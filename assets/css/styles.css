@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@500&family=Roboto:wght@700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+    margin: 0;
+}
+
+.container {
+    position: relative;
+    /* display: flex; */
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+    font-size: 16px;
+    background-color: #F4F6F1;
+    color: #2D3A3F;
+}
+
+header {
+    /* justify-content: space-between;
+    align-items: center; */
+    background-color: #2D3A3F;
+    text-align: center;
+    padding: .5em 1.5em;
+}
+
+.fixed {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.logo-div {
+    /* border: 1px solid #EE8B46; */
+    width: 10.9375em;
+    padding: .75em .25em .5em .25em;
+    margin: 0;
+}
+
+.logo-div a {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+}
+
+.logo {
+    /* background-color: #EE8B46; */
+    padding: 0;
+    margin: 0; 
+}
+
+/* Hamburger Button */
+.nav-toggle {
+    position: absolute;
+    top: 1.45em;
+    right: .75em; 
+    width: 3em;
+    height: 3em;
+    background-color: #2D3A3F;
+    border: 2px solid #EE8B46;
+    padding-bottom: .3em;
+    cursor: pointer;
+    transition: background-color 250ms ease;
+}
+.nav-toggle:hover,
+.nav-toggle:focus {
+    background-color: hsl(196.7, 16.7%, 41.2%);
+}
+
+.hamburger {
+    font-size: 1.375rem;
+    color: #EE8B46;
+}
+
+/* Navigation */
+.nav {
+    position: absolute;
+    visibility: hidden;
+    width: 100%;
+}
+
+.nav--visible {
+    position: relative;
+    visibility: visible;
+    height: auto;
+}
+
+.nav__list {
+    margin: 1em auto;
+    padding: 0;
+}
+
+.nav__item {
+    margin-top: 1em;
+    list-style: none;
+}
+
+.nav__item:first-child {
+    margin-top: 0;
+}
+
+.nav__link {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    letter-spacing: 1.5px;
+    color: rgb(173, 128, 91);
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.nav__link:hover,
+.nav__link:focus {
+    color: #EE8B46;
+}
+
+.active {
+    color: hsl(24.6, 83.2%, 80.4%);
+}
