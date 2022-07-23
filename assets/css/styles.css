@@ -309,4 +309,67 @@ header {
     font-size: 1.75rem;
 }
 
+/* Call to Action */
+.cta-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 90%;
+    height: auto;
+    background-color: var(--clr-main);
+    border-radius: 5px;
+    padding: .5em;
+    margin: 0 auto;
+}
+
+.cta__image {
+    width: 100%;
+    height: 500px;
+    background-image: url('../images/pexels-andrea-piacquadio-3865544.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    border-radius: 5px;
+    opacity: 0.8;
+}
+
+.cta__textbox {
+    position: absolute;
+    top: 22%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60%;
+    color: var(--clr-light-accent);
+    background-color:rgba(45, 58, 63, .4);
+    border-radius: 5px;
+    padding: 1em;
+    text-align: center;
+}
+
+.cta__button {
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.cta__button a {
+    color: black;
+    background-color: var(--clr-main);
+    border: 2px solid black;
+    text-decoration: none;
+    font-variant: small-caps;
+    font-weight: 900;
+    padding: .5em 1em;
+    border-radius: 50px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, .6);
+}
+
+.cta__button a:hover,
+.cta__button a:focus {
+    color: var(--clr-main);
+    background-color: var(--clr-dark);
+    border: 1px solid var(--clr-main);
+}
 
