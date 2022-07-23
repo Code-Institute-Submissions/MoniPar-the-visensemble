@@ -30,7 +30,12 @@
 .martop-big {
     margin-top: 1.5em;
 }
-
+.marbot-large {
+    margin-bottom: 2em;
+}
+.martop-large {
+    margin-tip: 2em;
+}
 /* Reset */
 * {
     margin: 0;
@@ -46,6 +51,14 @@ img {
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Roboto', Verdana, Geneva, Tahoma, sans-serif;
     line-height: 1.2;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
 }
 
 body {
@@ -137,7 +150,7 @@ header {
 
 .nav__item {
     margin-bottom: .5em;
-    list-style: none;
+    /* list-style: none; */
 }
 
 .nav__link {
@@ -146,7 +159,7 @@ header {
     font-size: 1rem;
     letter-spacing: 1.5px;
     color: var(--clr-main);
-    text-decoration: none;
+    /* text-decoration: none; */
     text-transform: uppercase;
 }
 
@@ -181,9 +194,9 @@ header {
 
 .hero__text {
     position: absolute;
-    top: 55%;
-    left: 15%;
-    /* transform: translate(-7%, -18%); */
+    top: 85%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     width: 70%;
     color: var(--clr-main);
     background-color: rgba(45, 58, 63, .8);
@@ -215,7 +228,7 @@ header {
     justify-content: space-between;
     align-items: center;
     width: 280px;
-    margin: 2em auto;
+    margin: 2.5em auto;
     padding: 1em .5em;
     background: linear-gradient(to right, 
       rgba(157, 166, 166, .4), 
@@ -273,7 +286,7 @@ header {
 /* Our Vision Section */
 .vision-container {
     text-align: center;
-    padding: 1.5em 1em;
+    padding: 0 1em;
 }
 
 .vision__title {
@@ -321,6 +334,7 @@ header {
     border-radius: 5px;
     padding: .5em;
     margin: 0 auto;
+    box-shadow: 5px 5px 10px rgb(0, 0, 0, .5);
 }
 
 .cta__image {
@@ -358,7 +372,7 @@ header {
     color: black;
     background-color: var(--clr-main);
     border: 2px solid black;
-    text-decoration: none;
+    /* text-decoration: none; */
     font-variant: small-caps;
     font-weight: 900;
     padding: .5em 1em;
@@ -373,3 +387,49 @@ header {
     border: 1px solid var(--clr-main);
 }
 
+/* Footer */
+.footer-container {
+    width: 100%;
+    background-color: var(--clr-dark);
+    padding: 2em 2em 0.5em;
+    text-align: center;
+    color: var(--clr-light-accent);
+    font-size: 0.6875rem;
+}
+
+.footer-container span {
+    color: var(--clr-dark-accent);
+}
+.footer-container span:hover,
+.footer-container span:focus {
+    color: var(--clr-main);
+}
+
+.footer__links {
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 1.125rem;
+    padding: .5em 0;
+}
+
+.contact-links li,
+.social-links li {
+    display: inline;
+}
+
+.contact-links li:not(:last-child),
+.social-links li:not(:last-child) {
+    margin-right: 1em;
+}
+
+.social-links a,
+.contact-links a {
+    color: var(--clr-light-accent);
+}
+
+.social-links a:hover,
+.social-links a:focus,
+.contact-links a:hover,
+.contact-links a:focus {
+    color: var(--clr-main);
+}
