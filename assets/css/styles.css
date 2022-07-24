@@ -116,20 +116,31 @@ header {
     height: 3em;
     background-color: var(--clr-dark);
     border: 2px solid var(--clr-main);
+    border-radius: 5px;
     padding-bottom: .3em;
     cursor: pointer;
-    transition: background-color 250ms ease;
-}
+    /* transition: background-color 250ms ease-in-out
+                border 
+                border-radius; */
+    }
 .nav-toggle:hover,
 .nav-toggle:focus {
-    background-color: hsl(196.7, 16.7%, 41.2%);
+    background-color: rgb(238, 139, 70, .5);
+    border: 2px solid black;
+    border-radius: 5px;
 }
 
 .hamburger {
     font-size: 1.375rem;
+    font-weight: 900;
     color: var(--clr-main);
+    cursor: pointer;
+    /* transition: color 250ms ease-in-out; */
 }
-
+.hamburger:hover,
+.hamburger:focus {
+    color: black;
+}
 /* Navigation */
 .nav {
     position: absolute;
