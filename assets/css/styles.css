@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@500&family=Roboto:wght@700&display=swap');
 
 /* Variables */
+
 :root {
 
     /* Color Palette */
@@ -12,6 +13,7 @@
 }
 
 /* Utility Classes */
+
 .marbot-small {
     margin-bottom: .5em;
 }
@@ -34,9 +36,11 @@
     margin-bottom: 2em;
 }
 .martop-large {
-    margin-tip: 2em;
+    margin-top: 2em;
 }
+
 /* Reset */
+
 * {
     margin: 0;
     padding: 0;
@@ -51,6 +55,11 @@ img {
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Roboto', Verdana, Geneva, Tahoma, sans-serif;
     line-height: 1.2;
+}
+
+h2 {
+    font-variant: small-caps;
+    margin-bottom: .5em;
 }
 
 li {
@@ -69,7 +78,10 @@ body {
     line-height: 1.6;
 }
 
-/* Header */
+/* ---------- */
+/*   Header   */
+/* ---------- */
+
 header {
     width: 100%;
     height: 90px;
@@ -87,7 +99,6 @@ header {
 
 .header-container {
     position: relative;
-    /* width: 100%; */
     max-width: 1200px;
     margin: 0 auto;
     padding-bottom: .1em;
@@ -108,6 +119,7 @@ header {
 }
 
 /* Hamburger Button */
+
 .nav-toggle {
     position: absolute;
     top: 1.45em;
@@ -119,10 +131,8 @@ header {
     border-radius: 5px;
     padding-bottom: .3em;
     cursor: pointer;
-    /* transition: background-color 250ms ease-in-out
-                border 
-                border-radius; */
     }
+
 .nav-toggle:hover,
 .nav-toggle:focus {
     background-color: rgb(238, 139, 70, .5);
@@ -135,13 +145,15 @@ header {
     font-weight: 900;
     color: var(--clr-main);
     cursor: pointer;
-    /* transition: color 250ms ease-in-out; */
 }
+
 .hamburger:hover,
 .hamburger:focus {
     color: black;
 }
+
 /* Navigation */
+
 .nav {
     position: absolute;
     visibility: hidden;
@@ -161,7 +173,6 @@ header {
 
 .nav__item {
     margin-bottom: .5em;
-    /* list-style: none; */
 }
 
 .nav__link {
@@ -170,7 +181,6 @@ header {
     font-size: 1rem;
     letter-spacing: 1.5px;
     color: var(--clr-main);
-    /* text-decoration: none; */
     text-transform: uppercase;
 }
 
@@ -185,7 +195,12 @@ header {
     border-bottom: 1px solid #eeac7c;
 }
 
+/* ---------- */
+/*    HOME    */
+/* ---------- */
+
 /* Hero */
+
 .hero-container {
     position: relative;
     width: 100%;
@@ -227,12 +242,12 @@ header {
     letter-spacing: 1.2px;
 }
 
-/* Aside */
+
+/* Aside quote */
+
 .aside-container {
     width: 100vw;  
 }
-
-/* Quote */
 
 .quote-card {
     display: flex;
@@ -245,7 +260,7 @@ header {
       rgba(157, 166, 166, .4), 
       rgba(157, 166, 166, .8));
     border-radius: 5px;
-    box-shadow: 2px 2px 5px rgb(0, 0, 0, .4);
+    box-shadow: 2px 2px 5px rgb(0, 0, 0, .6);
 }
 
 .quote__image {
@@ -295,6 +310,7 @@ header {
 }
 
 /* Our Vision Section */
+
 .vision-container {
     text-align: center;
     padding: 0 1em;
@@ -302,10 +318,6 @@ header {
 
 .vision__title {
     padding: 0 1.5em;
-}
-.vision__title h2 {
-    font-variant: small-caps;
-    margin-bottom: .5em;
 }
 
 .vision__title h3 {
@@ -337,6 +349,7 @@ header {
 }
 
 /* Call to Action */
+
 .cta-container {
     position: relative;
     display: flex;
@@ -401,7 +414,10 @@ header {
     border: 1px solid var(--clr-main);
 }
 
-/* Footer */
+/* ---------- */
+/*   FOOTER   */
+/* ---------- */
+
 .footer-container {
     width: 100%;
     background-color: var(--clr-dark);
@@ -446,4 +462,72 @@ header {
 .contact-links a:hover,
 .contact-links a:focus {
     color: var(--clr-main);
+}
+
+/* ---------- */
+/*    ABOUT   */
+/* ---------- */
+
+.about-container {
+    position: relative;
+    width: 100%;
+    height: 600px;
+    margin-top: 90px;
+}
+
+.about__image {
+    width: 100%;
+    height: 600px;
+    background-image: url('../images/hero-about-orange-tint-flip-crop.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right center;
+    opacity: 0.6;
+}
+
+.about__text {
+    position: absolute;
+    top: 50px;
+    right: 10%;
+    transition: translate(-50%, -50%);
+    width: 80%;
+    height: 500px;
+    border: 2px solid var(--clr-main);
+    border-radius: 5px;
+    padding: 1em;
+    overflow: scroll;
+}
+
+.more-text {
+    display: none;
+}
+
+.button-container {
+    margin: 1em auto;
+}
+
+.read-more-btn {
+    padding: 8px 20px;
+    background-color: var(--clr-dark-accent);
+    color: var(--clr-dark);
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 2px 2px 5px rgb(0, 0, 0, .6);
+    cursor: pointer;
+}
+
+.read-more-btn:hover,
+.read-more-btn:focus {
+    background-color: var(--clr-light-accent);
+}
+
+.text.show--more .more-text {
+    display: inline-block;
+}
+
+.text.show--more .dots {
+    display: none;
 }
