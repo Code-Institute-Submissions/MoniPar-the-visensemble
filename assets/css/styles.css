@@ -134,7 +134,7 @@ header {
     }
 
 .nav-toggle:hover,
-.nav-toggle:focus {
+.nav-toggle:focus-within {
     background-color: rgb(238, 139, 70, .5);
     border: 2px solid black;
     border-radius: 5px;
@@ -148,7 +148,7 @@ header {
 }
 
 .hamburger:hover,
-.hamburger:focus {
+.hamburger:focus-within {
     color: black;
 }
 
@@ -185,7 +185,7 @@ header {
 }
 
 .nav__link:hover,
-.nav__link:focus {
+.nav__link:focus-within {
     color: #eeac7c;
 }
 
@@ -399,7 +399,6 @@ header {
     color: black;
     background-color: var(--clr-main);
     border: 2px solid black;
-    /* text-decoration: none; */
     font-variant: small-caps;
     font-weight: 900;
     padding: .5em 1em;
@@ -408,7 +407,7 @@ header {
 }
 
 .cta__button a:hover,
-.cta__button a:focus {
+.cta__button a:focus-within {
     color: var(--clr-main);
     background-color: var(--clr-dark);
     border: 1px solid var(--clr-main);
@@ -431,7 +430,7 @@ header {
     color: var(--clr-dark-accent);
 }
 .footer-container span:hover,
-.footer-container span:focus {
+.footer-container span:focus-within {
     color: var(--clr-main);
 }
 
@@ -458,9 +457,9 @@ header {
 }
 
 .social-links a:hover,
-.social-links a:focus,
+.social-links a:focus-within,
 .contact-links a:hover,
-.contact-links a:focus {
+.contact-links a:focus-within {
     color: var(--clr-main);
 }
 
@@ -520,7 +519,7 @@ header {
 }
 
 .read-more-btn:hover,
-.read-more-btn:focus {
+.read-more-btn:focus-within {
     background-color: var(--clr-light-accent);
 }
 
