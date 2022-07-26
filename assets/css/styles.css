@@ -760,3 +760,57 @@ header {
     padding-top: 1.5em;
     border-bottom: 1px solid var(--clr-main);
 }
+
+
+/* Rehearsal Card */
+
+.rehearsal-card {
+    max-width: 600px;
+    margin: 0 auto;
+    border: 5px solid var(--clr-main);
+    border-radius: 3px;
+    padding: 1.5em 0;
+    text-align: center;
+    line-height: 1.2;
+}
+
+.rehearsal-card h3 {
+    font-size: 1.75rem;
+    font-variant: small-caps;
+    letter-spacing: 1.5px;
+    padding-bottom: 1em;
+}
+
+.rehearsal__content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.rehearsal__item {
+    width: 45%;
+    margin: 0 auto;
+}
+
+.rehearsal__icon {
+    font-size: 1.5rem;
+    color: var(--clr-main);
+    padding: .5em 0;
+}
+
+.rehearsal__text span {
+    color: var(--clr-main);
+    font-weight: 900;
+}
+
+.rehearsal__text a:link {
+    color: var(--clr-light-accent);
+    font-weight: 900;
+    text-decoration: underline;
+}
+
+.rehearsal__text a:hover,
+.rehearsal__text a:focus-within {
+    color: var(--clr-main);
+}
