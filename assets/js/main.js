@@ -21,14 +21,37 @@ readMoreBtn.addEventListener("click", (e) => {
   }
 });
 
-// Back To Top Button //
+// // Back To Top Button //
 
-const toTop = document.querySelector(".back-to-top");
+const toTop = document.getElementById("backToTop");
 
-window.addEventListener("scroll", () => {
-  if (window.pageYOffset > 100) {
-    toTop.classList.add("active");
+// // Show button when user scrolls down 20px from top
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if(document.body.scrollTop > 20 || document.documnentEle
+    .scrollTop > 20) {
+      toTop.style.display = "block";
   } else {
-    toTop.classList.remove("active");
+    toTop.style.display = "none";
   }
-});
+}
+
+// On click scroll to top
+function backToTop() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+
+
+
+
+// const toTop = document.querySelector(".back-to-top");
+
+// window.addEventListener("scroll", () => {
+//   if (window.pageYOffset > 100) {
+//     toTop.classList.add("active");
+//   } else {
+//     toTop.classList.remove("active");
+//   }
+// });

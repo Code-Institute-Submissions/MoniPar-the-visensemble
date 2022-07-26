@@ -24,81 +24,47 @@
             </button>
             <nav class="nav">
                 <ul class="nav__list">
-                    <li class="nav__item"><a href="index.html" class="nav__link active">Home</a></li>
+                    <li class="nav__item"><a href="index.html" class="nav__link">Home</a></li>
                     <li class="nav__item"><a href="about.html" class="nav__link">About</a></li>
-                    <li class="nav__item"><a href="events.html" class="nav__link">Events</a></li>
+                    <li class="nav__item"><a href="events.html" class="nav__link active">Events</a></li>
                     <li class="nav__item"><a href="contact.html" class="nav__link">Contact</a></li>
                 </ul>
             </nav>
         </div>
     </header>
     <main id="main">
-        <section class="hero-container">
-            <div class="hero__image"></div>
-            <div class="hero__text">
-                <h1 class="marbot-small">The VisEnsemble</h1>
-                <h3>Ireland's only choir for
-                  people living with sight loss</h3>
-            </div>
+        <section class="events-and-news">
+            <h2>Calendar of Events and News</h2>
+            <article class="event__card">
+                <div class="event__card-image">
+                    <img src="/assets/images/st-audoens-church1200.jpg" alt="Green space with St. Audoen's Church in the background on a sunny day">
+                </div>                
+                <div class="event__card-content">
+                    <div class="event__card-header">
+                        <div class="event-date">
+                            <h3>17th July</h3>
+                        </div>
+                        <div class="event-details">
+                            <a class="event-location" target="_blank"
+                            href="https://goo.gl/maps/BgJk2JGCX13bumhg9"
+                            aria-label="Map your journey on Google Maps (opens in a new tab)">
+                            <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+                            St. Audoen's Church, Dublin    
+                            </a>
+                            <i class="fa-solid fa-clock"></i>Doors Open at 19:00
+                        </div>
+                    </div>
+                    <div class="event-text">
+                        <h4>The Wait is Over!!</h4>
+                        <p>The Summer Concert is Back! Celebrate with us after a two year long hiatus of in person performances.  
+                    This event is going to be truly special and we have worked incredibly hard during the lockdown on old and new 
+                    material to share with you all.  <span> Tickets are Free!!!</span>
+                        </p>
+                    </div>
+                </div>
+            </article>
         </section>
-        <aside class="aside-container">
-            <div class="quote-card">
-                <img class="quote__image" src="assets/images/helen-keler-portrait.jpg" alt="Portrait of Helen Keller facing right and holding white flowers">
-                <div class="quote__text">
-                    <blockquote cite=="https://www.goodreads.com/quotes/420478-the-only-thing-worse-than-being-blind-is-having-sight">
-                        <p><em>The only thing worse than being
-                            blind is having sight and no vision.</em></p><br>
-                    </blockquote>
-                    <p>Helen Keller</p>
-                </div>
-            </div>
-        </aside>
-        <section>
-            <div class="vision-container marbot-big">
-                <div class="vision__title marbot-medium">
-                    <h2>Our Vision</h2>
-                    <h3>To give people with visual impairments opportunities to:</h3>
-                </div>    
-                    <div class="vision__statements">
-                        <div class="vision__box">
-                            <div class="vision__icon"><i class="fa-solid fa-music" aria-hidden="true"></i></div>
-                            <div class="vision__text">
-                                <p>Explore and express themselves through singing</p>
-                            </div>
-                        </div>
-                        <div class="vision__box">
-                            <div class="vision__icon"><i class="fa-solid fa-people-group" aria-hidden="true"></i></div>
-                            <div class="vision__text">
-                                <p>Develop friendships and a sense of camaraderie</p>
-                            </div>
-                        </div>
-                        <div class="vision__box">
-                            <div class="vision__icon"><i class="fa-solid fa-kit-medical" aria-hidden="true"></i></div>
-                            <div class="vision__text">
-                                <p>Improve mental health and reduce stress</p>
-                            </div>
-                        </div>
-                        <div class="vision__box">
-                            <div class="vision__icon"><i class="fa-regular fa-face-smile" aria-hidden="true"></i></div>
-                            <div class="vision__text">
-                                <p>Rediscover that sense of joy and happiness</p>
-                            </div>
-                        </div>
-                    </div>  
-                </div>
-            </div>
-        </section>
-        <section>
-            <div class="cta-container">
-                <div class="cta__image"></div>
-                <div class="cta__textbox">
-                    <h3>We are looking for new members from all over Ireland!</h3>
-                </div>
-                <div class="cta__button">
-                    <a href="contact.html" >Get in Touch!</a>
-                </div>
-            </div>
-        </section>
+        <button id="backToTop" onclick="backToTop()" title="Go to Top">&#8679;</button>
     </main>
     <footer class="footer-container martop-big">
         <div class="footer__links">
