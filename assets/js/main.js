@@ -29,19 +29,18 @@ const toTop = document.getElementById("backToTop");
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
-  if(document.body.scrollTop > 20 || document.documnentEle
-    .scrollTop > 20) {
-      toTop.style.display = "block";
+  if(document.body.scrollBottom > 100 || document.documentElement.scrollBottom > 100) {
+    toTop.style.display = "block";
   } else {
     toTop.style.display = "none";
   }
-}
+};
 
 // On click scroll to top
 function backToTop() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
-}
+};
 
 
 
