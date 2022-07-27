@@ -984,3 +984,45 @@ header {
     float: right;
     display: block;
 }
+
+/* ---------------- */
+/*   CONTACT PAGE   */
+/* ---------------- */
+
+.contact-us {
+    width: 100%;
+    margin-top: 5.625em;
+    background-image: url('../images/pexels-kindel-media-7149180.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    color: var(--clr-light);
+    text-align: center;
+    padding: 1em;
+}
+
+.contact-us__text {
+    width: 80vw;
+    background-color: rgba(238, 139, 70, 0.6);
+    line-height: 1.4;
+    border-radius: 5px;
+    margin: 0 auto 1.5em;
+    padding: 1em;
+}
+
+.contact-us__form-container {
+    margin: 0 auto;
+    border: 3px solid var(--clr-main);
+    border-radius: 10px;
+    text-align: left;
+}
+
+.contact-form {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 2em;
+}
+
+.contact-form fieldset {
+    padding: 1em;
+}
