@@ -51,30 +51,28 @@
                         <input type="text" id="lname" name="lname" class="text-input" value="Enter your surname" required><br>
                         <label for="email">Email:</label><br>
                         <input type="email" id="email" name="email" class="text-input" value="Enter your email" required><br>
-                        <label for="mobile">Mobile Number:</label><br>
+                        <label for="mobile">Mobile (optional):</label><br>
                         <input type="number" id="mobile" name="mobile" class="text-input" value="Enter your mobile number"><br>
                     </fieldset>
                     <fieldset>
                         <legend>About you</legend>
-                        <input type="radio" id="new_member" name="feedback_type" value="new_member" required checked>
+                        <input type="radio" id="new_member" name="feedback_type" class="radio" value="new_member" checked>
                         <label for="new_member">New Member</label><br>
-                        <input type="radio" id="organiser" name="feedback_type" value="organiser">
+                        <input type="radio" id="organiser" name="feedback_type" class="radio" value="organiser">
                         <label for="organiser">Event Organiser</label><br>
-                        <input type="radio" id="other" name="feedback_type" value="other">
+                        <input type="radio" id="other" name="feedback_type" class="radio" value="other">
                         <label for="other">Other</label><br>
                     </fieldset>
                     <fieldset>
-                        <legend>Questions, Comments or Feedback</legend>
-                        <textarea class="text-input" name="message" rows="10" cols="30">
+                        <legend>Message Us</legend>
+                        <textarea class="text-input" name="message" rows="10" cols="25">
                             Enter any questions, comments or feedback here.
                         </textarea> 
                     </fieldset>
+                    <input class="btn" type="submit" value="Submit">
                 </form>
-                
             </div>
         </section>
-        
-
         <button id="backToTop" onclick="backToTop()" title="Go to Top">&#8679;</button>
     </main>
     <footer class="footer-container martop-big">
