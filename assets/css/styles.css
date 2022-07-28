@@ -109,7 +109,7 @@ h4 {
 
 body {
     font-family: 'Nunito', Arial, Helvetica, sans-serif;
-    font-size: 16px;
+    font-size: 1rem;
     background-color: var(--clr-light);
     color: var(--clr-dark);
     line-height: 1.6;
@@ -312,15 +312,11 @@ header {
 
 /* Quote */
 
-.quote-container {
-    width: 100vw;  
-}
-
 .quote-card {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 300px;
+    width: 300px;
     margin: 2.5em auto;
     padding: 1em;
     background: linear-gradient(to right, 
@@ -341,7 +337,7 @@ header {
 
 .quote__text {
     position: relative;
-    padding: .5em;
+    padding: .75em;
     width: 140px;
     height: 180px;
 }
@@ -368,7 +364,7 @@ header {
     font-size: 7em;
     opacity: 0.4;
     position: absolute;
-    top: 69px;
+    top: 90px;
     right: 3px;
     z-index: 9;
 }
@@ -377,9 +373,34 @@ header {
     text-align: right;
 }
 
+@media only screen and (min-width: 90em) {
+    .quote-card {
+        width: 25em;
+        /* flex-direction: column; */
+        justify-content: space-evenly;
+        padding: 1.5em;
+    }
+
+    .quote__text {
+        width: 16em;
+    }
+
+    .quote__text::before {
+        top: -80px;
+        right: 355px;
+    }
+
+    .quote__text::after {
+        top: 16px;
+        right: -17px;
+    }
+}
+
+
 /* Our Vision Section */
 
 .vision-container {
+    max-width: 28.125em; 
     text-align: center;
     padding: 0 1em;
 }
@@ -411,6 +432,28 @@ header {
     font-size: 1.75rem;
 }
 
+@media only screen and (min-width: 48em) {
+    .quote-vision-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .quote-container {
+        padding: 1.5em;
+    }
+
+    .vision-container {
+        padding: 1.5em;
+    }
+}
+
+@media only screen and (min-width: 64em) {
+    .quote-vision-container {
+        justify-content: space-evenly;
+    }
+}
+
 /* Call to Action */
 
 .cta-container {
@@ -423,7 +466,7 @@ header {
     background-color: var(--clr-main);
     border-radius: 5px;
     padding: .5em;
-    margin: 2.5em auto;
+    margin: 0 auto;
     box-shadow: 5px 5px 10px rgb(0, 0, 0, .5);
 }
 
