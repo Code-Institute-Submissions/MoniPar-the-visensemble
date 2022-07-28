@@ -104,13 +104,11 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 {
     font-size: 1.625rem;
+    font-variant: small-caps;
+    letter-spacing: 1.4px;
 }
 h2 {
     font-size: 1.5rem;
-}
-h1, h2 {
-    font-variant: small-caps;
-    letter-spacing: 1.4px;
 }
 h3 {
     font-size: 1.375rem;
@@ -474,7 +472,7 @@ header {
 }
 
 .footer-container span {
-    color: var(--clr-dark-accent);
+    color: rgb(209, 166, 131);
 }
 .footer-container span:hover,
 .footer-container span:focus-within {
