@@ -52,7 +52,7 @@
                         <label for="email">Email:</label><br>
                         <input type="email" id="email" name="email" class="text-input" value="Enter your email" required><br>
                         <label for="mobile">Mobile (optional):</label><br>
-                        <input type="number" id="mobile" name="mobile" class="text-input" value="Enter your mobile number"><br>
+                        <input type="tel" id="mobile" name="mobile" class="text-input" value="012 345 6789" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"><br>
                     </fieldset>
                     <fieldset>
                         <legend>About you</legend>
@@ -65,7 +65,8 @@
                     </fieldset>
                     <fieldset>
                         <legend>Message Us</legend>
-                        <textarea class="text-input" name="message" rows="10" cols="25">
+                        <label for="feedback">Questions, Comments or Feedback</label>
+                        <textarea id="feedback" class="text-input" name="message" rows="10" cols="25" wrap>
                             Enter any questions, comments or feedback here.
                         </textarea> 
                     </fieldset>

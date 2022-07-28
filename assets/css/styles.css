@@ -1029,7 +1029,7 @@ header {
 
 .text-input {
     color: rgb(45, 58, 63, .8);
-    background-color: #9DA6A6;
+    background-color: rgb(180, 207, 207);
     padding: 5px;
     margin-bottom: .75em;
     border: none;
