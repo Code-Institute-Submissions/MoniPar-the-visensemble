@@ -291,14 +291,14 @@ header {
 .hero-container {
     position: relative;
     width: 100%;
-    height: 70vh;
+    height: 31.25em;
     overflow: hidden;
 }
 
 .hero__image {
     width: 100%;
-    height: 70vh;
-    background: url('../images/hero-home-425x283.jpg') no-repeat;
+    height: 31.25em;
+    background: url("https://res.cloudinary.com/aperlae/image/upload/v1659107124/hero-home-1440x960_kkoih0.jpg") no-repeat;
     background-size: cover;
     background-position: center center;
 }
@@ -328,11 +328,11 @@ header {
     }
     
     .hero__image {
-        /* display: inline-block; */
         width: 90em;
         height: 60em;
-        background: url('../images/hero-home-1440x960.jpg') no-repeat;
-        background-size: cover;
+        background: url("https://res.cloudinary.com/aperlae/image/upload/v1659107124/hero-home-1440x960_kkoih0.jpg") no-repeat;
+        background-size: contain;
+        background-position: center right;
         margin: 0 auto;
         overflow: auto;
     }
@@ -519,9 +519,8 @@ header {
 
 .cta__image {
     width: 100%;
-    height: 500px;
-    background-image: url('../images/pexels-andrea-piacquadio-3865544.jpg');
-    background-repeat: no-repeat;
+    height: 31.25em;
+    background: url('https://res.cloudinary.com/aperlae/image/upload/v1659107488/cta_rb21er.jpg') no-repeat;
     background-size: cover;
     background-position: center center;
     border-radius: 5px;
@@ -631,27 +630,26 @@ header {
 .about-container {
     position: relative;
     width: 100%;
-    height: 60vh;
+    height: 37.5em;
     overflow: hidden;
     margin-bottom: 2.5em;
 }
 
 .about__image {
     width: 100%;
-    height: 60vh;
-    background: url('../images/hero-about-425x323.jpg') no-repeat;
+    height: 37.5em;
+    background: url('https://res.cloudinary.com/aperlae/image/upload/v1659108674/hero-about_ndx29v.jpg') no-repeat;
     background-size: cover;
     background-position: right center;
-    opacity: 0.7;
 }
 
 .about__text {
     position: absolute;
-    top: 50px;
+    top: 5%;
     right: 10%;
     transition: translate(-50%, -50%);
     width: 80%;
-    height: 450px;
+    height: 33em;
     font-weight: 700;
     border: 2px solid var(--clr-main);
     border-radius: 5px;
@@ -680,7 +678,7 @@ header {
 }
 
 .read-more-btn:hover,
-.read-more-btn:focus-within {
+.read-more-btn:focus {
     background-color: var(--clr-light-accent);
 }
 
@@ -693,15 +691,13 @@ header {
 }
 
 @media only screen and (min-width: 26em) {
-    /* .about__image {
-        background-position: right;
-    } */
-
     .about__text {
         width: 65%;
+        right: 5%;
         padding: 1.5em;
     }
 }
+
 @media only screen and (min-width: 48em) {
     .about__text {
         width: 50%;
@@ -709,44 +705,27 @@ header {
     }
 }
 
-@media only screen and (min-width: 90em) {
+@media only screen and (min-width: 160em) {
     .about-container {
         background-color: rgb(45, 58, 63, .9);
     }
-
+    
     .about__image {
         width: 90em;
         height: 60em;
-        background: url('../images/about-hero-medium.jpg') no-repeat;
-        background-position: right center;
+        background: url('https://res.cloudinary.com/aperlae/image/upload/v1659108674/hero-about_ndx29v.jpg') no-repeat;
         background-size: contain;
+        background-position: center;
         margin: 0 auto;
-        opacity: 0.7;
-        /* overflow: auto; */
     }
 
     .about__text {
-        top: 6%;
-        right: 45%;
-        padding: 1em 2em;
-        color: var(--clr-light);
+        width: 37.5em;
+        height: 31.25em;
+        top: 8%;
+        right: 20%;
     }
-}
-
-@media only screen and (min-width: 160em) {
-    .about__image {
-        background: url('../images/about-hero-large.jpg') no-repeat;
-        background-position: center center;
-        background-size: contain;
-    }
-
-    .about__text {
-        top: 9%;
-        right: 58%;
-        width: 30%;
-    }
-}
-
+} 
 
 /* Flip-Card */
 
@@ -792,7 +771,7 @@ header {
     position: relative;
     width: 18.75em;
     height: 9.375em;
-    background: url('../images/pexels-bryan-geraldo-586415.jpg') no-repeat;
+    background: url('https://res.cloudinary.com/aperlae/image/upload/v1659108521/flip-background_hzunwx.jpg') no-repeat;
     background-size: cover;
     backface-visibility: hidden;
     overflow: hidden;
@@ -815,7 +794,7 @@ header {
     width: 7.5em;
     height: 7.5em;
     margin: 0 auto;
-    background: url('../images/johnsmithcropped.jpg') no-repeat;
+    background: url('https://res.cloudinary.com/aperlae/image/upload/v1659107601/johnsmithcropped_ngwjic.jpg') no-repeat;
     background-size: cover;
     backface-visibility: hidden;
     overflow: hidden;
@@ -888,55 +867,11 @@ header {
     margin: 0 50px;
 }
 
-
-/* Media Section */
-
-.media {
-    background-color: rgba(156, 165, 165, .7);
-    margin: 2.5em auto;
-    padding: 2em 1em;
-  
-}
-
-.media__title {
-    max-width: 500px;
-    margin: 0 auto;
-    text-align: center;
-    line-height: 1.2;
-}
-
-.media__content {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    align-items: flex-start;
-}
-
-.media__content p {
-    max-width: 300px;
-    margin: 0 auto;
-    line-height: 1.4;
-    text-align: left;
-    padding: .5em .5em 1em .5em;
-}
-
-.audio-div {
-    width: 300px;
-    height: 150px;
-    padding-top: 50px;
-}
-
-.media__item {
-    padding-top: 1.5em;
-    border-bottom: 1px solid var(--clr-main);
-}
-
-
 /* Rehearsal Card */
 
 .rehearsal-card {
     max-width: 600px;
-    margin: 0 auto;
+    margin: 2.5em auto;
     border: 2px solid var(--clr-main);
     border-radius: 10px;
     padding: 1.5em 0;
@@ -971,6 +906,58 @@ header {
 .rehearsal__text a:focus-within {
     background-color:rgb(209, 166, 131);
     color: var(--clr-dark);
+}
+
+/* Media Section */
+
+.media {
+    background: url('https://res.cloudinary.com/aperlae/image/upload/v1659119422/media-light_qlisku.jpg') no-repeat;
+    background-position: bottom center;
+    background-size: cover;
+    margin: 2.5em auto;
+    padding: 2em 1em;
+  
+}
+
+.media__title {
+    max-width: 31.25em;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 1.2;
+}
+
+.media__content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+
+.media__content p {
+    max-width: 18.75em;
+    margin: 0 auto;
+    line-height: 1.4;
+    text-align: left;
+    padding: .5em 1em 1em;
+}
+
+.audio-div {
+    width: 19em;
+    height: 9.375em;
+    padding: 2.75em 0;
+}
+
+.media__item {
+    padding-top: 1.5em;
+    border: 3px solid var(--clr-light-accent);
+    border-radius: 20px;
+    margin-top: 1em;
+}
+
+@media only screen and (min-width: 64em) {
+    .audio-div {
+        padding: 2.75em 2em;
+    }
 }
 
 /* Testimonials Section */
