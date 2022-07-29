@@ -140,8 +140,8 @@ header {
 
 .logo-div {
     display: inline-block;
-    margin: .5em 0 0 1em;
-    padding-top: .5em;
+    width: 200px;
+    margin: .7em 0 0 1em;
 }
 
 .logo-div a {
@@ -227,7 +227,8 @@ header {
     }
 
     .logo-div {
-        padding-left: 2em;
+        width: 250px;
+        margin: .5em 0 0 2em;
     }
 
     .nav {
@@ -243,7 +244,7 @@ header {
 
     .nav__list {
         display: flex;
-        margin-top: 0;
+        margin-top: 0.5em;
         margin-right: 1em;
     }
 
@@ -252,6 +253,25 @@ header {
     }
 }
 
+@media only screen and (min-width: 64em) {
+    .nav {
+        padding-top: 2em;
+    }
+
+    .nav__list {
+        margin-top: 0;
+    }
+}
+
+@media only screen and (min-width: 90em) {
+    .logo-div {
+        width: 300px;
+    }
+
+    .nav {
+        padding-top: 1em;
+    }
+}
 
 /* --------------- */
 /*    HOME PAGE    */
@@ -534,6 +554,7 @@ header {
     .cta__textbox {
         width: 40%;
         padding-top: 2em;
+        top: 30%;
     }
 }
 
