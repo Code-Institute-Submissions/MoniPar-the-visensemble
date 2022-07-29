@@ -61,10 +61,9 @@ a { text-decoration: none; }
 }
 
 #backToTop {
-    /* display: none; */
     position: fixed;
-    bottom: 2%;
-    right: 2%;
+    bottom: 5%;
+    right: 5%;
     background-color: var(--clr-main);
     color: var(--clr-light);
     font-size: 2rem;
@@ -75,6 +74,7 @@ a { text-decoration: none; }
     box-shadow: 0 2px 10px rgba(0, 0, 0, .6);
     cursor: pointer;
     z-index: 99;
+    /* display: none; */
 }
 
 #backToTop:hover {
@@ -296,19 +296,23 @@ header {
 @media only screen and (min-width: 90em) {
     .hero-container {
         background-color: rgb(45, 58, 63, .9);
-        text-align: center;
     }
     
     .hero__image {
-        display: inline-block;
+        /* display: inline-block; */
         width: 90em;
+        height: 60em;
         background: url('../images/hero-home-1440x960.jpg') no-repeat;
+        background-size: cover;
+        margin: 0 auto;
+        overflow: auto;
     }
 
     .hero__text {
         width: 25em;
     }
 }
+
 
 /* Quote */
 
@@ -375,7 +379,7 @@ header {
 
 @media only screen and (min-width: 90em) {
     .quote-card {
-        width: 25em;
+        width: 25em; /* 400px */
         /* flex-direction: column; */
         justify-content: space-evenly;
         padding: 1.5em;
@@ -400,7 +404,7 @@ header {
 /* Our Vision Section */
 
 .vision-container {
-    max-width: 28.125em; 
+    max-width: 28.125em; /* 450px */
     text-align: center;
     padding: 0 1em;
 }
@@ -416,7 +420,7 @@ header {
 }
 
 .vision__box {
-    width: 150px;
+    width: 9.375em; /* 150px */
     font-size: 1.125rem;
     line-height: 1.4;
     flex-grow: 1;
@@ -437,6 +441,8 @@ header {
         display: flex;
         justify-content: space-between;
         align-items: center;
+        max-width: 90em; /* 1440px */
+        margin: 2.5em auto;
     }
 
     .quote-container {
@@ -455,6 +461,11 @@ header {
 }
 
 /* Call to Action */
+
+.cta {
+    max-width: 80em; /* 1280px */
+    margin: 0 auto;
+}
 
 .cta-container {
     position: relative;
@@ -517,6 +528,13 @@ header {
     color: var(--clr-main);
     background-color: var(--clr-dark);
     border: 1px solid var(--clr-main);
+}
+
+@media only screen and (min-width: 48em) {
+    .cta__textbox {
+        width: 40%;
+        padding-top: 2em;
+    }
 }
 
 /* ---------- */
