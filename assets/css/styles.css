@@ -632,7 +632,6 @@ header {
     width: 100%;
     height: 37.5em;
     overflow: hidden;
-    margin-bottom: 2.5em;
 }
 
 .about__image {
@@ -726,6 +725,21 @@ header {
         right: 20%;
     }
 } 
+
+/* Cards Wrapper */
+.cards-wrapper {
+    background-color: rgb(45, 58, 63, 0.3);
+    padding: 2.5em 0;
+}
+
+@media only screen and (min-width: 90em) {
+    .cards-wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 2.5em;
+    }
+}
 
 /* Flip-Card */
 
@@ -872,11 +886,13 @@ header {
 .rehearsal-card {
     max-width: 600px;
     margin: 2.5em auto;
+    background-color: var(--clr-light);
     border: 2px solid var(--clr-main);
     border-radius: 10px;
     padding: 1.5em 0;
     text-align: center;
     line-height: 1.2;
+    box-shadow: 0 2px 8px rgb(0, 0, 0, .6);
 }
 
 .rehearsal__content {
@@ -909,14 +925,20 @@ header {
 }
 
 /* Media Section */
+.media-wrapper {
+    background-color: rgb(45, 58, 63, 0.3);
+    padding-bottom: 2.5em;
+}
 
 .media {
+    max-width: 1190px;
     background: url('https://res.cloudinary.com/aperlae/image/upload/v1659119422/media-light_qlisku.jpg') no-repeat;
     background-position: bottom center;
     background-size: cover;
-    margin: 2.5em auto;
+    margin: 0 auto;
     padding: 2em 1em;
-  
+    border: 2px solid rgb(113, 121, 121);
+    border-radius: 5px;
 }
 
 .media__title {
@@ -933,6 +955,10 @@ header {
     align-items: flex-start;
 }
 
+.media__content h4 {
+    text-align: center;
+}
+
 .media__content p {
     max-width: 18.75em;
     margin: 0 auto;
@@ -943,8 +969,9 @@ header {
 
 .audio-div {
     width: 19em;
-    height: 9.375em;
-    padding: 2.75em 0;
+    height: 8.75em;
+    background-color: rgb(157, 166, 166, 0.5);
+    padding: 2.1875em 0;
 }
 
 .media__item {
@@ -952,6 +979,7 @@ header {
     border: 3px solid var(--clr-light-accent);
     border-radius: 20px;
     margin-top: 1em;
+    box-shadow: 0 2px 5px rgb(0, 0, 0, .6);
 }
 
 @media only screen and (min-width: 64em) {
@@ -960,36 +988,30 @@ header {
     }
 }
 
+
 /* Testimonials Section */
 
 .testimonials {
-    max-width: 1200px;
-    margin: 2.5em auto;
+    width: 100%;
+    margin: 0 auto;
     background-color: var(--clr-dark-accent);
     padding: 2em;
     border-radius: 10px;
     text-align: center;
-
-}
-
-.testimonials__content {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
 }
 
 .testimonials__item {
+    max-width: 21em;
+    background-color: rgb(244, 246, 241, .6);
+    margin: 1em auto;
     padding: 1em;
     border-radius: 10px;
-    background-color: rgb(244, 246, 241, .6);
-    margin-bottom: 1em;
     box-shadow: 0 2px 5px rgba(0, 0, 0, .6); 
 }
 
 .testimonials__image {
-    width: 70px;
-    height: 70px;
+    width: 4.375em;
+    height: 4.375em;
     display: inline-block;
     border-radius: 50%;
     border: 1px solid var(--clr-main);
@@ -1005,6 +1027,14 @@ header {
 .testimonials__text span {
     font-style: italic;
     font-weight: 700;
+}
+
+@media only screen and (min-width: 48em) {
+    .testimonials__content {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
 }
 
 /* ---------------- */
