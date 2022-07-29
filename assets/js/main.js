@@ -14,10 +14,10 @@ const text = document.querySelector(".text");
 
 readMoreBtn.addEventListener("click", function () {
     text.classList.toggle("show--more");
-    if (readMoreBtn.innerText === "READ MORE") {
-      readMoreBtn.innerText = "READ LESS";
+    if (readMoreBtn.innerText === "Read More") {
+      readMoreBtn.innerText = "Read Less";
     } else {
-      readMoreBtn.innerText = "READ MORE";
+      readMoreBtn.innerText = "Read More";
     }
   });
 

@@ -27,6 +27,11 @@ html {
     font-size: 100%; /* 16px = 1rem */
 }
 
+@media only screen and (min-width: 64em) {
+    html {
+        font-size: 125%; /* 20px = 1rem */
+    }
+}
 @media only screen and (min-width: 90em) {
     html {
         font-size: 150%; /* 24px = 1rem */
@@ -254,6 +259,10 @@ header {
 }
 
 @media only screen and (min-width: 64em) {
+    .logo-div {
+        margin: 1em 0 0 2em;
+    }
+    
     .nav {
         padding-top: 2em;
     }
@@ -269,7 +278,7 @@ header {
     }
 
     .nav {
-        padding-top: 1em;
+        padding-top: 1.8em;
     }
 }
 
@@ -397,6 +406,12 @@ header {
     text-align: right;
 }
 
+@media only screen and (min-width: 64em) {
+    .quote__text {
+        font-size: 16px;
+    }
+}
+
 @media only screen and (min-width: 90em) {
     .quote-card {
         width: 25em; /* 400px */
@@ -407,6 +422,7 @@ header {
 
     .quote__text {
         width: 16em;
+        font-size: 1rem;
     }
 
     .quote__text::before {
@@ -615,18 +631,18 @@ header {
 .about-container {
     position: relative;
     width: 100%;
-    height: 600px;
-    margin-top: 90px;
+    height: 60vh;
+    overflow: hidden;
+    margin-bottom: 2.5em;
 }
 
 .about__image {
     width: 100%;
-    height: 600px;
-    background-image: url('../images/hero-about-orange-tint-flip-crop.jpg');
-    background-repeat: no-repeat;
+    height: 60vh;
+    background: url('../images/hero-about-425x323.jpg') no-repeat;
     background-size: cover;
     background-position: right center;
-    opacity: 0.6;
+    opacity: 0.7;
 }
 
 .about__text {
@@ -635,7 +651,7 @@ header {
     right: 10%;
     transition: translate(-50%, -50%);
     width: 80%;
-    height: 500px;
+    height: 450px;
     font-weight: 700;
     border: 2px solid var(--clr-main);
     border-radius: 5px;
@@ -656,7 +672,6 @@ header {
     background-color: var(--clr-light-accent);
     color: var(--clr-dark);
     font-weight: 800;
-    /* text-transform: uppercase; */
     letter-spacing: 1.2px;
     border-radius: 20px;
     border: none;
@@ -677,12 +692,68 @@ header {
     display: none;
 }
 
+@media only screen and (min-width: 26em) {
+    /* .about__image {
+        background-position: right;
+    } */
+
+    .about__text {
+        width: 65%;
+        padding: 1.5em;
+    }
+}
+@media only screen and (min-width: 48em) {
+    .about__text {
+        width: 50%;
+        padding: 2em;
+    }
+}
+
+@media only screen and (min-width: 90em) {
+    .about-container {
+        background-color: rgb(45, 58, 63, .9);
+    }
+
+    .about__image {
+        width: 90em;
+        height: 60em;
+        background: url('../images/about-hero-medium.jpg') no-repeat;
+        background-position: right center;
+        background-size: contain;
+        margin: 0 auto;
+        opacity: 0.7;
+        /* overflow: auto; */
+    }
+
+    .about__text {
+        top: 6%;
+        right: 45%;
+        padding: 1em 2em;
+        color: var(--clr-light);
+    }
+}
+
+@media only screen and (min-width: 160em) {
+    .about__image {
+        background: url('../images/about-hero-large.jpg') no-repeat;
+        background-position: center center;
+        background-size: contain;
+    }
+
+    .about__text {
+        top: 9%;
+        right: 58%;
+        width: 30%;
+    }
+}
+
+
 /* Flip-Card */
 
 /* functionality */
 .flip-card {
-    width: 300px;
-    height: 500px;
+    width: 18.75em;
+    height: 32.8125em;
     margin: 0 auto;
     perspective: 1000px;
 }
@@ -719,8 +790,8 @@ header {
 
 .front__bkg-photo {
     position: relative;
-    width: 300px;
-    height: 150px;
+    width: 18.75em;
+    height: 9.375em;
     background: url('../images/pexels-bryan-geraldo-586415.jpg') no-repeat;
     background-size: cover;
     backface-visibility: hidden;
@@ -740,9 +811,9 @@ header {
 
 .front__profile-photo {
     position: relative;
-    top: -70px;
-    width: 120px;
-    height: 120px;
+    top: -15%;
+    width: 7.5em;
+    height: 7.5em;
     margin: 0 auto;
     background: url('../images/johnsmithcropped.jpg') no-repeat;
     background-size: cover;
@@ -754,7 +825,7 @@ header {
 
 .front__text {
     position: relative;
-    top: -60px;
+    top: -10%;
     padding: 0 1.5em;
     backface-visibility: hidden;
 }
@@ -802,7 +873,7 @@ header {
 
 .back__links {
     position: absolute;
-    bottom: 50px;
+    bottom: 10%;
     width: 100%;
     text-align: center;
 }
@@ -817,6 +888,11 @@ header {
     margin: 0 50px;
 }
 
+@media only screen and (min-width: 90em) {
+    .flip-card {
+        /* width: 500px; */
+    }
+}
 
 /* Media Section */
 
