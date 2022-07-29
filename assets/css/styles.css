@@ -888,11 +888,6 @@ header {
     margin: 0 50px;
 }
 
-@media only screen and (min-width: 90em) {
-    .flip-card {
-        /* width: 500px; */
-    }
-}
 
 /* Media Section */
 
@@ -1031,7 +1026,7 @@ header {
 
 .events-and-news {
     width: 90vw;
-    margin: 6.625em auto 2.5em;
+    margin: 2.5em auto 1.5em;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -1046,6 +1041,7 @@ header {
 /* Events Section */
 
 .event__card {
+    max-width: 37.5em;
     background-image: linear-gradient(to bottom right,
     rgb(238, 139, 70),
     rgb(244, 246, 241),
@@ -1067,7 +1063,7 @@ header {
 }
 
 .event__card-header {
-    height: 80px;
+    height: 5em;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -1076,8 +1072,8 @@ header {
 }
 
 .event-date {
-    width: 70px;
-    height: 70px;
+    width: 4.375em;
+    height: 4.375em;
     background-color: var(--clr-dark);
     color: var(--clr-light-accent);
     line-height: 1.1;
@@ -1107,9 +1103,23 @@ header {
     color: black;
 }
 
-
 .event-text {
     padding: 1em;
+}
+
+@media only screen and (min-width: 23.4374em) {
+    .event__card-header {
+        justify-content: space-between;
+        padding-right: 1.5em;
+    }
+    
+    .event-details {
+        font-size: 1rem;
+    }
+
+    .event-text {
+        padding: 2em;
+    }
 }
 
 /* News Section */
