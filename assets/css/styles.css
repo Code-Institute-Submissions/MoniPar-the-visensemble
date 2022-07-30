@@ -197,7 +197,7 @@ header {
 
 .nav__list {
     margin: 1em auto;
-    padding: 0;
+    padding-bottom: .5em;
 }
 
 .nav__item {
@@ -808,7 +808,7 @@ header {
     width: 7.5em;
     height: 7.5em;
     margin: 0 auto;
-    background: url('https://res.cloudinary.com/aperlae/image/upload/v1659107601/johnsmithcropped_ngwjic.jpg') no-repeat;
+    background: url('https://res.cloudinary.com/aperlae/image/upload/q_auto/v1659107601/johnsmithcropped_ngwjic.jpg') no-repeat;
     background-size: cover;
     backface-visibility: hidden;
     overflow: hidden;
@@ -971,7 +971,8 @@ header {
     width: 19em;
     height: 8.75em;
     background-color: rgb(157, 166, 166, 0.5);
-    padding: 2.1875em 0;
+    padding: 2.5em 0;
+    margin: 0 auto;
 }
 
 .media__item {
@@ -982,9 +983,9 @@ header {
     box-shadow: 0 2px 5px rgb(0, 0, 0, .6);
 }
 
-@media only screen and (min-width: 64em) {
+@media only screen and (min-width: 90em) {
     .audio-div {
-        padding: 2.75em 2em;
+        padding: 3em 3.25em;
     }
 }
 
@@ -996,7 +997,6 @@ header {
     margin: 0 auto;
     background-color: var(--clr-dark-accent);
     padding: 2em;
-    border-radius: 10px;
     text-align: center;
 }
 
