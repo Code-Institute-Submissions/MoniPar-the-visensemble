@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
-    <header class="fixed">
+    <header>
         <div class="header-container">
             <div class="logo-div">
                 <img class="logo" alt="The Visensemble Logo"
@@ -43,18 +43,18 @@
             </p>
             <div class="contact-us__form-container">
                 <form class="contact-form" action="https://formdump.codeinstitute.net/" method="post">
-                    <fieldset>
+                    <fieldset class="flex1">
                         <legend>Your contact information</legend>
                         <label for="fname">First Name:</label><br>
-                        <input type="text" id="fname" name="fname" class="text-input" required><br>
+                        <input type="text" id="fname" name="fname" class="text-input contact-info" required><br>
                         <label for="lname">Last Name:</label><br>
-                        <input type="text" id="lname" name="lname" class="text-input" required><br>
+                        <input type="text" id="lname" name="lname" class="text-input contact-info" required><br>
                         <label for="email">Email:</label><br>
-                        <input type="email" id="email" name="email" class="text-input" required><br>
+                        <input type="email" id="email" name="email" class="text-input contact-info" required><br>
                         <label for="mobile">Mobile (optional):</label><br>
-                        <input type="tel" id="mobile" name="mobile" class="text-input" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"><br>
+                        <input type="tel" id="mobile" name="mobile" class="text-input contact-info" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"><br>
                     </fieldset>
-                    <fieldset>
+                    <fieldset class="flex2">
                         <legend>About you</legend>
                         <input type="radio" id="new_member" name="feedback_type" class="radio" value="new_member" checked>
                         <label for="new_member">New Member</label><br>
@@ -63,19 +63,19 @@
                         <input type="radio" id="other" name="feedback_type" class="radio" value="other">
                         <label for="other">Other</label><br>
                     </fieldset>
-                    <fieldset>
+                    <fieldset class="flex3">
                         <legend>Message Us</legend>
                         <label for="feedback">Enter any questions, comments or feedback below.</label>
-                        <textarea id="feedback" class="text-input" name="message" rows="10" cols="25" wrap>
-                        </textarea> 
+                        <textarea id="feedback" class="text-input" name="message" rows="15" cols="30" wrap>
+                        </textarea>
+                        <input class="btn" type="submit" value="Submit"> 
                     </fieldset>
-                    <input class="btn" type="submit" value="Submit">
                 </form>
             </div>
         </section>
         <button id="backToTop" onclick="backToTop()" title="Go to Top">&#8679;</button>
     </main>
-    <footer class="footer-container martop-big">
+    <footer class="footer-container">
         <div class="footer__links">
             <div class="contact-links">
                 <ul>
