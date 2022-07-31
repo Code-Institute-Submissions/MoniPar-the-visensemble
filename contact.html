@@ -14,8 +14,14 @@
     <header>
         <div class="header-container">
             <div class="logo-div">
-                <img class="logo" alt="The Visensemble Logo"
-                        src="https://res.cloudinary.com/aperlae/image/upload/v1659108822/visensemble_logo_crop_orange_mtq39g.png">
+                <a href="index.html">
+                    <img class="logo" alt="The Visensemble Logo" 
+                        width="200" height="59.25"
+                        src="https://res.cloudinary.com/aperlae/image/upload/c_scale,q_auto:eco,w_200/v1659108822/visensemble_logo_crop_orange_mtq39g.png"
+                        srcset="https://res.cloudinary.com/aperlae/image/upload/c_scale,q_auto:eco,w_200/v1659108822/visensemble_logo_crop_orange_mtq39g.png 200w,
+                        https://res.cloudinary.com/aperlae/image/upload/c_scale,q_auto:eco,w_250/v1659108822/visensemble_logo_crop_orange_mtq39g.png 250w,
+                        https://res.cloudinary.com/aperlae/image/upload/c_scale,q_auto:eco,w_300/v1659108822/visensemble_logo_crop_orange_mtq39g.png 300w,
+                        https://res.cloudinary.com/aperlae/image/upload/c_scale,q_auto:eco,w_350/v1659108822/visensemble_logo_crop_orange_mtq39g.png 350w"/> 
                 </a>    
             </div>
             <a href="#main" class="skip-to-main">skip navigation</a>
@@ -43,7 +49,7 @@
             </p>
             <div class="contact-us__form-container">
                 <form class="contact-form" action="https://formdump.codeinstitute.net/" method="post">
-                    <fieldset class="flex1">
+                    <fieldset id="set-a">
                         <legend>Your contact information</legend>
                         <label for="fname">First Name:</label><br>
                         <input type="text" id="fname" name="fname" class="text-input contact-info" required><br>
@@ -54,7 +60,7 @@
                         <label for="mobile">Mobile (optional):</label><br>
                         <input type="tel" id="mobile" name="mobile" class="text-input contact-info" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"><br>
                     </fieldset>
-                    <fieldset class="flex2">
+                    <fieldset id="set-b">
                         <legend>About you</legend>
                         <input type="radio" id="new_member" name="feedback_type" class="radio" value="new_member" checked>
                         <label for="new_member">New Member</label><br>
@@ -63,7 +69,7 @@
                         <input type="radio" id="other" name="feedback_type" class="radio" value="other">
                         <label for="other">Other</label><br>
                     </fieldset>
-                    <fieldset class="flex3">
+                    <fieldset id="set-c">
                         <legend>Message Us</legend>
                         <label for="feedback">Enter any questions, comments or feedback below.</label>
                         <textarea id="feedback" class="text-input" name="message" rows="15" cols="30" wrap>
@@ -114,7 +120,7 @@
             target="_blank" rel="noopener"><span>Monique Parnis</span></a>
         </p> 
     </footer>
-    <script src="https://kit.fontawesome.com/de07fb651c.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/de07fb651c.js" crossorigin="anonymous" preconnect></script>
     <script src="assets/js/main.js" defer></script>
 </body>
 </html>
