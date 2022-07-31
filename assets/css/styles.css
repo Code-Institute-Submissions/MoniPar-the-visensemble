@@ -482,7 +482,7 @@ header {
     }
     .quote__image {
         width: 120px;
-        height: 163px;
+        height: 162px;
     }
     .quote__text {
         width: 16em;
@@ -501,7 +501,7 @@ header {
 @media only screen and (min-width: 160em) {
     .quote__image {
         width: 150px;
-        height: 202.5px;
+        height: 203px;
     }
     .quote__text::before {
         top: -114px;
@@ -940,7 +940,7 @@ header {
 }
 
 .media {
-    max-width: 1190px;
+    max-width: 1800px;
     margin: 0 auto;
     padding: 2em 1em;
 }
@@ -987,6 +987,16 @@ header {
     box-shadow: var(--box-shadow-quad);
 }
 
+@media only screen and (min-width: 90em) {
+    .media {
+        width: 1400px;
+    }
+}
+@media only screen and (min-width: 160em) {
+    .media {
+        width: 2000px;
+    }
+}
 /* Testimonials Section */
 
 .testimonials {
