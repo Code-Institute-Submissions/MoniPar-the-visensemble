@@ -307,7 +307,7 @@ header {
 .hero__image {
     width: 100%;
     height: 31.25em;
-    background: url("https://res.cloudinary.com/aperlae/image/upload/v1659107124/hero-home-1440x960_kkoih0.jpg") no-repeat;
+    background: url('https://res.cloudinary.com/aperlae/image/upload/q_auto/v1659107124/hero-home-1440x960_kkoih0.webp') no-repeat;
     background-size: cover;
     background-position: center center;
 }
@@ -338,7 +338,7 @@ header {
     .hero__image {
         width: 90em;
         height: 60em;
-        background: url("https://res.cloudinary.com/aperlae/image/upload/v1659107124/hero-home-1440x960_kkoih0.jpg") no-repeat;
+        background: url('https://res.cloudinary.com/aperlae/image/upload/q_auto/v1659107124/hero-home-1440x960_kkoih0.webp') no-repeat;
         background-size: contain;
         background-position: center right;
         margin: 0 auto;
@@ -648,7 +648,7 @@ header {
 .about__image {
     width: 100%;
     height: 37.5em;
-    background: url('https://res.cloudinary.com/aperlae/image/upload/v1659108674/hero-about_ndx29v.jpg') no-repeat;
+    background: url('https://res.cloudinary.com/aperlae/image/upload/q_auto/v1659108674/hero-about_ndx29v.webp') no-repeat;
     background-size: cover;
     background-position: right center;
 }
@@ -719,19 +719,11 @@ header {
     .about-container {
         background-color: rgb(45, 58, 63, .9);
     }
-    .about__image {
-        width: 90em;
-        height: 60em;
-        background: url('https://res.cloudinary.com/aperlae/image/upload/v1659108674/hero-about_ndx29v.jpg') no-repeat;
-        background-size: contain;
-        background-position: center;
-        margin: 0 auto;
-    }
     .about__text {
         width: 37.5em;
         height: 31.25em;
         top: 8%;
-        right: 20%;
+        right: 4%;
     }
 } 
 
