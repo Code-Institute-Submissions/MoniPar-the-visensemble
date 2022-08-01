@@ -655,9 +655,9 @@ header {
 
 .about__text {
     position: absolute;
-    top: 5%;
-    right: 10%;
-    transition: translate(-50%, -50%);
+    top: 50%;
+    right: -30%;
+    transform: translate(-50%, -50%);
     width: 80%;
     height: 33em;
     font-weight: 700;
@@ -703,14 +703,20 @@ header {
 @media only screen and (min-width: 26em) {
     .about__text {
         width: 65%;
-        right: 5%;
+        right: -18%;
         padding: 1.5em;
     }
 }
 
+@media only screen and (min-width: 40.625em) {
+    .about__text {
+        right: -30%;
+    }
+}
 @media only screen and (min-width: 48em) {
     .about__text {
         width: 50%;
+        right: -20%;
         padding: 2em;
     }
 }
@@ -722,8 +728,8 @@ header {
     .about__text {
         width: 37.5em;
         height: 31.25em;
-        top: 8%;
-        right: 4%;
+        top: 50%;
+        right: -20%;
     }
 } 
 
