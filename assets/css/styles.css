@@ -730,7 +730,6 @@ header {
 /* Cards Wrapper */
 .cards-wrapper {
     background-color: rgb(238, 139, 70, .2);
-    /* background-color: rgb(45, 58, 63, 0.3); */
     padding: 2.5em 0;
 }
 
@@ -786,7 +785,7 @@ header {
     position: relative;
     width: 18.75em;
     height: 9.375em;
-    background: url('https://res.cloudinary.com/aperlae/image/upload/v1659108521/flip-background_hzunwx.jpg') no-repeat;
+    background: url('https://res.cloudinary.com/aperlae/image/upload/c_scale,q_auto,w_600/v1659108521/flip-background_hzunwx.webp') no-repeat;
     background-size: cover;
     backface-visibility: hidden;
     overflow: hidden;
@@ -809,7 +808,7 @@ header {
     width: 7.5em;
     height: 7.5em;
     margin: 0 auto;
-    background: url('https://res.cloudinary.com/aperlae/image/upload/q_auto/v1659107601/johnsmithcropped_ngwjic.jpg') no-repeat;
+    background: url('https://res.cloudinary.com/aperlae/image/upload/c_scale,q_auto,w_240/v1659107601/johnsmithcropped_ngwjic.webp') no-repeat;
     background-size: cover;
     backface-visibility: hidden;
     overflow: hidden;
@@ -1273,7 +1272,7 @@ header {
 
 .contact-us {
     width: 100%;
-    background: url('https://res.cloudinary.com/aperlae/image/upload/q_auto:eco/v1659199663/contact-strings_mar3mq.jpg') no-repeat;
+    background: url('https://res.cloudinary.com/aperlae/image/upload/c_scale,q_auto,w_2560/v1659199663/contact-strings_mar3mq.webp') no-repeat;
     background-size: cover;
     background-position: center;
     opacity: 0.8;
