@@ -1017,15 +1017,16 @@ header {
     box-shadow: var(--box-shadow-quad); 
 }
 
-.testimonials__image {
-    width: 4.375em;
-    height: 4.375em;
-    display: inline-block;
+.testimonials__img {
+    width: 70px;
+    height: 70px;
+    display: inline;
     border-radius: 50%;
     border: 1px solid var(--clr-main);
     object-fit: cover;
     overflow: hidden;
     margin: .5em;
+    
 }
 
 .testimonials__text {
@@ -1049,10 +1050,28 @@ header {
     }
 }
 
+@media only screen and (min-width: 64em) {
+    .testimonials__img {
+        width: 85px;
+        height: 85px;
+    }
+}
+
 @media only screen and (min-width: 90em) {
     .testimonials__content {
         width: 1400px;
         margin: 0 auto;
+    }
+    .testimonials__img {
+        width: 103px;
+        height: 103px;
+    }
+}
+
+@media only screen and (min-width: 160em) {
+    .testimonials__item {
+        max-width: 600px;
+        max-height: 600px;
     }
 }
 /* ---------------- */
