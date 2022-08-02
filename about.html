@@ -11,6 +11,11 @@
     <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
+    <!-- Skip Navigation Link -->
+    <div class="skip-nav-container">
+        <a href="#main" id="skip-navigation-link" class="skip-nav">Skip Navigation</a>
+    </div>
+    <!-- Site Header -->
     <header>
         <div class="header-container">
             <div class="logo-div">
@@ -25,7 +30,6 @@
                         sizes="(max-width: 768px) 200px, (max-width: 1240px) 250px, (max-width: 1440px) 300px, 350px"/> 
                 </a>    
             </div>
-            <a href="#main" class="skip-to-main">skip navigation</a>
             <button class="nav-toggle" aria-label="open-navigation">
                 <span class="hamburger">&#9776;</span>
             </button>
@@ -39,7 +43,7 @@
             </nav>
         </div>
     </header>
-    <main id="main">
+    <main id="main" tabindex="-1">
         <section class="about-container">
             <div class="about__image"></div>
             <div class="about__text">
@@ -64,7 +68,7 @@
                 </div> 
             </div>
         </section>
-        <div class="cards-wrapper">
+        <section class="cards-container">
             <article class="flip-card">
                 <div class="card-inner">
                     <div class="card-front">
@@ -159,8 +163,8 @@
                     </div>
                 </div>
             </article>
-        </div>
-        <div class="media-wrapper">
+        </section>
+        <div class="media-container">
             <section class="media">
                 <div class="media__title">
                     <h3 class="marbot-small">Sample our song repertoire</h3>
@@ -221,10 +225,9 @@
                             </audio>
                         </div>
                         <p>Sanctus by Sally K. Albrecht is a more recent addition to our
-                        song repertoire.  It is a three-part mixed octavo melody with imitative 
-                        textures, independent vocal parts, and an accessible Latin text. The emphasis 
-                        of pure vowels and legato phrasing highlights the beauty of this gorgeous setting. 
-                        Simply stunning.
+                        song repertoire.  It is a three-part melody with imitative 
+                        textures and independent vocal parts. The emphasis of pure vowels 
+                        and legato phrasing highlights the beauty of this stunning setting.
                         </p>
                     </div>
                 </div>
@@ -321,8 +324,10 @@
                 </div>
             </div>
         </section>
-        <button id="backToTop" onclick="backToTop()" title="Go to Top">&#8679;</button>
     </main>
+    <!-- Back to Top Button -->
+    <a href="#skip-navigation-link" class="back-to-top">Back to Top &#8679;</a>
+    <!-- Site Footer -->
     <footer class="footer-container">
         <div class="footer__links">
             <div class="contact-links">

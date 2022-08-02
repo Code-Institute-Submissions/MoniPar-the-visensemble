@@ -11,6 +11,11 @@
     <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
+    <!-- Skip Navigation Link -->
+    <div class="skip-nav-container">
+        <a href="#main" id="skip-navigation-link" class="skip-nav">Skip Navigation</a>
+    </div>
+    <!-- Site Header -->
     <header>
         <div class="header-container">
             <!-- Logo  -->
@@ -26,8 +31,6 @@
                         sizes="(max-width: 768px) 200px, (max-width: 1240px) 250px, (max-width: 1440px) 300px, 350px"/> 
                 </a>
             </div>    
-            <!-- Skip to Main Link  -->
-            <a href="#main" class="skip-to-main">skip navigation</a>
             <!-- Navigation -->
             <!-- Hamburger Button -->
             <button class="nav-toggle" aria-label="open-navigation">
@@ -44,7 +47,7 @@
             </nav>
         </div>
     </header>
-    <main id="main">
+    <main id="main" tabindex="-1">
         <section class="hero-container">
             <div class="hero__image"></div>
             <div class="hero__text">
@@ -53,7 +56,7 @@
                   people living with sight loss</h2>
             </div>
         </section>
-        <section class="quote-vision-container martop-large marbot-large">
+        <section class="quote-vision-container">
             <article class="quote-container">
                 <div class="quote-card">
                     <img class="quote__image" width="100" height="135" 
@@ -118,9 +121,11 @@
                 </div>
             </div>
         </section>
-        <button id="backToTop" onclick="backToTop()" title="Go to Top">&#8679;</button>
     </main>
-    <footer class="footer-container martop-large">
+    <!-- Back to Top Button -->
+        <a href="#skip-navigation-link" class="back-to-top">Back to Top &#8679;</a>
+    <!-- Site Footer -->
+    <footer class="footer-container">
         <div class="footer__links">
             <div class="contact-links">
                 <ul>
@@ -159,6 +164,7 @@
             target="_blank" rel="noopener"><span>Monique Parnis</span></a>
         </p> 
     </footer>
+    <!-- Icon and JS Scripts -->
     <script src="https://kit.fontawesome.com/de07fb651c.js" crossorigin="anonymous"></script>
     <script src="assets/js/main.js" defer></script>
 </body>

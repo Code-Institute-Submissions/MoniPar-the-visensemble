@@ -11,6 +11,11 @@
     <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
+    <!-- Skip Navigation Link -->
+    <div class="skip-nav-container">
+        <a href="#main" id="skip-navigation-link" class="skip-nav">Skip Navigation</a>
+    </div>
+    <!-- Site Header -->
     <header>
         <div class="header-container">
             <div class="logo-div">
@@ -25,7 +30,6 @@
                         sizes="(max-width: 768px) 200px, (max-width: 1240px) 250px, (max-width: 1440px) 300px, 350px"/> 
                 </a>    
             </div>
-            <a href="#main" class="skip-to-main">skip navigation</a>
             <button class="nav-toggle" aria-label="open-navigation">
                 <span class="hamburger">&#9776;</span>
             </button>
@@ -39,7 +43,7 @@
             </nav>
         </div>
     </header>
-    <main id="main">
+    <main id="main" tabindex="-1">
         <section class="events-news">
             <div class="events-news__title">
                 <h2>Calendar of Events and News</h2>
@@ -171,8 +175,10 @@
                 </section>
             </div> 
         </section>
-        <button id="backToTop" onclick="backToTop()" title="Go to Top">&#8679;</button>
     </main>
+    <!-- Back to Top Button -->
+    <a href="#skip-navigation-link" class="back-to-top">Back to Top &#8679;</a>
+    <!-- Site Footer -->
     <footer class="footer-container">
         <div class="footer__links">
             <div class="contact-links">

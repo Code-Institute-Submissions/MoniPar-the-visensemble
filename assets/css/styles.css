@@ -2,7 +2,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@500&family=Roboto:wght@700&display=swap');
 
 /* Variables */
+
 :root {
+    
     /* Color Palette */
     --clr-dark: #2D3A3F;
     --clr-dark-accent: #AD805B;
@@ -10,85 +12,67 @@
     --clr-light-accent: #9DA6A6;
     --clr-light: #F4F6F1;
 
+    /* Box Shadow */
     --box-shadow-quad: 4px 6px 12px 2px rgba(0,0,0,0.4);
     --box-shadow-circ: 3px 5px 10px 1px rgba(0,0,0,0.5);
 }
 
 /* Utility Classes */
+
 .marbot-small { margin-bottom: .5em; }
 .marbot-medium { margin-bottom: 1em; }
 .marbot-large { margin-bottom: 2em; }
 .martop-large { margin-top: 2em; }
 
 /* Reset */
+
 html {
-    scroll-behavior: smooth; 
+    
+    /* Give user control over animations */
+    @media (prefer-reduced-motion: no-preference) {
+        /* Smooth scrolling animation when clicking buttons on same page */
+        scroll-behavior: smooth;
+    }
+    
+    /* Sets font-size for mobile devices */
     font-size: 100%; /* 16px = 1rem */
 }
 
+/* Sets font-size for tablets */
 @media only screen and (min-width: 64em) {
     html {
         font-size: 125%; /* 20px = 1rem */
     }
 }
+
+/* Sets font-size for laptop/desktop */
 @media only screen and (min-width: 90em) {
     html {
         font-size: 150%; /* 24px = 1rem */
     }
 }
+
+/* Sets font-size for larger screens */
 @media only screen and (min-width: 160em) {
     html {
         font-size: 200%; /* 32px = 1rem */
     }
 }
 
+/* Base styling for all elements */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Base styling for images */
 img { max-width: 100%; }
 
+/* Base styling for lists and anchors */
 li { list-style-type: none; }
-
 a { text-decoration: none; }
 
-/* Ease of Access */
-.skip-to-main {
-    position: absolute;
-    color: var(--clr-main);
-    font-size: 1rem;
-    top: 0;
-    left: 35%;
-    transform: translateY(-100%);
-    transition: transform .400ms ease-in;
-}
-
-.skip-to-main:focus {
-    transform: translateY(0);
-}
-
-#backToTop {
-    position: fixed;
-    bottom: 5%;
-    right: 5%;
-    background-color: var(--clr-main);
-    color: var(--clr-light);
-    font-size: 2rem;
-    width: 3.125rem;
-    height: 3.125rem;
-    border-radius: 50%;
-    border: none;
-    box-shadow: var(--box-shadow-circ);
-    cursor: pointer;
-    z-index: 99;
-    /* display: none; */
-}
-
-#backToTop:hover {
-    background-color: var(--clr-dark);
-}
 
 /* General Components */
 
@@ -119,9 +103,55 @@ h4 {
 body {
     font-family: 'Nunito', Arial, Helvetica, sans-serif;
     font-size: 1rem;
-    background-color: var(--clr-light);
+    background-color: rgb(173, 128, 91, .7);
     color: var(--clr-dark);
     line-height: 1.6;
+}
+
+/* Ease of Access */
+
+.skip-nav-container {
+    position: relative;
+}
+
+.skip-nav {
+    position: absolute;
+    left: 45vw;
+    z-index: 20;
+    color: var(--clr-main);
+    transform: translateY(-100px);
+    transition: transform 500ms ease-in;
+}
+
+.skip-nav:focus {
+    transform: translateY(0);
+}
+
+.back-to-top-container{
+    width: 100%;
+    height: 1.2em;
+    margin-top: 2.5em;
+    padding: 0;
+    text-align: center;
+}
+
+.back-to-top {
+    display: block;
+    width: fit-content;
+    margin: .5em auto .5em;
+    padding: 8px 15px;
+    color: var(--clr-light-accent);
+    background-color: rgb(45, 58, 63, .8);
+    border: 1px solid var(--clr-light-accent);
+    border-radius: 10px;
+    box-shadow: var(--box-shadow-quad);
+}
+
+.back-to-top:hover,
+.back-to-top:focus {
+    background-color: var(--clr-light-accent);
+    color: var(--clr-dark);
+    border: 1px solid var(--clr-dark);
 }
 
 
@@ -349,6 +379,12 @@ header {
     }
 }
 
+/* Quote and Vision Sections */
+
+.quote-vision-container {
+    background-color: var(--clr-light);
+    padding: 2em 0;
+}
 
 /* Quote */
 
@@ -455,7 +491,7 @@ header {
         justify-content: space-between;
         align-items: center;
         max-width: 90em; /* 1440px */
-        margin: 2.5em auto;
+        padding: 2.5em 0;
     }
     .quote-container {
         padding: 1.5em;
@@ -518,6 +554,8 @@ header {
 .cta {
     max-width: 80em; /* 1280px */
     margin: 0 auto;
+    padding-bottom: 2.5em;
+    background-color: var(--clr-light);
 }
 
 .cta-container {
@@ -733,14 +771,14 @@ header {
     }
 } 
 
-/* Cards Wrapper */
-.cards-wrapper {
+/* Cards Section Container */
+.cards-container {
     background-color: rgb(238, 139, 70, .2);
     padding: 2.5em 0;
 }
 
 @media only screen and (min-width: 90em) {
-    .cards-wrapper {
+    .cards-container {
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -931,8 +969,8 @@ header {
 }
 
 /* Media Section */
-.media-wrapper {
-    background-color: rgb(238, 139, 70, .7);
+.media-container{
+    background-color: var(--clr-light);
     padding-bottom: 2.5em;
 }
 
@@ -976,7 +1014,7 @@ header {
 }
 
 .media__item {
-    background-color: rgb(244, 246, 241, .6);
+    background-color: rgb(238, 139, 70, .4);
     padding-top: 1.5em;
     border: 3px solid var(--clr-light-accent);
     border-radius: 20px;
@@ -999,7 +1037,6 @@ header {
 .testimonials {
     width: 100%;
     margin: 0 auto;
-    background-color: var(--clr-dark-accent);
     padding: 2em;
     text-align: center;
 }
@@ -1104,8 +1141,7 @@ header {
 .event__card {
     max-width: 500px;
     color: var(--clr-dark);
-    background-color: rgb(173, 128, 91, .7);
-    border: 5px solid var(--clr-dark);
+    background-color: rgb(244, 246, 241);
     border-radius: 10px;
     box-shadow: var(--box-shadow-quad);
     margin: 0 auto 2.5em;
@@ -1178,7 +1214,7 @@ header {
 /* News Section */
 .news__card {
     max-width: 500px; 
-    background-color: rgb(157, 166, 166, .7);
+    background-color: rgb(157, 166, 166, .8);
     border: 2px solid var(--clr-dark);
     border-radius: 10px;
     padding: 1.5em;
@@ -1329,7 +1365,7 @@ header {
 .text-input {
     font-size: 1rem;
     color: var(--clr-light);
-    background-color: rgb(238, 139, 70, .5);
+    background-color: rgb(173, 128, 91, .7);
     padding: 5px;
     margin-bottom: .75em;
     border: 1px solid var(--clr-dark);
