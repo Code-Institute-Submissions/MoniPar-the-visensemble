@@ -107,8 +107,11 @@ body {
     color: var(--clr-dark);
     line-height: 1.6;
     overflow: scroll;
+    -ms-overflow-style: none; /* Hide scrollbar for Edge */
+    scrollbar-width: none;    /* Hide scrollbar for Firefox */
 }
 
+/* Hide scrollbar for Chrome, Safari and Opera */
 body::-webkit-scrollbar {
     display: none;
 }
@@ -335,13 +338,13 @@ header {
 .hero-container {
     position: relative;
     width: 100%;
-    height: 31.25em; /* 500px */
+    height: 25em; /* 400px */
     overflow: hidden;
 }
 
 .hero__image {
     width: 100%;
-    height: 31.25em; 
+    height: 25em; 
     background: url('https://res.cloudinary.com/aperlae/image/upload/q_auto/v1659107124/hero-home-1440x960_kkoih0.webp') no-repeat;
     background-size: cover;
     background-position: center center;
@@ -359,8 +362,17 @@ header {
     padding: 1.2em 0.5em;
     border-radius: 10px;
 }
- 
+
+@media only screen and (min-width: 40.625em) {
+    .hero__image {
+        height: 37.5em;
+    }
+}
+
 @media only screen and (min-width: 64em) {
+    .hero-container {
+        height: 31.25em;
+    }
     .hero__image {
         height: 62.5em;
     }
