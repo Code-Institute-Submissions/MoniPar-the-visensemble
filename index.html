@@ -164,8 +164,18 @@
             target="_blank" rel="noopener"><span>Monique Parnis</span></a>
         </p> 
     </footer>
-    <!-- Icon and JS Scripts -->
+
+    <!-- Fontawesome Script -->
     <script src="https://kit.fontawesome.com/de07fb651c.js" crossorigin="anonymous"></script>
-    <script src="assets/js/main.js" defer></script>
+   
+    <!-- JavaScript for Navigation Hamburger Button -->
+    <script>
+        const navToggle = document.querySelector(".nav-toggle");
+        const nav = document.querySelector(".nav");
+
+        navToggle.addEventListener("click", () => {
+        nav.classList.toggle("nav--visible");
+        });
+    </script>
 </body>
 </html>

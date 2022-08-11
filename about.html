@@ -155,10 +155,10 @@
                               aria-hidden="true" title="Sign Up"></i>
                               <span class="sr-only">How and where to sign up</span>
                         </div>
-                        <div class="rehearsal__text">Fill in contact form 
+                        <div class="rehearsal__text">Fill in
                             <a href="contact.html" target="_blank" 
                         rel="noopener" aria-label="Link to contact form (opens in a new tab)">
-                            here</a> 
+                            contact form</a> 
                         </div>
                     </div>
                 </div>
@@ -367,7 +367,30 @@
             target="_blank" rel="noopener"><span>Monique Parnis</span></a>
         </p> 
     </footer>
+
+    <!-- Fontawsome Script -->
     <script src="https://kit.fontawesome.com/de07fb651c.js" crossorigin="anonymous"></script>
-    <script src="assets/js/main.js" defer></script>
+    
+    <!-- JavaScript for Navigation Hamburger Button and Read More Read Less Button -->
+    <script>
+        // Navigation
+        const navToggle = document.querySelector(".nav-toggle");
+        const nav = document.querySelector(".nav");
+        navToggle.addEventListener("click", () => {
+            nav.classList.toggle("nav--visible");
+        });
+
+        // Read More Read Less
+        const readMoreBtn = document.querySelector(".read-more-btn");
+        const text = document.querySelector(".text");
+        readMoreBtn.addEventListener("click", () => {
+            text.classList.toggle("show--more");
+                if (readMoreBtn.innerText === "Read More") {
+                    readMoreBtn.innerText = "Read Less";
+                } else {
+                    readMoreBtn.innerText = "Read More";
+                }
+        });
+    </script>
 </body>
 </html>
