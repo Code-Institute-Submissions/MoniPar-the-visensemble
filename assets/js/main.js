@@ -12,7 +12,7 @@ navToggle.addEventListener("click", () => {
 const readMoreBtn = document.querySelector(".read-more-btn");
 const text = document.querySelector(".text");
 
-readMoreBtn.addEventListener("click", function () {
+readMoreBtn.addEventListener("click", () => {
     text.classList.toggle("show--more");
     if (readMoreBtn.innerText === "Read More") {
       readMoreBtn.innerText = "Read Less";
