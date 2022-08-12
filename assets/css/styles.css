@@ -725,6 +725,7 @@ header {
 
 :is(.read-more-link:hover, .read-more-link:focus) {
     background-color: var(--clr-main);
+    color: var(--clr-dark);
 }
 
 .text.show--more .more-text {
@@ -805,7 +806,7 @@ header {
     box-shadow: var(--box-shadow-quad);
 }
 
-:is(.flip-card:hover, .flip-card:focus) .card-inner {
+:is(.flip-card:hover, .flip-card:focus-within) .card-inner {
     transform: rotateY(180deg);
 }
 
@@ -883,6 +884,12 @@ header {
     box-shadow: var(--box-shadow-quad);
 }
 
+.front__text-hover:hover,
+.front__text-hover:focus {
+    background-color: var(--clr-dark);
+    color: var(--clr-main);
+}
+
 /* back style */
 .card-back {
     position: absolute;
@@ -910,6 +917,7 @@ header {
     bottom: 10%;
     width: 100%;
     text-align: center;
+    backface-visibility: hidden;
 }
 
 .back__links li {
@@ -920,6 +928,12 @@ header {
     font-size: 1.375rem;
     color: var(--clr-light);
     margin: 0 50px;
+    cursor: pointer;
+}
+
+.back__links-item:hover,
+.back__links-item:focus {
+    color: var(--clr-dark);
 }
 
 /* Rehearsal Card */
