@@ -120,6 +120,7 @@ The live link can be found here - https://monipar.github.io/the-visensemble/
 * The text for the Conductor's Bio on the About page was taken from http://www.kellymusicservices.com/frankbio.html
 * Instructions on how to make the Read More button accessible with screen readers was taken from https://jolvera.dev/posts/accessible-read-more-links
 * The text for the testimonials section on the About page was inspired from https://www.fightingblindness.ie/news/the-choir-has-a-special-place-in-my-heart-its-my-rock/
+* Instructions on how to make the flip card accessible with keyboard navigation were taken from https://stackoverflow.com/questions/62418249/css-flip-card-how-can-i-activate-the-flip-via-tab-so-it-is-keyboard-accessible
 * Instructions on how to write the syntax for responsive images in HTML were taken from https://css-tricks.com/a-guide-to-the-responsive-images-syntax-in-html/
 * Instructions on how to optimise images for better Cumulative Layout Shifts (CLS) were taken from https://web.dev/optimize-cls/?utm_source=lighthouse&utm_medium=devtools#images-without-dimensions
 * Instructions on how to style textarea width for the Contact Form was taken from https://davidwalsh.name/textarea-width
