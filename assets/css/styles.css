@@ -884,12 +884,6 @@ header {
     box-shadow: var(--box-shadow-quad);
 }
 
-/* .front__text-hover:hover,
-.front__text-hover:focus {
-    background-color: var(--clr-dark);
-    color: var(--clr-main);
-} */
-
 /* back style */
 .card-back {
     position: absolute;
