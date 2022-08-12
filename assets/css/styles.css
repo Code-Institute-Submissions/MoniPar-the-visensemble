@@ -710,25 +710,21 @@ header {
     display: none;
 }
 
-.button-container {
+.link-container {
     margin: 1em auto;
 }
 
-.read-more-btn {
-    padding: 5px 15px;
-    background-color: var(--clr-light-accent);
+.read-more-link{
     color: var(--clr-dark);
-    font-weight: 800;
+    font-weight: 900;
+    font-style: italic;
     letter-spacing: 1.2px;
-    border-radius: 20px;
     border: none;
-    box-shadow: var(--box-shadow-quad);
     cursor: pointer;
 }
 
-:is(.read-more-btn:hover, .read-more-btn:focus) {
+:is(.read-more-link:hover, .read-more-link:focus) {
     background-color: var(--clr-main);
-    color: var(--clr-dark);
 }
 
 .text.show--more .more-text {

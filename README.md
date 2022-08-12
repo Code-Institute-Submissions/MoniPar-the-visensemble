@@ -56,3 +56,76 @@ This section aims to describe the value of the different parts of the project fo
                     laptop width 1024px 
 ![Home page header and hero image with text overlay](assets/documentation/lap-home-hero.png)
 
+* Home Page Main Content
+
+  The Home Page Main Content features:
+1. An inspiring quote by Helen Keller which introduces the ethos of the choir presented in a blockquote format with a picture of Helen Keller on the left. This is meant to motivate the user to read on about the vision of the choir.
+2. The Vision Section allows the user to see the benefits of joining the choir, as well as the benefits of singing overall. It is presented with icons which help the sighted user to distinguish between the different statements presented.  Screen readers will ignore these icons completely and move on to the text instead. This should encourage the user to consider joining the choir to help improve their quality of life. 
+3. The Call to Action (CTA) card includes a background image with a thick orange border to draw the eye. The text overlay expresses the call for new members and directs the eye to the bright orange button at the bottom which links to the contact page. The button has a hover and focus effect to make the user aware that it will lead to somewhere. This is meant to give the user a quick and easy way to get to the sign up page at the end.  It is placed on the Home page to encourage more users to get in touch. 
+
+#### Mobile Screenshots
+                  Galaxy S9
+![Home page quote and vision statements](assets/documentation/mob-home-quote-vision.png)
+
+                  iPhone 12 Pro
+![Home page call to action card](assets/documentation/mob-home-cta.png)
+#### Tablet Screenshot
+                  Surface Pro 7
+![Home page quote and vision statements and call to action](assets/documentation/tab-home-quoteviscta.png)
+
+
+* A Back to Top Link
+  
+  Featured on all four pages, the back to top button is placed right before the footer for easy navigation. It is linked with the skip navigation link to bring the sighted user to the top of the page and gives the keyboard navigation user the option to either skip to main content or go through the navigation list in the header.  It also has a hover and focus effect to help the user identify it as an interactive asset.  
+
+![Back to Top Button and footer](assets/documentation/mob-backtotop-footer.png)
+
+* A Footer
+
+  Featured on all four pages, includes icons which when clicked or focussed on will bring up a phone number and email address for easy contact with the choir master.  Screen readers are able to read out the phone numbers and the email address as well.  The social icons are labelled links which will open in a new tab to allow for easy navigation for the user.  The footer is valuable to the user as it encourages them to get in touch via phone or email if they prefer that method of contact and it also allows the user to keep connected via social media. (Refer to image above)
+
+* The About Page
+
+  1. The About page opens with an about us section which is overlayed on a background image.  It displays a paragraph on the history of the choir and a read more button which when clicked brings up the rest of the choir history. The read more button was added to reduce the amount of text visible on the page, it is up to the user if they want to find out more about the history of the choir or move on to the next section. The feature has a read less button as well which will hide the second chunck of text once read. 
+  2. 
+
+
+### Future Features
+
+## UX / UI
+### Site Goals
+### Design Choices
+### User Stories
+### Wireframes
+
+## Testing
+### Validator Testing
+### Lighthouse Testing
+### Manual Testing
+### Bugs
+
+## Deployment
+The project was deployed to GitHub pages by navigating to the Settings tab in the GitHub repository and selecting the Main Branch from the source section drop-down menu.  Once the Main branch was selected, the page automatically refreshed to display a detailed ribbon indicating successful deployment.
+
+The live link can be found here - https://monipar.github.io/the-visensemble/
+  
+
+## Citation of Sources
+### Content
+
+* The fonts used throughout the page were taken from https://fonts.google.com/
+* The icons used throughout the page were taken from https://fontawesome.com/icons
+* Instructions on how to implement the Skip Navigation, Back to Top links and Accessible, Smooth Scroll to Top Styling was taken from https://ashleemboyer.com/blog
+* The quotation on the Home page was taken from https://www.goodreads.com/quotes/420478-the-only-thing-worse-than-being-blind-is-having-sight
+* The text for the Conductor's Bio on the About page was taken from http://www.kellymusicservices.com/frankbio.html
+* The text for the testimonials section on the About page was inspired from https://www.fightingblindness.ie/news/the-choir-has-a-special-place-in-my-heart-its-my-rock/
+* Instructions on how to write the syntax for responsive images in HTML were taken from https://css-tricks.com/a-guide-to-the-responsive-images-syntax-in-html/
+* Instructions on how to optimise images for better Cumulative Layout Shifts (CLS) were taken from https://web.dev/optimize-cls/?utm_source=lighthouse&utm_medium=devtools#images-without-dimensions
+* Instructions on how to style textarea width for the Contact Form was taken from https://davidwalsh.name/textarea-width
+
+### Media
+* The VisEnsemble Logo was designed by https://www.circlestrafemedia.com/
+* The background image for the Home Hero was taken from [this open source site](https://unsplash.com) 
+* The public domain image of Helen Keller on the Home page was taken from https://cdn18.picryl.com/photo/2019/10/07/helen-keller-no-8-0bcfc1-640.jpg 
+
+### Code
