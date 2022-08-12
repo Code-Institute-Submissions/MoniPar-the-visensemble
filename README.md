@@ -128,11 +128,93 @@ This section aims to describe the value of the different parts of the project fo
 
 ### Future Features
 
-## UX / UI
-### Site Goals
-### Design Choices
-### User Stories
-### Wireframes
+## User Experience (UX) / User Interface (UI)
+
+### Strategy/Site Goals
+The main goal of the website is to make the public aware of The VisEnsemble Choir.  It hopes to motivate more visually impaired people to join as members and to increase the number of supporters and followers of The VisEnsemble Choir.  The overall objective of this website is to aid in creating a well-established and well-rounded choir and as a result to increase the number of ticket sales and performances per year.  
+
+### Scope/User Stories
+This section aims at determining what a user/visitor would expect from interacting with the website.  Scenarios of actions each type of visitor wishes to take are listed below.
+* Website User Goals
+  
+  As a website user:  
+  
+  * I want to easily navigate through the website.
+  * I want the website to be organised and consistent across all devices.
+  * I want all external links to be opened in a new tab so I don’t have to find my way back to the main page.
+  * I want to see consistent behaviour so I have a pleasant journey when navigating through the page.
+
+* First Time Visitor Goals
+
+  As a first time visitor: 
+  
+  * I want to understand immediately what the website offers.
+  * I want to read about the choir and learn more about who they cater for and how accessible the space for rehearsal and learning is. 
+  * I want to see where and when rehearsals take place so I can check if I am available and how to get there. 
+  * I want to know what the individual members have to say about the choir so I can assess if the atmosphere meets my expectations.
+  * I want to hear what kind of songs are in the choir’s repertoire so I can decide if I would enjoy singing them.
+  * I want to hear what kind of songs are in the choir’s repertoire so I can assess if they are appropriate for the event I’m organising.
+  * I want to hear/see the choir sing in order to assess their level of performance.
+
+* Returning Visitor Goals
+
+    As a returning visitor:
+    
+    * I want to be able to contact the choir master or his assistant with any queries I may have.
+    * I want to see the links to social media so I can interact with other followers and see what else is happening.
+    * I want to see updates in the events section in order to pre-book tickets with the relevant organisations.
+
+* Frequent Visitor Goals
+
+    As a frequent visitor: 
+    
+    * I want to see updated news from the choir master and other members of the choir.
+    * I want to see different testimonials from newer members of the choir.
+    * I want to engage and make my contribution to the choir.  I want my opinion to be heard. 
+
+### Structure/Design Choices
+  A four page website which offers simplicity and consistency within its structure.  The Navigation menu displays the choir’s logo and links to the different pages on the website, for easy navigation.  This is repeated across all pages.  The Footer displays social media links which open in a separate tab for ease of use.  The footer is also repeated across all pages to keep the design uniform and for ease of access. 
+
+### Skeleton/Wireframes
+Wireframes were firstly sketched with pen and paper.  This method helped me with brainstorming, deciding the most essential parts for the website and getting a feel for the website as a whole.
+
+Right click to view Mobile Wireframes [Here](assets/documentation/TVE%20Mobile.pdf)
+
+Right click to view Desktop Wireframes [Here](assets/documentation/TVE%20Desktop.pdf)
+
+Note: Through the design phase some elements were changed to allow for a better user experience.
+
+### Surface
+This section defines the visual language of the website.
+
+* Colour Scheme
+
+  The colour orange was chosen as the primary colour for the website as it represents friendliness, enthusiasm and creativity. It was used for the logo and header text as well as important text and buttons to draw the eye. 
+
+  [ColorMind](http://colormind.io/) was used to generate the following colour palette. 
+
+![Colour Palette Used](assets/documentation/colourmind-palette.png)
+
+  The colour Outer Space was used as the dark shade for the header and footer background as well as the website's main typeface.
+
+  The colour Green White was used as a light shade for the background on some cards and text color on the contact page.
+
+  The colour Edward was used as a light accent with increased or decreased brightness and/or opacity for certain features.
+
+  The colour Limed Oak was used with opacity for the body background and the contact page text inputs. 
+
+
+* Typography
+
+Google fonts Roboto and Nunito were chosen for the website.  They are both sans-serif fonts which have a higher readability than serif fonts. 
+
+
+
+
+
+
+
+
 
 ## Testing
 ### Validator Testing
