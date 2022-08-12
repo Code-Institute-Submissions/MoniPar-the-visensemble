@@ -49,11 +49,11 @@ This section aims to describe the value of the different parts of the project fo
   Includes a photograph of the choir with a text overlay which captures the essence of the choir.  This section introduces the sighted user to the choir with an eye catching image to grab their attention, the text gives the non-sighted user a very brief introduction to the choir.
 
 #### Mobile Screenshot
-                   iPhone 6/7/8 
+    iPhone 6/7/8 
 ![Home page header and hero image with text overlay](assets/documentation/mob-home-hero.png)
 
 #### Desktop Screenshot
-                    laptop width 1024px 
+    Laptop width 1024px 
 ![Home page header and hero image with text overlay](assets/documentation/lap-home-hero.png)
 
 * Home Page Main Content
@@ -64,13 +64,13 @@ This section aims to describe the value of the different parts of the project fo
 3. The Call to Action (CTA) card includes a background image with a thick orange border to draw the eye. The text overlay expresses the call for new members and directs the eye to the bright orange button at the bottom which links to the contact page. The button has a hover and focus effect to make the user aware that it will lead to somewhere. This is meant to give the user a quick and easy way to get to the sign up page at the end.  It is placed on the Home page to encourage more users to get in touch. 
 
 #### Mobile Screenshots
-                  Galaxy S9
+    Galaxy S9
 ![Home page quote and vision statements](assets/documentation/mob-home-quote-vision.png)
 
-                  iPhone 12 Pro
+    iPhone 12 Pro
 ![Home page call to action card](assets/documentation/mob-home-cta.png)
 #### Tablet Screenshot
-                  Surface Pro 7
+    Surface Pro 7
 ![Home page quote and vision statements and call to action](assets/documentation/tab-home-quoteviscta.png)
 
 
@@ -86,9 +86,45 @@ This section aims to describe the value of the different parts of the project fo
 
 * The About Page
 
-  1. The About page opens with an about us section which is overlayed on a background image.  It displays a paragraph on the history of the choir and a read more button which when clicked brings up the rest of the choir history. The read more button was added to reduce the amount of text visible on the page, it is up to the user if they want to find out more about the history of the choir or move on to the next section. The feature has a read less button as well which will hide the second chunck of text once read. 
-  2. 
+1. The About page opens with an about us section which is overlayed on a background image.  It displays a paragraph on the history of the choir and a read more button which when clicked brings up the rest of the choir history. The read more button was added to reduce the amount of text visible on the page, it is up to the user if they want to find out more about the history of the choir or move on to the next section. The feature has a read less button as well which will hide the second chunck of text once read. 
+2. The flip card with a snippet of the Conductor's Biography is an eye catching feature which displays a photo of the conductor with a background of piano keys and information about his qualifications and conducting experience.  This is helpful for the user as it gives more information about the Conductor as well as links to his social media for more information or to connect. 
+3. The Rehearsal card is a useful feature on which the rehearsal day and time, location and cost are displayed.  The icons are accessible by screen readers and have a little tooltip explaining what they are.  It also has a link to google maps to aid with finding the location of the rehearsal venue as well as a link to the contact page to encourage the user to sign up.
 
+#### Mobile Screenshots
+    Samsung Galaxy S20 Ultra
+![About Us and top of flip card](assets/documentation/mob-aboutus-flip.png)
+    
+    Nokia N9
+![About Page Conductor and Rehearsal Cards](assets/documentation/mob-about-flip-reh.png)
+
+#### Tablet Screenshot
+    Back of Flip Card and Rehearsal Card
+![About Page Back of Conductor Card and Rehearsal Card](assets/documentation/tab-about-backflip-reh.png)
+
+#### Desktop Screenshot
+    Laptop L 1440px
+![About Page About Us Section](assets/documentation/desk-aboutus.png)
+![About Page Conductor and Rehearsal Card](assets/documentation/desk-about-flip-reh.png)
+
+* The About Page Continued
+
+4. The Audio Section provides the user with supporting evidence showing what the choir's repertoire of songs sounds like.  Although these are temporary arrangments of the songs the choir uses, in the future they will be actual recordings to showcase the choir's talent.  This is valuable to both visually impaired and sighted users and event organisers can have a better idea of what type of events will suit the choir.
+5. The Testimonials Section provides feedback from some of the choir members.  This is very useful to the user as it gives them an overview of how the choir works and the benefits people living with sightloss experience when joining the choir.
+
+#### Mobile Screenshots
+    Audio files on iPhone 12 Pro
+![About Page Audio Files Section](assets/documentation/mob-about-audio.png) 
+
+    Testimonials on Pixel 3 XL
+![About Page Testimonials](assets/documentation/mob-about-testimon.png)
+
+#### Desktop Screenshots
+    2000px wide screen
+![About Page Audio and Testimonials](assets/documentation/larges-about-audio-testimon.png)
+
+* The Events Page
+
+1. 
 
 ### Future Features
 
@@ -121,6 +157,7 @@ The live link can be found here - https://monipar.github.io/the-visensemble/
 * Instructions on how to make the Read More button accessible with screen readers was taken from https://jolvera.dev/posts/accessible-read-more-links
 * The text for the testimonials section on the About page was inspired from https://www.fightingblindness.ie/news/the-choir-has-a-special-place-in-my-heart-its-my-rock/
 * Instructions on how to make the flip card accessible with keyboard navigation were taken from https://stackoverflow.com/questions/62418249/css-flip-card-how-can-i-activate-the-flip-via-tab-so-it-is-keyboard-accessible
+* Instructions on how to make icons readable by screen readers were taken from https://webaim.org/techniques/css/invisiblecontent/
 * Instructions on how to write the syntax for responsive images in HTML were taken from https://css-tricks.com/a-guide-to-the-responsive-images-syntax-in-html/
 * Instructions on how to optimise images for better Cumulative Layout Shifts (CLS) were taken from https://web.dev/optimize-cls/?utm_source=lighthouse&utm_medium=devtools#images-without-dimensions
 * Instructions on how to style textarea width for the Contact Form was taken from https://davidwalsh.name/textarea-width
