@@ -1,4 +1,5 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+![The VisEnsemble logo](https://res.cloudinary.com/aperlae/image/upload/c_scale,w_300/v1659108822/visensemble_logo_crop_orange_mtq39g.png)
+
 
 # The VisEnsemble
 
@@ -250,3 +251,4 @@ The live link can be found here - https://monipar.github.io/the-visensemble/
 * The public domain image of Helen Keller on the Home page was taken from https://cdn18.picryl.com/photo/2019/10/07/helen-keller-no-8-0bcfc1-640.jpg 
 
 ### Code
+![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
