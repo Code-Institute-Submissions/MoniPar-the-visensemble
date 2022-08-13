@@ -366,7 +366,7 @@ header {
     left: 50%;
     transform: translate(-50%, -50%);
     width: 15.625em;
-    color: var(--clr-main);
+    color: hsl(25, 83%, 70%);
     background-color: rgba(45, 58, 63, .8);
     text-align: center;
     padding: 1.2em 0.5em;
@@ -599,7 +599,7 @@ header {
     left: 50%;
     transform: translate(-50%, -50%);
     width: 60%;
-    color: var(--clr-light-accent);
+    color: var(--clr-light);
     background-color:rgba(45, 58, 63, .4);
     border-radius: 5px;
     padding: 1em;
