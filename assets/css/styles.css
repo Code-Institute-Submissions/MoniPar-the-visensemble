@@ -697,7 +697,7 @@ header {
 .about__image {
     width: 100%;
     height: 37.5em;
-    background: url('https://res.cloudinary.com/aperlae/image/upload/q_auto/v1659108674/hero-about_ndx29v.webp') no-repeat;
+    background: url('https://res.cloudinary.com/aperlae/image/upload/c_fit,w_3742/v1660389604/hero-about-comp_pjhk6c.webp') no-repeat;
     background-size: cover;
     background-position: right center;
 }
@@ -709,6 +709,7 @@ header {
     transform: translate(-50%, -50%);
     width: 80%;
     height: 33em;
+    color: black;
     font-weight: 700;
     border: 2px solid var(--clr-main);
     border-radius: 5px;
