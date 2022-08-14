@@ -172,15 +172,15 @@ They will be able to see the schedule of events, rehearsal times and locations a
 
 ### Mobile Screenshot
 
-    Pixel 3 XL
+    iPhone XR
 
-![Events Page Full Image](assets/documentation/mob-events-full.png)
+![Events Page Full Image](assets/documentation/mob-events.png)
 
 ### desktop Screenshot
 
     Desktop 1440px
 
-![Events Page Full Image](/assets/documentation/deskeventsfull-min.png)
+![Events Page Full Image](assets/documentation/desk-events.png)
 
 
 ## The Contact Form Page
@@ -190,6 +190,7 @@ They will be able to see the schedule of events, rehearsal times and locations a
   The user is able to give their contact details, specify if they are interested in becoming members or if they are event organisers or other.
   The user is able to leave comments in the text area to encourage the choir or offer some insights on their performances.
 
+![Contact Form]()
 ---
 
 ## Future Features
