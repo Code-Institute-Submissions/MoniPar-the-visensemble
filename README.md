@@ -327,9 +327,76 @@ This section defines the visual language of the website.
 
 ## Validator Testing
 
+#### [HTML Validator](https://validator.w3.org/)
 
+| Page    | Error     | Warning                 | Note                    |
+|---------|-----------|:-----------------------:|-------------------------|
+|Index |None |Article lacks heading. |Article is quote card - no heading needed.
+|||Section lacks heading. |Section is quote and vision container - no heading needed.
+|About |None |Section lacks heading. |Section is cards container - no heading needed.
+|Events |None |None ||
+|Contact |None |None ||
+
+#### [CSS Validator](https://jigsaw.w3.org/css-validator/)
+
+Sorry! We found the following errors (2)
+URI : TextArea
+42		Parse Error /* Give user control over animations */ @media (prefer-reduced-motion: no-preference) { /* Smooth scrolling animation when clicking buttons on same page */ scroll-behavior: smooth; }
+45		Parse Error font-size: 100%;
+
+Trying to solve issue! 
+
+
+Warnings (1)
+URI : TextArea
+9		Imported style sheets are not checked in direct input and file upload modes
 
 ## Lighthouse Testing
+
+    Chrome Browser
+
+|Page    |Device  |Category     |Result |Diagnostics |Comments |
+|--------|--------|-------------|-------|:------------------------:|:------------------------:|
+|Index |Mobile |Performance |92% |Serve static assets with an efficient cache policy||
+|||Accessibility |100% |||
+|||Best Practice |92% |Issues were logged in Devtools |No issues detected so far|
+|||SEO |100% |||
+||Desktop |Performance |98% |Serve static assets with an efficient cache policy ||
+|||Accessibility |100% |||
+|||Best Practice |92% |Issues were logged in Devtools |Only third-party coookie issues detected so far |
+|||SEO |100% |||
+|About |Mobile |Performance |71% |Serve static assets with an efficient cache policy |Audio files have a Cache TTL of None |
+|||||Minimize main-thread work - 5.3s |JS moved from external script to index.html |
+|||Accessibility |100% |||
+|||Best Practice |92% |Issues were logged in Devtools |No issues detected so far |
+|||SEO |100% |||
+||Desktop |Performance |87% |Serve static assets with an efficietn cache policy |Audio files have a Cache TTL of None |
+|||||Avoid enormous network payloads -total  4,237KiB |Hero image compressed and webp |
+|||Accessibility |100% |||
+|||Best Practice |92% |Issues were logged in Devtools |Only third-party cookie issues detected so far |
+|||SEO |100% |||
+|Events |Mobile |Performance |95% |Serve static assets with an efficient cache policy ||
+|||Accessibility |100% |||
+|||Best Practice |92% |Issues were logged in Devtools |No issues detected so far |
+|||SEO |100% |||
+||Desktop |Performance |99% |||
+|||Accessibility |100% |||
+|||Best Practice |92% |Issues were logged in Devtools |Only third-party cookie issues detected so far |
+|Contact |Mobile |Performance |60% |Opportunity: Eliminate render-blocking resources 1.02s | Deferred JS scripts |
+|||Accessibility |100% |||
+|||Best Practice |92% |Issues were logged in Devtools |No issues detected so far |
+|||SEO |100% |||
+||Desktop |Performance |90% |Serve Static assets with an efficient cache policy ||
+|||Accessibility |100% |||
+|||Best Practice |92% |Issues were logged in Devtools |No issues detected so far |
+|||SEO |100% |||
+
+
+
+
+
+
+[Rich Results Test](https://search.google.com/test/rich-results/result?id=81pw7miVWmuaYqrbtMZFZw)
 
 ## Manual Testing
 
@@ -351,6 +418,8 @@ The live link can be found here - https://monipar.github.io/the-visensemble/
 
 * The fonts used throughout the page were taken from https://fonts.google.com/
 * The icons used throughout the page were taken from https://fontawesome.com/icons
+* Instructions on how to implement flexbox and a hamburger button were taken from this [Conquering Responsive Layouts Course by Kevin Powell](https://courses.kevinpowell.co/view/courses/conquering-responsive-layouts)
+* Instructions on how to use absolute positioning and desing a flip card were taken from this [Advanced CSS and SASS Course by Jonas Schmedtmann](https://www.udemy.com/share/101Wmq3@li4Dk57030W0IIEZToZWjSA9bafmLV5b-NM8BE-o_03EOBER-VIygYm_0XwV-8PB7w==/) 
 * Instructions on how to implement the Skip Navigation, Back to Top links and Accessible, Smooth Scroll to Top Styling was taken from https://ashleemboyer.com/blog
 * The quotation on the Home page was taken from https://www.goodreads.com/quotes/420478-the-only-thing-worse-than-being-blind-is-having-sight
 * The text for the Conductor's Bio on the About page was taken from http://www.kellymusicservices.com/frankbio.html
