@@ -18,11 +18,9 @@ ___
     * [A Skip Navigation Link](#a-skip-navigation-link)
     * [The Header](#the-header)
     * [The Landing Page](#the-landing-page)
-    * [Home Page Content](#home-page-content)
     * [A Back to Top Link](#a-back-to-top-link)
     * [The Footer](#the-footer)
     * [The About Page](#the-about-page)
-    * [Media and Testimonials](#media-and-testimonials)
     * [The Events Page](#the-events-page)
     * [The Contact Form Page](#the-contact-form-page)
     * [Future Features](#future-features)
@@ -55,9 +53,9 @@ The website is intended to target the visually impaired community including frie
 
 They will be able to see the schedule of events, rehearsal times and locations as well as a way to learn about and contact the choir in order to join, seek further information or book them for an event. 
 
+---
 
 # Features
-
 
 ## A Skip Navigation Link
 
@@ -176,7 +174,7 @@ They will be able to see the schedule of events, rehearsal times and locations a
 
 ![Events Page Full Image](assets/documentation/mob-events.png)
 
-### desktop Screenshot
+### Desktop Screenshot
 
     Desktop 1440px
 
@@ -190,15 +188,27 @@ They will be able to see the schedule of events, rehearsal times and locations a
   The user is able to give their contact details, specify if they are interested in becoming members or if they are event organisers or other.
   The user is able to leave comments in the text area to encourage the choir or offer some insights on their performances.
 
-![Contact Form]()
+### Mobile Screenshot
+    Moto G4
+
+![Contact Form](assets/documentation/mob-contact.png)
+
+### Desktop Screenshot
+    Desktop Width 1440px
+
+![Desktop Contact Form](assets/documentation/desk-contact.png)
 ---
 
 ## Future Features
 
   * Real name, logo, information, media and links for the Visionaries Choir.
-  * A close navigation button in the header on mobile.
+  * A close navigation symbol on the hamburger button in the header on mobile.
   * An archive of past performances, appearances etc for the choir’s followers and members to access on the website itself.
+  * News stories cards to look more modern, maybe a skewed effect on an opaque background. 
   * The choir’s very own donation box.
+  * Information about how the users data will be used (GDPR).
+
+[Back to Top](#table-of-contents)
 
 ---
 
@@ -249,9 +259,9 @@ This section aims at determining what a user/visitor would expect from interacti
 ## Skeleton/Wireframes
 Wireframes were firstly sketched with pen and paper.  This method helped me with brainstorming, deciding the most essential parts for the website and getting a feel for the website as a whole.
 
-Right click to view Mobile Wireframes [Here](assets/documentation/TVE%20Mobile.pdf)
+[Right click to view Mobile Wireframes](assets/documentation/TVE%20Mobile.pdf)
 
-Right click to view Desktop Wireframes [Here](assets/documentation/TVE%20Desktop.pdf)
+[Right click to view Desktop Wireframes](assets/documentation/TVE%20Desktop.pdf)
 
 Note: Through the design phase some elements were changed to allow for a better user experience.
 
@@ -277,17 +287,47 @@ This section defines the visual language of the website.
 
 * Typography
 
-Google fonts Roboto and Nunito were chosen for the website.  They are both sans-serif fonts which have a higher readability than serif fonts. 
+[Google fonts](https://fonts.google.com/) Roboto and Nunito were chosen for the website.  They are both sans-serif fonts which have a higher readability than serif fonts. 
+
+[Back to Top](#table-of-contents)
 
 ---
 
 # Technologies
+
+## Languages
+* [Semantic HTML5 Markup](https://www.w3schools.com/html/)
+* [Cascading Style Sheets (CSS)](https://www.w3schools.com/css/css_intro.asp)
+* [JavaScript](https://www.w3schools.com/js/)
+
+## Libraries & Frameworks
+* [Font Awesome](https://fontawesome.com/)
+* [Google Fonts](https://fonts.google.com/)
+
+## Tools
+* [Balsamiq](https://balsamiq.com/wireframes/)
+* [GitPod](https://www.gitpod.io/)
+* [GitHub](https://github.com/)
+* [Cloudinary](https://cloudinary.com/)
+* [Tiny PNG](https://tinypng.com/)
+* [YouTube MP3 Converter](https://mp3-convert.org/)
+* [MP3 to OGG Converter](https://www.onlineconverter.com/mp3-to-ogg)
+* [W3C HTML Validation](https://validator.w3.org/)
+* [W3C CSS Validation](https://jigsaw.w3.org/css-validator/)
+* [Chrome DevTools & Lighthouse](https://developer.chrome.com/docs/devtools/)
+* [Firefox DevTools & Accessibility Inspector](https://firefox-source-docs.mozilla.org/devtools-user/tools_toolbox/index.html)
+* [Edge DevTools & Lighthouse](https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/overview)
+* [CSS Autoprefixer Online](https://autoprefixer.github.io/)
+
+[Back to Top](#table-of-contents)
 
 ---
 
 # Testing
 
 ## Validator Testing
+
+
 
 ## Lighthouse Testing
 
