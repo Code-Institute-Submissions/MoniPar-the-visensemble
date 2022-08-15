@@ -33,18 +33,20 @@
 
 /* Reset */
 
-html {
+/* Give user control over animations */
+@media (prefer-reduced-motion: no-preference) {
     
-    /* Give user control over animations */
-    @media (prefer-reduced-motion: no-preference) {
+    html {
         /* Smooth scrolling animation when clicking buttons on same page */
         scroll-behavior: smooth;
-    }
-    
+    }   
+}
+
+html {
     /* Sets font-size for mobile devices */
     font-size: 100%; /* 16px = 1rem */
 }
-
+    
 /* Sets font-size for tablets */
 @media only screen and (min-width: 64em) {
     html {
@@ -1563,7 +1565,6 @@ header {
     border: 1px solid var(--clr-dark);
     border-radius: 3px;
 }
-
 :is(.text-input) :hover, :focus {
     border-color: var(--clr-light-accent);
 }

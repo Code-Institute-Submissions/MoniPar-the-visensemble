@@ -57,14 +57,18 @@
                 <form class="contact-form" action="https://formdump.codeinstitute.net/" method="post">
                     <fieldset id="set-a">
                         <legend>Your contact information</legend>
-                        <label for="fname">First Name:</label><br>
-                        <input type="text" id="fname" name="fname" class="text-input contact-info" required><br>
+                        <label for="fname" id="fname-label">First Name:</label><br>
+                        <input type="text" id="fname" name="fname" class="text-input contact-info error" 
+                        title="Enter your First name here" aria-labelledby="fname-label fname-error" aria-invalid="true" required><br>
+                        <label for="fname" id="fname-label" class="error visually-hidden" id="fname-error">First Name is required.</label>
+                        
                         <label for="lname">Last Name:</label><br>
-                        <input type="text" id="lname" name="lname" class="text-input contact-info" required><br>
+                        <input type="text" id="lname" name="lname" class="text-input contact-info" title="Enter your Surname here" aria-invalid="true" required><br>
                         <label for="email">Email:</label><br>
-                        <input type="email" id="email" name="email" class="text-input contact-info" required><br>
+                        <input type="email" id="email" name="email" class="text-input contact-info" title="Enter your Email here" aria-invalid="true" required><br>
                         <label for="mobile">Mobile (optional):</label><br>
-                        <input type="tel" id="mobile" name="mobile" class="text-input contact-info" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"><br>
+                        <input type="tel" id="mobile" name="mobile" class="text-input contact-info" title="Enter your mobile number here" 
+                        pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"><br>
                     </fieldset>
                     <fieldset id="set-b">
                         <legend>About you</legend>
@@ -78,7 +82,7 @@
                     <fieldset id="set-c">
                         <legend>Message Us</legend>
                         <label for="feedback">Enter any questions, comments or feedback below.</label>
-                        <textarea id="feedback" class="text-input" name="message" rows="15" cols="30">
+                        <textarea id="feedback" class="text-input" name="message" title="Enter any questions, comments or feedback here" rows="15" cols="30">
                         </textarea>
                         <input class="btn" type="submit" value="Submit"> 
                     </fieldset>
