@@ -57,7 +57,7 @@
                 <form class="contact-form" action="https://formdump.codeinstitute.net/" method="post">
                     <fieldset id="set-a">
                         <legend>Your contact information</legend>
-                        <div class="contact">
+                        <div class="info">
                             <label for="fname" id="fname-label">First Name:</label><br>
                             <input type="text" id="fname" name="fname" class="text-input contact-info" 
                                 title="Enter your First name here" data-error="Please enter a valid name" 
@@ -67,23 +67,23 @@
                             </div>
                         </div>
                         
-                        <div class="contact">
+                        <div class="info">
                             <label for="lname" id="lname-label">Last Name:</label><br>
                             <input type="text" id="lname" name="lname" class="text-input contact-info" 
                                 title="Enter your Surname here" data-error="Please enter a valid surname" 
                                 aria-labelledby="lname-label lname-error" required><br>
-                            <div role="alert" class="error-area" id="lname-error">
-                                Last name is required.
+                            <div aria-live="assertive" aria-relevant="additions removals" 
+                                class="error-area" id="lname-error">Last name is required.
                             </div>
                         </div>
                         
-                        <div class="contact">
+                        <div class="info">
                             <label for="email" id="email-label">Email:</label><br>
                             <input type="email" id="email" name="email" class="text-input contact-info" 
                                 title="Enter your Email here" data-error="Please enter a valid email" 
                                 aria-labelledby="email-label email-error" required><br>
-                            <div aria-live="polite" class="error-area" id="email-error">
-                                Email is required.
+                            <div aria-live="assertive" aria-relevant="additions removals 
+                                class="error-area" id="email-error">Email is required.
                             </div>
                         </div>
                                                 
@@ -167,7 +167,7 @@
         });
 
         // Contact form: Inserts an error any time you leave any field
-        const fields = document.querySelectorAll("input");
+        let fields = document.querySelectorAll("input");
 
         [].forEach.call(fields, (field) => {
             field.addEventListener("blur", (event) => {
@@ -182,7 +182,7 @@
         function handleError(field) {
             if(field.getAttribute("data-has-error") !== "true") {
                 let error = getErrorMessage(field);
-                let contact = field.closest("div");
+                let info = field.closest("div");
                 let errorArea = contact.querySelector(".error-area");
 
                 if(validate(field) === false) {
