@@ -336,6 +336,8 @@ No Errors or Warnings to show on either of the four pages.
 
 No Errors found.
 
+---
+
 ## Lighthouse Testing
 
     Chrome Browser
@@ -377,21 +379,26 @@ No Errors found.
 |||SEO |100% |||
 
 
+    Edge Browser
 
+Issues: 
+* Button type attribute has not been set on the navigation button - added
+* The 'x-ua-compatible' meta element should not be specified as it is not needed - removed
 
-
-
-[Rich Results Test](https://search.google.com/test/rich-results/result?id=81pw7miVWmuaYqrbtMZFZw)
 
 ## Manual Testing
 
+The website was manually tested on Chrome, Edge, Brave, Firefox and Safari browsers at different screen sizes as well as on iPhone 6S, Samsung Galaxy S10 Plus, iPhone XS max, iPad Air,Laptop 1280px and Standard HD Screen 1920 x 1080.  Responsiveness and functionality worked as expected on all except iPad Air which ran on iOS 12.5.5.  The WebP images were not rendering. FIX THIS!!!
 
+Functionality was also tested with keyboard navigation and screen reading technology.  These work as intended, except for the 'read more button' on the [About Us Section](#the-about-us-section), [The Flip Card](#the-flip-card-our-conductor) and [The Contact Form](#contact-form). Please refer to the next section for details or click on the links above. 
+
+[Back to Top](#back-to-top)
 
 ---
 
 # Bugs
 
-Validation
+#### Validation
 
 * HTML Validator gives warnings that some articles and sections lack headings.
   * Index Page:
@@ -411,7 +418,6 @@ Validation
 * CSS Validator gives a parsing error on the following:
 
 ```CSS
-
 html {
   @media (prefer-reduced-motion: no-preference) {
     scroll-behavior: smooth;
@@ -419,8 +425,9 @@ html {
   font-size: 100%;
 }
 ```
-This was corrected by placing the media query on the outside then the element and the style rule, like so:
-```
+This was corrected by placing the media query on the outside, then the element and the style rule, like so:
+
+```CSS
 @media (prefer-reduced-motion: no-preference) {
   html {
     scroll-behavior: smooth;
@@ -432,34 +439,34 @@ html {
 }
 ```
 
-* Firefox Accessibility Tools
+#### Firefox Accessibility Tools
 
   Firefox gave warnings on every page about contrast issues, which the Lighthouse validators on Chrome and Edge did not detect.  These were all changed accordingly to suit, except for the 'Skip Navigation Link' which is meant to be hidden until it comes into focus. 
 
   Firefox gave an accessibility issue with the radio buttons in the contact form.  They were not visible enough.  The width and height of the radio buttons was added and set for different screen sizes.  
 
-* Lighthouse
+#### Lighthouse
 
   * When Lighthouse performance was first checked the report was extremely low for almost all pages.  All images had to be resized, compressed and most changed to webP. Media queries were added to resize images according to screen size.  After all this performance improved a little but still not enough.  Eventually all images on the website were moved to [Cloudinary](https://cloudinary.com/console/c-122ef6555651b7cfec18a8cfd09711/media_library/folders/home), this made it easier to resize the images accordingly.  This [Guide to responsive image syntax in HTML](https://css-tricks.com/a-guide-to-the-responsive-images-syntax-in-html/) was very helpful in making the logo and photos responsive and instruct on how to use srcset for better performance.  
 
   * iFrames with YouTube videos were also reducing performance of the website, eventually they were turned to mp3s and ogg backups to help with this.  The visuals were not needed in this case so it made sense to have them as audio files instead.  The real website would have the choir's own recordings and these will be added in as audio/video files or links will be provided to the choir's own YouTube page. 
 
-The Back to Top Button
+#### The Back to Top Button
 
   All four pages had a back to top button which was meant to appear when scrolling down.  This worked on 3 of the 4 pages and was not always accessible with screen readers. AFter many trials and errors it had to be scrapped and replaced with the current back to top link which works fine for sighted, non-sighted and keyboard users.  The back to top link brings the user back to the skip navigation link which is quite handy for people with disabilities.  
 
 
-The About Us Section
+#### The About Us Section
 
   When the read more link was clicked, the whole page jumped down.  This was not ideal so after a few tests an anchor tag was placed in the div container which fixed this problem.  This however made the read more button less intuitive with screen readers.  As the user double taps on the read more button, the next swipe jumps to the next section (Our Conductor) rather than the next paragraph in the about us section.  This issue has not yet been fully resolved! I will opt to not use one in my future projects unless I find an accessible solution to it. For the time being, an aria-label to select and swipe back, has been added in order to facilitate the read more action.   
 
-The Flip Card (Our Conductor)
+#### The Flip Card (Our Conductor)
 
-  This worked out better than expected and no JavaScript was needed.  At first the flip card was not rotating when navigating with the keyboard.  A quick search on google made this possible by adding :focus-within rather than just :focus along with :hover on the flip card container.  
+  This worked out better than expected and no JavaScript was needed.  At first the flip card was not rotating when navigating with the keyboard.  A quick search on google brought me to [anycodings](https://www.anycodings.com/1questions/1942238/css-flip-card-how-can-i-activate-the-flip-via-tab-so-it-is-keyboard-accessible) which had a solution made possible by adding :focus-within rather than just :focus along with :hover on the flip card container.  
   
   The only bug with it that remains unfixed is that although voice over is able to read the back side information, with certain devices it does not always flip to show the back.  This is not ideal for visually impaired people who have some sight and use screen readers. More research will be done to fix this.   
 
-Contact Form
+#### Contact Form
 
 * The contact form works well for sighted users and with keyboard navigation as errors are visually highlighted when form is submitted incorrectly.  However the user relying on screen reader has no feedback when errors are displayed.  After plenty of searches online it was evident that this could not be done without JS so a script had to be borrowed from [Hidde's blog](https://hidde.blog/how-to-make-inline-error-messages-accessible/) to make form more accessible with screen readers.  
 After testing with different methods, aria-live="assertive" with aria-relevant="additions removals" (to apply the same functionality in reverse) is used to tell user that required field is not filled in and a visually hidden note is placed just before the submit button to tell user that in order to submit form, they need to get a confirmation and to review their required fields. 
@@ -514,5 +521,12 @@ The live link can be found here - https://monipar.github.io/the-visensemble/
 ---
 
 # Acknowledgements
+
+A huge thanks goes to my mentor [Sammy Dartnall](https://github.com/SammyDartnall10) for all the help and encouragment she gave me throughout this project. Same goes to the fabulous Student Care Duo Kenan Wright and Kasia Bogucka for their support and help with getting set up and sorted as well as my MSLETBB team mates for the moral and technical l support.    
+Thank you goes to the [CodeInstitute](https://codeinstitute.net/ie/) [Slack](https://slack.com/intl/en-ie/) community which had a lot of material I found useful in the various channels. 
+My friends and little team of screen reading technology testers [Abbie Healy](https://www.linkedin.com/in/abbie-healy-2a641b20a/), Edvard Navackas, Victoria Alves de Oliveira and Tim Culhane for testing my website and giving very helpful feedback.
+My parents Joe and Lucia Parnis for the encouragment and last but not least my partner [Austen Donohoe](https://www.instagram.com/circlestrafemedia/) for the VisEnsemble Logo and for all the dinners and cups of tea.  
+
+[Back to Top](#back-to-top)
 
 ![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
