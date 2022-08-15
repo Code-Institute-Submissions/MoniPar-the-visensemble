@@ -204,8 +204,9 @@ They will be able to see the schedule of events, rehearsal times and locations a
   * Real name, logo, information, media and links for the Visionaries Choir.
   * A close navigation symbol on the hamburger button in the header on mobile.
   * An archive of past performances, appearances etc for the choir’s followers and members to access on the website itself.
-  * News stories cards to look more modern, maybe a skewed effect on an opaque background. 
+  * News cards to look more modern, maybe a skewed effect on an opaque background. 
   * The choir’s very own donation box.
+  * A personalised page that thanks the user for submitting the sign up/contact form with a functioning action which sends the data to a file on the server.
   * Information about how the users data will be used (GDPR).
 
 [Back to Top](#table-of-contents)
@@ -329,27 +330,11 @@ This section defines the visual language of the website.
 
 #### [HTML Validator](https://validator.w3.org/)
 
-| Page    | Error     | Warning                 | Note                    |
-|---------|-----------|:-----------------------:|-------------------------|
-|Index |None |Article lacks heading. |Article is quote card - no heading needed.
-|||Section lacks heading. |Section is quote and vision container - no heading needed.
-|About |None |Section lacks heading. |Section is cards container - no heading needed.
-|Events |None |None ||
-|Contact |None |None ||
+No Errors or Warnings to show on either of the four pages.
 
 #### [CSS Validator](https://jigsaw.w3.org/css-validator/)
 
-Sorry! We found the following errors (2)
-URI : TextArea
-42		Parse Error /* Give user control over animations */ @media (prefer-reduced-motion: no-preference) { /* Smooth scrolling animation when clicking buttons on same page */ scroll-behavior: smooth; }
-45		Parse Error font-size: 100%;
-
-Trying to solve issue! 
-
-
-Warnings (1)
-URI : TextArea
-9		Imported style sheets are not checked in direct input and file upload modes
+No Errors found.
 
 ## Lighthouse Testing
 
@@ -400,10 +385,95 @@ URI : TextArea
 
 ## Manual Testing
 
+
+
 ---
 
 # Bugs
 
+Validation
+
+* HTML Validator gives warnings that some articles and sections lack headings.
+  * Index Page:
+
+    Article tag for the quote was changed into an Aside tag.
+    Section for the quote and vision container was changed to a div.
+  
+  * About Page:
+
+    Section tag for cards container was changed to a div.
+
+  * Events Page: 
+
+    Section tag for Events was given the heading of "Events".
+    Section tag for News was given the heading of "News".
+
+* CSS Validator gives a parsing error on the following:
+
+```CSS
+
+html {
+  @media (prefer-reduced-motion: no-preference) {
+    scroll-behavior: smooth;
+  }  
+  font-size: 100%;
+}
+```
+This was corrected by placing the media query on the outside then the element and the style rule, like so:
+```
+@media (prefer-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+html {
+  font-size: 100%;
+}
+```
+
+* Firefox Accessibility Tools
+
+  Firefox gave warnings on every page about contrast issues, which the Lighthouse validators on Chrome and Edge did not detect.  These were all changed accordingly to suit, except for the 'Skip Navigation Link' which is meant to be hidden until it comes into focus. 
+
+  Firefox gave an accessibility issue with the radio buttons in the contact form.  They were not visible enough.  The width and height of the radio buttons was added and set for different screen sizes.  
+
+* Lighthouse
+
+  * When Lighthouse performance was first checked the report was extremely low for almost all pages.  All images had to be resized, compressed and most changed to webP. Media queries were added to resize images according to screen size.  After all this performance improved a little but still not enough.  Eventually all images on the website were moved to [Cloudinary](https://cloudinary.com/console/c-122ef6555651b7cfec18a8cfd09711/media_library/folders/home), this made it easier to resize the images accordingly.  This [Guide to responsive image syntax in HTML](https://css-tricks.com/a-guide-to-the-responsive-images-syntax-in-html/) was very helpful in making the logo and photos responsive and instruct on how to use srcset for better performance.  
+
+  * iFrames with YouTube videos were also reducing performance of the website, eventually they were turned to mp3s and ogg backups to help with this.  The visuals were not needed in this case so it made sense to have them as audio files instead.  The real website would have the choir's own recordings and these will be added in as audio/video files or links will be provided to the choir's own YouTube page. 
+
+The Back to Top Button
+
+  All four pages had a back to top button which was meant to appear when scrolling down.  This worked on 3 of the 4 pages and was not always accessible with screen readers. AFter many trials and errors it had to be scrapped and replaced with the current back to top link which works fine for sighted, non-sighted and keyboard users.  The back to top link brings the user back to the skip navigation link which is quite handy for people with disabilities.  
+
+
+The About Us Section
+
+  When the read more link was clicked, the whole page jumped down.  This was not ideal so after a few tests an anchor tag was placed in the div container which fixed this problem.  This however made the read more button less intuitive with screen readers.  As the user double taps on the read more button, the next swipe jumps to the next section (Our Conductor) rather than the next paragraph in the about us section.  This issue has not yet been fully resolved! I will opt to not use one in my future projects unless I find an accessible solution to it. For the time being, an aria-label to select and swipe back, has been added in order to facilitate the read more action.   
+
+The Flip Card (Our Conductor)
+
+  This worked out better than expected and no JavaScript was needed.  At first the flip card was not rotating when navigating with the keyboard.  A quick search on google made this possible by adding :focus-within rather than just :focus along with :hover on the flip card container.  
+  
+  The only bug with it that remains unfixed is that although voice over is able to read the back side information, with certain devices it does not always flip to show the back.  This is not ideal for visually impaired people who have some sight and use screen readers. More research will be done to fix this.   
+
+Contact Form
+
+* The contact form works well for sighted users and with keyboard navigation as errors are visually highlighted when form is submitted incorrectly.  However the user relying on screen reader has no feedback when errors are displayed.  After plenty of searches online it was evident that this could not be done without JS so a script had to be borrowed from [Hidde's blog](https://hidde.blog/how-to-make-inline-error-messages-accessible/) to make form more accessible with screen readers.  
+After testing with different methods, aria-live="assertive" with aria-relevant="additions removals" (to apply the same functionality in reverse) is used to tell user that required field is not filled in and a visually hidden note is placed just before the submit button to tell user that in order to submit form, they need to get a confirmation and to review their required fields. 
+
+* The text area stretches outside the parent container on small screens and it is not responsive.  After a quick search on google, it was found that box-sizing needed to be set to border-box in order for it to respect its parent container padding and border.
+```CSS
+textarea {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    width: 100%;
+}
+```
+
+[Back to Top](#back-to-top)
 ---
 
 # Deployment
@@ -430,12 +500,17 @@ The live link can be found here - https://monipar.github.io/the-visensemble/
 * Instructions on how to write the syntax for responsive images in HTML were taken from https://css-tricks.com/a-guide-to-the-responsive-images-syntax-in-html/
 * Instructions on how to optimise images for better Cumulative Layout Shifts (CLS) were taken from https://web.dev/optimize-cls/?utm_source=lighthouse&utm_medium=devtools#images-without-dimensions
 * Instructions on how to style textarea width for the Contact Form was taken from https://davidwalsh.name/textarea-width
+* Instructions and JS code on how to convey that an error message has appeared with screen readers were taken from [Hidde's Blog](https://hidde.blog/how-to-make-inline-error-messages-accessible/)
 
 ## Media
 * The VisEnsemble Logo was designed by https://www.circlestrafemedia.com/
-* The background image for the Home Hero was taken from [this open source site](https://unsplash.com) 
+* The background image for the Home Hero was taken from [the Unsplash open source site](https://unsplash.com) 
 * The public domain image of Helen Keller on the Home page was taken from https://cdn18.picryl.com/photo/2019/10/07/helen-keller-no-8-0bcfc1-640.jpg 
+* The image of St. Audeon's church on the Events page was taken from [Heritage Ireland](https://heritageireland.ie/places-to-visit/st-audoens-church/)
+* The audio files in the About page were taken from [Alfred Music Choral](https://www.youtube.com/c/AlfredMusicChoral) and [Hal Leonard Choral](https://www.youtube.com/c/HalleonardChoral) YouTube pages and converted into mp3 and ogg files using this [YouTube MP3 Converter](https://mp3-convert.org/) and this [MP3 to OGG Converter](https://www.onlineconverter.com/mp3-to-ogg)
+* All other photos and images were taken from [the Pexels open source site](https://www.pexels.com/)
 
+[Back to Top](#back-to-top)
 ---
 
 # Acknowledgements
