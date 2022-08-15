@@ -63,7 +63,7 @@
                                 title="Enter your First name here" data-error="Please enter a valid name" 
                                 aria-labelledby="fname-label fname-error" required><br>
                             <div aria-live="assertive" aria-relevant="additions removals" 
-                                class="error-area" id="fname-error">
+                                class="error-area" id="fname-error">First name is required.
                             </div>
                         </div>
                         
@@ -103,9 +103,12 @@
                     <fieldset id="set-c">
                         <legend>Message Us</legend>
                         <label for="feedback">Enter any questions, comments or feedback below.</label>
-                        <textarea id="feedback" class="text-input" name="message" title="Enter any questions, comments or feedback here" rows="15" cols="30">
+                        <textarea id="feedback" class="text-input marbot-medium" name="message" title="Enter any questions, comments or feedback here" rows="15" cols="30">
                         </textarea>
-                        <input class="btn" type="submit" value="Submit"> 
+                        <span class="error-area visually-hidden">Note: If you don't get confirmation after submitting form please review your required fields.</span>
+                        <div>
+                            <input class="btn" type="submit" value="Submit">
+                        </div>
                     </fieldset>
                 </form>
             </div>
