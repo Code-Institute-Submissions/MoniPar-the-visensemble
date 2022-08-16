@@ -128,6 +128,7 @@ body::-webkit-scrollbar {
 
 /* Ease of Access */
 
+/* Skip Navigation Link */
 .skip-nav-container {
     position: relative;
 }
@@ -153,6 +154,7 @@ body::-webkit-scrollbar {
             transform: translateY(0);
 }
 
+/* Back to Top Link */
 .back-to-top-container{
     width: 100%;
     height: 1.2em;
@@ -183,6 +185,7 @@ body::-webkit-scrollbar {
     border: 1px solid var(--clr-dark);
 }
 
+/* Class hides elements, readable by screen readers */
 .visually-hidden {
     clip: rect(1px, 1px, 1px, 1px);
     -webkit-clip-path: inset(50%);
@@ -293,6 +296,7 @@ header {
     color: #eeac7c;
 }
 
+/* Class gives active state to chosen elements */
 .active {
     font-weight: 500;
     padding-bottom: .3em;
@@ -387,7 +391,7 @@ header {
 .hero__image {
     width: 100%;
     height: 25em; 
-    background: url('https://res.cloudinary.com/aperlae/image/upload/q_auto/v1659107124/hero-home-1440x960_kkoih0.webp') no-repeat;
+    background: url('https://res.cloudinary.com/aperlae/image/upload/q_auto/v1659107124/hero-home-1440x960_kkoih0.jpg') no-repeat;
     background-size: cover;
     background-position: center center;
 }
@@ -782,7 +786,7 @@ header {
 .about__image {
     width: 100%;
     height: 37.5em;
-    background: url('https://res.cloudinary.com/aperlae/image/upload/c_fit,w_3742/v1660389604/hero-about-comp_pjhk6c.webp') no-repeat;
+    background: url('https://res.cloudinary.com/aperlae/image/upload/c_fit,w_3742/v1660389604/hero-about-comp_pjhk6c.jpg') no-repeat;
     background-size: cover;
     background-position: right center;
 }
@@ -980,7 +984,7 @@ header {
     width: 7.5em;
     height: 7.5em;
     margin: 0 auto;
-    background: url('https://res.cloudinary.com/aperlae/image/upload/c_scale,q_auto,w_240/v1659107601/johnsmithcropped_ngwjic.webp') no-repeat;
+    background: url('https://res.cloudinary.com/aperlae/image/upload/c_scale,q_auto,w_240/v1659107601/johnsmithcropped_ngwjic.jpg') no-repeat;
     background-size: cover;
     -webkit-backface-visibility: hidden;
             backface-visibility: hidden;
