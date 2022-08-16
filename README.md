@@ -315,6 +315,8 @@ The icons used throughout the page were taken from [Font Awesome](https://fontaw
 * [GitPod](https://www.gitpod.io/)
 * [GitHub](https://github.com/)
 * [Cloudinary](https://cloudinary.com/)
+* [Am I Responsive](https://ui.dev/amiresponsive)
+* [Can I Use](https://caniuse.com/)
 * [Tiny PNG](https://tinypng.com/)
 * [YouTube MP3 Converter](https://mp3-convert.org/)
 * [MP3 to OGG Converter](https://www.onlineconverter.com/mp3-to-ogg)
@@ -341,6 +343,12 @@ No Errors or Warnings to show on either of the four pages.
 
 No Errors found.
 
+Warnings include:
+ 
+ * 'Imported style sheets are not checked in direct input and file upload modes' for the google fonts @import
+ * 'Due to their dynamic nature, CSS variables are currently not statically checked' for all the variables I used.
+* All other warnings are for vendor extension prefixes.
+
 ---
 
 ## Lighthouse Testing
@@ -349,11 +357,11 @@ No Errors found.
 
 |Page    |Device  |Category     |Result |Diagnostics |Comments |
 |--------|--------|-------------|-------|:------------------------:|:------------------------:|
-|Index |Mobile |Performance |92% |Serve static assets with an efficient cache policy||
+|Index |Mobile |Performance |95% |Serve static assets with an efficient cache policy||
 |||Accessibility |100% |||
 |||Best Practice |92% |Issues were logged in Devtools |No issues detected so far|
 |||SEO |100% |||
-||Desktop |Performance |98% |Serve static assets with an efficient cache policy ||
+||Desktop |Performance |99% |Serve static assets with an efficient cache policy ||
 |||Accessibility |100% |||
 |||Best Practice |92% |Issues were logged in Devtools |Only third-party coookie issues detected so far |
 |||SEO |100% |||
@@ -393,7 +401,9 @@ Issues:
 
 ## Manual Testing
 
-The website was manually tested on Chrome, Edge, Brave, Firefox and Safari browsers at different screen sizes as well as on iPhone 6S, Samsung Galaxy S10 Plus, iPhone XS max, iPad Air,Laptop 1280px and Standard HD Screen 1920 x 1080.  Responsiveness and functionality worked as expected on all except iPad Air which ran on iOS 12.5.5.  The WebP images were not rendering. FIX THIS!!!
+The website was manually tested on Chrome, Edge, Brave, Firefox and Safari browsers at different screen sizes as well as on iPhone 6S, Samsung Galaxy S10 Plus, iPhone XS max, iPad Air,Laptop 1280px and Standard HD Screen 1920 x 1080.  Responsiveness and functionality worked as expected on all except iPad Air which ran on iOS 12.5.5.  The WebP images were not rendering. Please refer to [Images not rendering on old browsers](#images-not-rendering-on-old-browsers) section under [Bugs](#bugs) for my solution to this.  
+
+Manual Testing with older browsers also showed that the :is() pseudo class selector was not yet supported and thus was removed from the stylesheet and reverted back to the long format. 
 
 Functionality was also tested with keyboard navigation and screen reading technology.  These work as intended, except for the 'read more button' on the [About Us Section](#the-about-us-section), [The Flip Card](#the-flip-card-our-conductor) and [The Contact Form](#contact-form). Please refer to the next section for details or click on the links above. 
 
@@ -403,7 +413,7 @@ Functionality was also tested with keyboard navigation and screen reading techno
 
 # Bugs
 
-#### Validation
+#### Bugs found through validation
 
 * HTML Validator gives warnings that some articles and sections lack headings.
   * Index Page:
@@ -419,6 +429,7 @@ Functionality was also tested with keyboard navigation and screen reading techno
 
     Section tag for Events was given the heading of "Events".
     Section tag for News was given the heading of "News".
+
 
 * CSS Validator gives a parsing error on the following:
 
@@ -443,6 +454,19 @@ html {
   font-size: 100%;
 }
 ```
+* CSS Validator warned about 'The property clip is deprecated' - [MDN web docs__](https://developer.mozilla.org/en-US/docs/Web/CSS/clip) recommended to use the clip-path property instead.
+So the following code which is meant to make an element 1px small in order not to be visible on screen
+
+```CSS
+clip: rect(1px, 1px, 1px, 1px);
+clip-path: inset(50%);
+```
+was replaced by:
+```CSS
+clip-path: polygon(1px, 1px, 1px, 1px);
+clip-path: inset(50%);
+```
+Eventually this was also replaced by absolutely positioning the text off screen as recommended by [WebAim](https://webaim.org/techniques/css/invisiblecontent/)
 
 #### Firefox Accessibility Tools
 
@@ -458,7 +482,7 @@ html {
 
 #### The Back to Top Button
 
-  All four pages had a back to top button which was meant to appear when scrolling down.  This worked on 3 of the 4 pages and was not always accessible with screen readers. AFter many trials and errors it had to be scrapped and replaced with the current back to top link which works fine for sighted, non-sighted and keyboard users.  The back to top link brings the user back to the skip navigation link which is quite handy for people with disabilities.  
+  All four pages had a back to top button which was meant to appear when scrolling down.  This worked on 3 of the 4 pages and after manual testing it found that it was not always accessible with screen readers. After many trials and errors it had to be scrapped and replaced with the current back to top link which works fine for sighted, non-sighted and keyboard users.  The back to top link brings the user back to the skip navigation link which is quite handy for people with disabilities.  
 
 
 #### The About Us Section
@@ -467,14 +491,14 @@ html {
 
 #### The Flip Card (Our Conductor)
 
-  This worked out better than expected and no JavaScript was needed.  At first the flip card was not rotating when navigating with the keyboard.  A quick search on google brought me to [anycodings](https://www.anycodings.com/1questions/1942238/css-flip-card-how-can-i-activate-the-flip-via-tab-so-it-is-keyboard-accessible) which had a solution made possible by adding :focus-within rather than just :focus along with :hover on the flip card container.  
+  This worked out better than expected and no JavaScript was needed.  At first the flip card was not rotating when navigating with the keyboard.  A quick search on google brought me to [anycodings](https://www.anycodings.com/1questions/1942238/css-flip-card-how-can-i-activate-the-flip-via-tab-so-it-is-keyboard-accessible) which had a solution made possible by adding `:focus-within` rather than just `:focus` along with `:hover` on the flip card container.  
   
   The only bug with it that remains unfixed is that although voice over is able to read the back side information, with certain devices it does not always flip to show the back.  This is not ideal for visually impaired people who have some sight and use screen readers. More research will be done to fix this.   
 
 #### Contact Form
 
 * The contact form works well for sighted users and with keyboard navigation as errors are visually highlighted when form is submitted incorrectly.  However the user relying on screen reader has no feedback when errors are displayed.  After plenty of searches online it was evident that this could not be done without JS so a script had to be borrowed from [Hidde's blog](https://hidde.blog/how-to-make-inline-error-messages-accessible/) to make form more accessible with screen readers.  
-After testing with different methods, aria-live="assertive" with aria-relevant="additions removals" (to apply the same functionality in reverse) is used to tell user that required field is not filled in and a visually hidden note is placed just before the submit button to tell user that in order to submit form, they need to get a confirmation and to review their required fields. 
+After testing with different methods, `aria-live="assertive"` with `aria-relevant="additions removals"` (to apply the same functionality in reverse) is used to tell user that required field is not filled in and a visually hidden note is placed just before the submit button to tell user that in order to submit form, they need to get a confirmation and to review their required fields. 
 
 * The text area stretches outside the parent container on small screens and it is not responsive.  After a quick search on google, it was found that box-sizing needed to be set to border-box in order for it to respect its parent container padding and border.
 ```CSS
@@ -484,6 +508,9 @@ textarea {
     width: 100%;
 }
 ```
+#### Images not rendering on old browsers
+
+A quick lookup on [Caniuse.com](https://caniuse.com/webp) showed that older versions of all browsers especially Safari did not support the WebP image format.  The picture tag in HTML was added to offer a fallback to a JPG format for these browsers. [faqcode4u.com](https://www.faqcode4u.com/faq/414363/responsive-image-picture-vs-img-with-srcset-fallback-issue) was helpful in figuring this out.  HTML for the pages was validated again in the [HTML Validator](https://validator.w3.org/). For the background images in CSS, it was opted to switch back the Home Page Landing Background Image, The About Us section Background Image and the flip card front image to JPG format again as they were useful for positioning of the other elements.  The website was tested again for performance and it was found that there was only a .2s delay for the JPG images.  The Contact Page Background Image was left as WebP as the contact form had good contrast anyway without it.
 
 [Back to Top](#table-of-contents)
 
@@ -523,6 +550,7 @@ The live link can be found here - https://monipar.github.io/the-visensemble/
 * The image of St. Audeon's church on the Events page was taken from [Heritage Ireland](https://heritageireland.ie/places-to-visit/st-audoens-church/)
 * The audio files in the About page were taken from [Alfred Music Choral](https://www.youtube.com/c/AlfredMusicChoral) and [Hal Leonard Choral](https://www.youtube.com/c/HalleonardChoral) YouTube pages and converted into mp3 and ogg files using this [YouTube MP3 Converter](https://mp3-convert.org/) and this [MP3 to OGG Converter](https://www.onlineconverter.com/mp3-to-ogg)
 * All other photos and images were taken from [the Pexels open source site](https://www.pexels.com/)
+* The Image with various screensizes at the start of the README.md file was done using [AmIResponsive](https://ui.dev/amiresponsive)
 
 [Back to Top](#table-of-contents)
 

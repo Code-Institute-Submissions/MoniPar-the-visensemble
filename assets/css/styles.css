@@ -185,17 +185,15 @@ body::-webkit-scrollbar {
     border: 1px solid var(--clr-dark);
 }
 
-/* Class hides elements, readable by screen readers */
+/* Class hides elements, readable by screen readers 
+taken from Web Aim (link in README.md*/
 .visually-hidden {
-    clip: rect(1px, 1px, 1px, 1px);
-    -webkit-clip-path: inset(50%);
-            clip-path: inset(50%);
-    height: 1px;
-    width: 1px;
-    margin: -1px;
-    overflow: hidden;
-    padding: 0;
-    position: absolute;
+    position:absolute;
+    left:-10000px;
+    top:auto;
+    width:1px;
+    height:1px;
+    overflow:hidden;
 }
 
 /* ---------- */
@@ -753,15 +751,18 @@ header {
     padding: .5em 0;
 }
 
-:is(.contact-links, .social-links) li {
+.contact-links li,
+.social-links li {
     display: inline;
 }
 
-:is(.contact-links, .social-links) li:not(:last-child) {
+.contact-links li:not(:last-child),
+.social-links li:not(:last-child) {
     margin-right: 1em;
 }
 
-:is(.contact-links, .social-links) a {
+.contact-links a,
+.social-links a {
     color: var(--clr-light-accent);
 }
 
@@ -831,8 +832,8 @@ header {
     border: none;
     cursor: pointer;
 }
-
-:is(.read-more-link:hover, .read-more-link:focus) {
+.read-more-link:hover,
+.read-more-link:focus {
     background-color: var(--clr-main);
     color: var(--clr-dark);
 }
@@ -1293,7 +1294,8 @@ header {
     padding: 2.5em 2.5em 1.5em;
 }
 
-:is(.events-news) h2, h3 {
+.events-news h2,
+.events-news h3 {
     text-align: center;
 }
 
@@ -1498,7 +1500,6 @@ header {
         width: 175px;
         height: 175px;
     }
-
 }
 
 @media only screen and (min-width: 125em) {
@@ -1509,7 +1510,6 @@ header {
     .news__card {
         max-width: 700px;
     }
-
 }
 
 /* ---------------- */
@@ -1574,7 +1574,8 @@ header {
     border: 1px solid var(--clr-dark);
     border-radius: 3px;
 }
-:is(.text-input) :hover, :focus {
+.text-input:hover,
+.text-input:focus {
     border-color: var(--clr-light-accent);
 }
 
