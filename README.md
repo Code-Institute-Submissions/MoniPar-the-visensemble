@@ -290,6 +290,10 @@ This section defines the visual language of the website.
 
 [Google fonts](https://fonts.google.com/) Roboto and Nunito were chosen for the website.  They are both sans-serif fonts which have a higher readability than serif fonts. 
 
+* Icons
+
+The icons used throughout the page were taken from [Font Awesome](https://fontawesome.com/).  On the Home page in the Our Vision Section, the icons used are mainly decorative, they are eye-catching and identify with the text underneath them. They are hidden from screen readers using aria-hidden=true.  The icons on the Footer are interactive links and have an aria-label which gives the relevant information to screen readers to read out to the users. The icons on the Rehearsal Card provide a tooltip for sighted mouse users by using the title tag.  A span tag was also added to provide the same information in the tool tip for assistive technologies.  This is kept visually hidden as the tool tip already provides that information. Unfortunately, at this time it wasn't possible to make them accessible by keyboard navigation without turning them to links and using JS. 
+
 [Back to Top](#table-of-contents)
 
 ---
@@ -304,6 +308,7 @@ This section defines the visual language of the website.
 ## Libraries & Frameworks
 * [Font Awesome](https://fontawesome.com/)
 * [Google Fonts](https://fonts.google.com/)
+* [Cloudinary](https://cloudinary.com/)
 
 ## Tools
 * [Balsamiq](https://balsamiq.com/wireframes/)
@@ -392,7 +397,7 @@ The website was manually tested on Chrome, Edge, Brave, Firefox and Safari brows
 
 Functionality was also tested with keyboard navigation and screen reading technology.  These work as intended, except for the 'read more button' on the [About Us Section](#the-about-us-section), [The Flip Card](#the-flip-card-our-conductor) and [The Contact Form](#contact-form). Please refer to the next section for details or click on the links above. 
 
-[Back to Top](#back-to-top)
+[Back to Top](#table-of-contents)
 
 ---
 
@@ -480,7 +485,8 @@ textarea {
 }
 ```
 
-[Back to Top](#back-to-top)
+[Back to Top](#table-of-contents)
+
 ---
 
 # Deployment
@@ -500,10 +506,11 @@ The live link can be found here - https://monipar.github.io/the-visensemble/
 * Instructions on how to implement the Skip Navigation, Back to Top links and Accessible, Smooth Scroll to Top Styling was taken from https://ashleemboyer.com/blog
 * The quotation on the Home page was taken from https://www.goodreads.com/quotes/420478-the-only-thing-worse-than-being-blind-is-having-sight
 * The text for the Conductor's Bio on the About page was taken from http://www.kellymusicservices.com/frankbio.html
+* Instruction on how to build a Read More button were taken from https://www.w3schools.com/howto/howto_js_read_more.asp
 * Instructions on how to make the Read More button accessible with screen readers was taken from https://jolvera.dev/posts/accessible-read-more-links
 * The text for the testimonials section on the About page was inspired from https://www.fightingblindness.ie/news/the-choir-has-a-special-place-in-my-heart-its-my-rock/
 * Instructions on how to make the flip card accessible with keyboard navigation were taken from https://stackoverflow.com/questions/62418249/css-flip-card-how-can-i-activate-the-flip-via-tab-so-it-is-keyboard-accessible
-* Instructions on how to make icons readable by screen readers were taken from https://webaim.org/techniques/css/invisiblecontent/
+* Instructions on how to make icons readable by screen readers were taken from [Webaim](https://webaim.org/techniques/css/invisiblecontent/) and [Fontwesome](https://fontawesome.com/docs/web/dig-deeper/accessibility)
 * Instructions on how to write the syntax for responsive images in HTML were taken from https://css-tricks.com/a-guide-to-the-responsive-images-syntax-in-html/
 * Instructions on how to optimise images for better Cumulative Layout Shifts (CLS) were taken from https://web.dev/optimize-cls/?utm_source=lighthouse&utm_medium=devtools#images-without-dimensions
 * Instructions on how to style textarea width for the Contact Form was taken from https://davidwalsh.name/textarea-width
@@ -517,7 +524,8 @@ The live link can be found here - https://monipar.github.io/the-visensemble/
 * The audio files in the About page were taken from [Alfred Music Choral](https://www.youtube.com/c/AlfredMusicChoral) and [Hal Leonard Choral](https://www.youtube.com/c/HalleonardChoral) YouTube pages and converted into mp3 and ogg files using this [YouTube MP3 Converter](https://mp3-convert.org/) and this [MP3 to OGG Converter](https://www.onlineconverter.com/mp3-to-ogg)
 * All other photos and images were taken from [the Pexels open source site](https://www.pexels.com/)
 
-[Back to Top](#back-to-top)
+[Back to Top](#table-of-contents)
+
 ---
 
 # Acknowledgements
@@ -527,6 +535,6 @@ Thank you goes to the [CodeInstitute](https://codeinstitute.net/ie/) [Slack](htt
 My friends and little team of screen reading technology testers [Abbie Healy](https://www.linkedin.com/in/abbie-healy-2a641b20a/), Edvard Navackas, Victoria Alves de Oliveira and Tim Culhane for testing my website and giving very helpful feedback.
 My parents Joe and Lucia Parnis for the encouragment and last but not least my partner [Austen Donohoe](https://www.instagram.com/circlestrafemedia/) for the VisEnsemble Logo and for all the dinners and cups of tea.  
 
-[Back to Top](#back-to-top)
+[Back to Top](#table-of-contents)
 
 ![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)

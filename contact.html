@@ -1,12 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Meta Data -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="The VisEnsemble Choir for people living with sightloss in Ireland">
     <meta name="keywords" content="the visensemble, choir, visually impaired, sightloss, choral singing, dublin, ireland">
-    <link rel="icon" href="https://res.cloudinary.com/aperlae/image/upload/c_scale,w_32/v1660385839/treblesquare_g0xno3.jpg" type="image/x-icon">
+    <!-- Website Title -->
     <title>The VisEnsemble</title>
+    <!-- Link to my Cloudinary Media Library -->
+    <link rel="icon" href="https://res.cloudinary.com/aperlae/image/upload/c_scale,w_32/v1660385839/treblesquare_g0xno3.jpg" type="image/x-icon">
+    <!-- Link to my CSS -->
     <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
@@ -17,6 +21,7 @@
     <!-- Site Header -->
     <header>
         <div class="header-container">
+            <!-- Logo -->
             <div class="logo-div">
                 <a href="index.html">
                     <img class="logo" alt="The Visensemble Logo" 
@@ -29,9 +34,11 @@
                         sizes="(max-width: 768px) 200px, (max-width: 1240px) 250px, (max-width: 1440px) 300px, 350px"/> 
                 </a>    
             </div>
+            <!-- Hamburger Button -->
             <button type="button" class="nav-toggle" aria-label="open-navigation">
                 <span class="hamburger">&#9776;</span>
             </button>
+            <!-- Navigation Links -->
             <nav class="nav">
                 <ul class="nav__list">
                     <li class="nav__item"><a href="index.html" class="nav__link">Home</a></li>
@@ -42,7 +49,9 @@
             </nav>
         </div>
     </header>
+    <!-- Main Content Starts Here -->
     <main id="main" tabindex="-1">
+        <!-- Contact Us Page -->
         <section class="contact-us">
             <div class="contact-us__img"></div>
             <h2>Get in Touch</h2>
@@ -53,7 +62,9 @@
                 back to you as soon as possible.
             </p>
             <div class="contact-us__form-container">
+                <!-- Contact Form -->
                 <form class="contact-form" action="https://formdump.codeinstitute.net/" method="post">
+                    <!-- Personal Information Inputs -->
                     <fieldset id="set-a">
                         <legend>Your contact information</legend>
                         <div class="info">
@@ -90,8 +101,9 @@
                         <input type="tel" id="mobile" name="mobile" class="text-input contact-info" title="Enter your mobile number here" 
                         pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"><br>
                     </fieldset>
+                    <!-- Select type of Contact Radio Buttons -->
                     <fieldset id="set-b">
-                        <legend>About you</legend>
+                        <legend>Select type of contact</legend>
                         <input type="radio" id="new_member" name="feedback_type" class="radio" value="new_member" checked>
                         <label for="new_member">New Member</label><br>
                         <input type="radio" id="organiser" name="feedback_type" class="radio" value="organiser">
@@ -99,16 +111,18 @@
                         <input type="radio" id="other" name="feedback_type" class="radio" value="other">
                         <label for="other">Other</label><br>
                     </fieldset>
+                    <!-- Feedback Textarea-->
                     <fieldset id="set-c">
                         <legend>Message Us</legend>
                         <label for="feedback">Enter any questions, comments or feedback below.</label>
                         <textarea id="feedback" class="text-input marbot-medium" name="message" title="Enter any questions, comments or feedback here" rows="15" cols="30">
                         </textarea>
-                        <span class="error-area visually-hidden">Note: If you don't get confirmation after submitting form please review your required fields.</span>
-                        <div>
-                            <input class="btn" type="submit" value="Submit">
-                        </div>
                     </fieldset>
+                    <!-- Note for screen reader users and Submit Button -->
+                    <div>
+                        <span class="error-area visually-hidden">Note: If you don't get confirmation after submitting form please review your required fields.</span>
+                        <input class="btn" type="submit" value="Submit">
+                    </div>
                 </form>
             </div>
         </section>
@@ -118,6 +132,7 @@
     <!-- Site Footer -->
     <footer class="footer-container">
         <div class="footer__links">
+            <!-- Contact Links -->
             <div class="contact-links">
                 <ul>
                     <li>
@@ -134,6 +149,7 @@
                     </li>
                 </ul>
             </div>
+            <!-- Social Links -->
             <div class="social-links">
                 <ul>
                     <li>
@@ -159,6 +175,7 @@
     <!-- Fontawesome Script -->
     <script src="https://kit.fontawesome.com/de07fb651c.js" crossorigin="anonymous" defer></script>
     
+    <!-- Internal JS -->
     <script>
         // Hamburger button navigation
         const navToggle = document.querySelector(".nav-toggle");
@@ -168,7 +185,7 @@
         nav.classList.toggle("nav--visible");
         });
 
-        // Contact form: Inserts an error any time you leave any field
+        // Contact form script taken from Hidde's Blog (link in README.md)
         let fields = document.querySelectorAll("input");
 
         [].forEach.call(fields, (field) => {

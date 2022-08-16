@@ -1,12 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Meta Data -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="The VisEnsemble Choir for people living with sightloss in Ireland">
     <meta name="keywords" content="the visensemble, choir, visually impaired, sightloss, choral singing, dublin, ireland">
-    <link rel="icon" href="https://res.cloudinary.com/aperlae/image/upload/c_scale,w_32/v1660385839/treblesquare_g0xno3.jpg" type="image/x-icon">
+    <!-- Website Title -->
     <title>The VisEnsemble</title>
+    <!-- Link to my Cloudinary Media Library -->
+    <link rel="icon" href="https://res.cloudinary.com/aperlae/image/upload/c_scale,w_32/v1660385839/treblesquare_g0xno3.jpg" type="image/x-icon">
+    <!-- Link to my CSS -->
     <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
@@ -35,7 +39,7 @@
             <button type="button" class="nav-toggle" aria-label="open-navigation">
                 <span class="hamburger">&#9776;</span>
             </button>
-                <!-- Navigation Links -->
+            <!-- Navigation Links -->
             <nav class="nav">
                 <ul class="nav__list">
                     <li class="nav__item"><a href="index.html" class="nav__link active">Home</a></li>
@@ -46,16 +50,18 @@
             </nav>
         </div>
     </header>
+    <!-- Main Content Starts Here -->
     <main id="main" tabindex="-1">
+        <!-- Hero Section -->
         <section class="hero-container">
             <div class="hero__image"></div>
             <div class="hero__text">
                 <h1 class="marbot-small">The VisEnsemble</h1>
-                <h2>Ireland's only choir for
-                  people living with sight loss</h2>
+                <h2>Ireland's only choir for people living with sight loss</h2>
             </div>
         </section>
         <div class="quote-vision-container">
+            <!-- Quote Aside -->
             <aside class="quote-container">
                 <div class="quote-card">
                     <img class="quote__image" width="100" height="135" 
@@ -74,6 +80,7 @@
                     </div>
                 </div>
             </aside>
+            <!-- Our Vision Section -->
             <section>
                 <div class="vision-container">
                     <div class="vision__title marbot-medium">
@@ -109,6 +116,7 @@
                 </div>
             </section>
         </div> 
+        <!-- Call To Action Section -->
         <section class="cta">
             <div class="cta-container">
                 <div class="cta__image"></div>
@@ -126,6 +134,7 @@
     <!-- Site Footer -->
     <footer class="footer-container">
         <div class="footer__links">
+            <!-- Contact Links -->
             <div class="contact-links">
                 <ul>
                     <li>
@@ -142,6 +151,7 @@
                     </li>
                 </ul>
             </div>
+            <!-- Social Links -->
             <div class="social-links">
                 <ul>
                     <li>
@@ -167,7 +177,7 @@
     <!-- Fontawesome Script -->
     <script src="https://kit.fontawesome.com/de07fb651c.js" crossorigin="anonymous" defer></script>
    
-    <!-- JavaScript for Navigation Hamburger Button -->
+    <!-- Internal JS for Navigation Hamburger Button adapted from Conquering Responsive Layouts Course (link in README.md)  -->
     <script>
         const navToggle = document.querySelector(".nav-toggle");
         const nav = document.querySelector(".nav");
