@@ -405,7 +405,7 @@ The website was manually tested on Chrome, Edge, Brave, Firefox and Safari brows
 
 Manual Testing with older browsers also showed that the :is() pseudo class selector was not yet supported and thus was removed from the stylesheet and reverted back to the long format. 
 
-Functionality was also tested with keyboard navigation and screen reading technology.  These work as intended, except for the 'read more button' on the [About Us Section](#the-about-us-section), [The Flip Card](#the-flip-card-our-conductor) and [The Contact Form](#contact-form). Please refer to the next section for details or click on the links above. 
+Functionality was also tested with keyboard navigation and screen reading technology.  These work as intended, except for the 'read more button' on the [About Us Section](#the-about-us-section), [The Flip Card](#the-flip-card-our-conductor) and [The Contact Form](#contact-form). Please refer to the next section for details or click on the links above.  
 
 [Back to Top](#table-of-contents)
 
@@ -510,13 +510,20 @@ textarea {
 ```
 #### Images not rendering on old browsers
 
-A quick lookup on [Caniuse.com](https://caniuse.com/webp) showed that older versions of all browsers especially Safari did not support the WebP image format.  The picture tag in HTML was added to offer a fallback to a JPG format for these browsers. [faqcode4u.com](https://www.faqcode4u.com/faq/414363/responsive-image-picture-vs-img-with-srcset-fallback-issue) was helpful in figuring this out.  HTML for the pages was validated again in the [HTML Validator](https://validator.w3.org/). For the background images in CSS, it was opted to switch back the Home Page Landing Background Image, The About Us section Background Image and the flip card front image to JPG format again as they were useful for positioning of the other elements.  The website was tested again for performance and it was found that there was only a .2s delay for the JPG images.  The Contact Page Background Image was left as WebP as the contact form had good contrast anyway without it.
+A quick lookup on [Caniuse.com](https://caniuse.com/webp) showed that older versions of all browsers especially Safari did not support the WebP image format.  The picture tag in HTML was added to offer a fallback to a JPG format for these browsers. [faqcode4u.com](https://www.faqcode4u.com/faq/414363/responsive-image-picture-vs-img-with-srcset-fallback-issue) was helpful in figuring this out.  HTML for the pages was validated again in the [HTML Validator](https://validator.w3.org/). For the background images in CSS, it was opted to switch back the Home Page Landing Background Image, The About Us section Background Image and the flip card profile photo to JPG format again as they were useful for positioning of the other elements.  The website was tested again for performance and it was found that there was only a .2s delay for the JPG images.  The Contact Page Background Image was left as WebP as the contact form had good contrast anyway without it.
+
+#### Other Issues
+
+The Audio players on certain iOS devices were not centering properly. It was suggested to pass the CSS through an online [Autoprefixer](https://autoprefixer.github.io/) to add vendor prefixes for all popular browsers.  This did not solve the problem but it was decided to keep the prefixes anyway. 
+
+iOS seems to disregard the width and height given to radio buttons.
 
 [Back to Top](#table-of-contents)
 
 ---
 
 # Deployment
+
 The project was deployed to GitHub pages by navigating to the Settings tab in the GitHub repository and selecting the Main Branch from the source section drop-down menu.  Once the Main branch was selected, the page automatically refreshed to display a detailed ribbon indicating successful deployment.
 
 The live link can be found here - https://monipar.github.io/the-visensemble/

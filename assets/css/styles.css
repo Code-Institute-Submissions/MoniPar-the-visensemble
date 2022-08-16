@@ -34,8 +34,7 @@
 /* Reset */
 
 /* Give user control over animations */
-@media (prefer-reduced-motion: no-preference) {
-    
+@media (prefer-reduced-motion: no-preference) { 
     html {
         /* Smooth scrolling animation when clicking buttons on same page */
         scroll-behavior: smooth;
@@ -185,7 +184,7 @@ body::-webkit-scrollbar {
     border: 1px solid var(--clr-dark);
 }
 
-/* Class hides elements, readable by screen readers 
+/* Hides elements, readable by screen readers 
 taken from Web Aim (link in README.md*/
 .visually-hidden {
     position:absolute;
@@ -294,7 +293,7 @@ header {
     color: #eeac7c;
 }
 
-/* Class gives active state to chosen elements */
+/* Gives active state to chosen elements */
 .active {
     font-weight: 500;
     padding-bottom: .3em;
@@ -1615,6 +1614,7 @@ textarea {
     border-radius: 20px;
     border: none;
     margin: 0 auto;
+    cursor: pointer;
     -webkit-box-shadow: var(--box-shadow-quad);
             box-shadow: var(--box-shadow-quad);
 }
