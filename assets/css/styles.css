@@ -300,6 +300,7 @@ header {
     border-bottom: 1px solid var(--clr-main);
 }
 
+/* Header media queries for Tablets 768px and wider */
 @media only screen and (min-width: 48em) {
     .nav-toggle {
         display: none;
@@ -343,6 +344,7 @@ header {
     }
 }
 
+/* Header media queries for screens wider than 1024px */
 @media only screen and (min-width: 64em) {
     .logo-div {
         margin: 1em 0 0 2em;
@@ -352,6 +354,7 @@ header {
     }
 }
 
+/* Header media queries for screens wider than 1440px */
 @media only screen and (min-width: 90em) {
     .logo {
         width: 300px;
@@ -362,6 +365,7 @@ header {
     }
 }
 
+/* Header media queries for screens wider than 2560px */
 @media only screen and (min-width: 160em) {
     .logo-div {
         margin: 1em 0 0 3em;
@@ -408,12 +412,14 @@ header {
     border-radius: 10px;
 }
 
+/* Hero media query for screens wider than 650px */
 @media only screen and (min-width: 40.625em) {
     .hero__image {
         height: 37.5em;
     }
 }
 
+/* Hero media queries for screens wider than 1024px */
 @media only screen and (min-width: 64em) {
     .hero-container {
         height: 31.25em;
@@ -422,7 +428,6 @@ header {
         height: 62.5em;
     }
 }
-
 
 /* Quote and Vision Sections */
 
@@ -552,6 +557,7 @@ header {
     font-size: 1.75rem;
 }
 
+/* Quote and Vision container(s) media queries for screens wider than 768px */
 @media only screen and (min-width: 48em) {
     .quote-vision-container {
         display: -webkit-box;
@@ -574,6 +580,7 @@ header {
     }
 }
 
+/* Quote and vision media queries for screens wider than 1024px */
 @media only screen and (min-width: 64em) {
     .quote-vision-container {
         -webkit-box-pack: space-evenly;
@@ -585,6 +592,7 @@ header {
     }
 }
 
+/* Quote and Vision media queries for screens wider than 1440px */
 @media only screen and (min-width: 90em) {
     .quote-card {
         width: 25em; /* 400px */
@@ -611,6 +619,7 @@ header {
     }
 }
 
+/* Quote and Vision media queries for screens wider than 2560px */
 @media only screen and (min-width: 160em) {
     .quote__image {
         width: 150px;
@@ -710,6 +719,7 @@ header {
     border: 1px solid var(--clr-main);
 }
 
+/* Call to Action media query for screens wider than 768px */
 @media only screen and (min-width: 48em) {
     .cta__textbox {
         width: 40%;
@@ -831,11 +841,14 @@ header {
     border: none;
     cursor: pointer;
 }
+
 .read-more-link:hover,
 .read-more-link:focus {
     background-color: var(--clr-main);
     color: var(--clr-dark);
 }
+
+/* Read More link functionality */
 
 .text.show--more .more-text {
     display: inline-block;
@@ -845,6 +858,7 @@ header {
     display: none;
 }
 
+/* About Us text positioning media query for mobile screens wider than 416px */
 @media only screen and (min-width: 26em) {
     .about__text {
         width: 80%;
@@ -854,6 +868,7 @@ header {
     }
 }
 
+/* About us text positioning for mobile wider than 600px */
 @media only screen and (min-width: 37.5em) {
     .about__text {
         width: 65%;
@@ -862,6 +877,7 @@ header {
     }
 }
 
+/* About us text block positioning for tablets and screens wider than 768px */
 @media only screen and (min-width: 48em) {
     .about__text {
         width: 50%;
@@ -871,6 +887,7 @@ header {
     }
 }
 
+/* About us text block positioning for screens wider than 1440px */
 @media only screen and (min-width: 90em) {
     .about__text {
         width: 50%;
@@ -887,6 +904,7 @@ header {
     padding: 2.5em 0;
 }
 
+/* Cards container media query for screens wider than 1440px */
 @media only screen and (min-width: 90em) {
     .cards-container {
         display: -webkit-box;
@@ -1127,6 +1145,7 @@ header {
 }
 
 /* Media Section */
+
 .media-container{
     background-color: var(--clr-light);
     padding-bottom: 2.5em;
@@ -1188,16 +1207,20 @@ header {
             box-shadow: var(--box-shadow-quad);
 }
 
+/* Media section media query for screens wider than 1440px */
 @media only screen and (min-width: 90em) {
     .media {
         width: 1400px;
     }
 }
+
+/* Media section media query for screens wider than 2560px */
 @media only screen and (min-width: 160em) {
     .media {
         width: 2000px;
     }
 }
+
 /* Testimonials Section */
 
 .testimonials {
@@ -1240,6 +1263,7 @@ header {
     font-weight: 700;
 }
 
+/* Testimonials media queries for tablets */
 @media only screen and (min-width: 48em) {
     .testimonials__content {
         display: -webkit-box;
@@ -1257,6 +1281,7 @@ header {
     }
 }
 
+/* Testimonials media queries for screens wider than 1024px */
 @media only screen and (min-width: 64em) {
     .testimonials__img {
         width: 85px;
@@ -1264,6 +1289,7 @@ header {
     }
 }
 
+/* Testimonials media queries for screens wider than 1440px */
 @media only screen and (min-width: 90em) {
     .testimonials__content {
         width: 1400px;
@@ -1275,12 +1301,14 @@ header {
     }
 }
 
+/* Testimonials media queries for screens wider than 2560px */
 @media only screen and (min-width: 160em) {
     .testimonials__item {
         max-width: 600px;
         max-height: 600px;
     }
 }
+
 /* ---------------- */
 /*   EVENTS PAGE    */
 /* ---------------- */
@@ -1313,6 +1341,7 @@ header {
 }
 
 /* Events Section */
+
 .events__section {
     margin-bottom: 2.5em;
 }
@@ -1395,6 +1424,7 @@ header {
     text-transform: uppercase;
 }
 
+/* Styles for call to action card on events page */
 .cta__card {
     max-width: 500px;
     margin: 2em auto 0;
@@ -1452,6 +1482,7 @@ header {
     display: block;
 }
 
+/* Event card media queries for mobile wider than 375px */
 @media only screen and (min-width: 23.4374em) {
     .event-details {
         font-size: 1rem;
@@ -1464,6 +1495,7 @@ header {
     }
 } 
 
+/* Event and News card media queries for tablets */
 @media only screen and (min-width: 48em) {
     .event-text {
         padding: 2.5em 3em;
@@ -1474,6 +1506,7 @@ header {
     }
 }
 
+/* CTA on events page media query for screens 1024px and wider */
 @media only screen and (min-width: 64em) {
     .events-cta__textbox {
         width: 75%;
@@ -1481,6 +1514,7 @@ header {
     }
 }
 
+/* Events and news section media queries for screens 1440px and wider */
 @media only screen and (min-width: 90em) {
     .content-wrapper {
     -webkit-box-orient: horizontal;
@@ -1504,6 +1538,7 @@ header {
     }
 }
 
+/* Events and News section media queries for screen wider than 2000px */
 @media only screen and (min-width: 125em) {
     .event__card,
     .cta__card {
@@ -1577,6 +1612,7 @@ header {
     border: 1px solid var(--clr-dark);
     border-radius: 3px;
 }
+
 .text-input:hover,
 .text-input:focus {
     border-color: var(--clr-light-accent);
@@ -1636,12 +1672,14 @@ textarea {
     color: var(--clr-main);
 }
 
+/* Contact page textblock media query for mobile wider than 375px */
 @media only screen and (min-width: 23.4375em) {
     .contact-info {
         width: 250px;
     }
 }
 
+/* Contact us form media queries for screens wider than 1440px */
 @media only screen and (min-width: 90em) {
     .contact-us__form-container {
         max-width: 900px;
@@ -1688,6 +1726,7 @@ textarea {
     }
 }
 
+/* Contact Form media queries for screens wider than 2560px */
 @media only screen and (min-width: 160em) {
     .contact-us__form-container {
         max-width: 1400px;
@@ -1702,7 +1741,7 @@ textarea {
         max-width: 400px;
     }
     #set-c {
-        max-width: 900px;
+        max-width: 1000px;
     }
     input[type="radio"] {
         width: 1.875em;
