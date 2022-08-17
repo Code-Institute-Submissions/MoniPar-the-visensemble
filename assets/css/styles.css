@@ -956,6 +956,7 @@ header {
     border-radius: 5px;
 }
 
+/* styling for background image */
 .front__bkg-photo {
     position: relative;
     width: 18.75em;
@@ -969,6 +970,7 @@ header {
     border-top-right-radius: 5px;
 }
 
+/* positioning of background image */
 .front__bkg-photo::after {
     content: '';
     position: absolute;
@@ -978,6 +980,7 @@ header {
     height: 100%;
 }
 
+/* styling and positioning of profile photo */
 .front__profile-photo {
     position: relative;
     top: -15%;
@@ -1540,6 +1543,7 @@ header {
     padding: 1.5em;
 }
 
+/* Contact Form */
 .contact-us__form-container {
     max-width: 500px;
     background-color: rgb(78, 35, 0, .7);
@@ -1589,7 +1593,8 @@ header {
     width: 100%;
 }
 
-.radio {
+input[type="radio"] {
+    display: inline-block;
     width: 0.9375em;
     height: 0.9375em;
     margin: .5em 0;
@@ -1671,7 +1676,7 @@ textarea {
     .contact-form fieldset {
         margin: 1.5em;
     }
-    .radio {
+    input[type="radio"] {
         width: 1.25em;
         height: 1.25em;
     }
@@ -1693,8 +1698,8 @@ textarea {
     #set-c {
         max-width: 900px;
     }
-    .radio {
+    input[type="radio"] {
         width: 1.875em;
         height: 1.875em;
-    }
+    } 
 }
