@@ -3,7 +3,7 @@
 
 # The VisEnsemble
 
-Welcome to The VisEnsemble Choir website! This is a mock-up website for a real choir for visually impaired people in Dublin called 'The Visionaries Choir'.  This website hopes to help people become more aware of what the choir is about and who are its members, motivate other visually impaired people to become members and to increase opportunities for public performances.
+Welcome to The VisEnsemble Choir website! This is a mock-up website for a real choir for visually impaired people in Dublin called 'The Visionaries Choir'.  This website hopes to help people become more aware of what the choir is about and motivate other visually impaired people to become members and to increase opportunities for public performances.
 
 ![Website responsiveness on multiple screen sizes](assets/documentation/responsiveness.png)
 
@@ -45,13 +45,13 @@ ___
 
 # Overview
 
-The aim of this project is to demonstrate skills in HTML and CSS.  Some JavaScript is used for interactivity and to make the website better accessible with screen-readers.
+The aim of this project is to demonstrate skills in HTML and CSS.  Some JavaScript is used for interactivity and to make the website more accessible with screen-readers.
 
-It is a mobile-first built and is responsive on tablet, desktop and screens up to 2000px wide. It is also compatible with all popular browsers. 
+It is a mobile-first build and is responsive on tablet, desktop and screens up to 2000px wide. It is also compatible with all popular browsers. 
 
-The website is intended to target the visually impaired community including friends, families and organisations for the blind/visually impaired/disabled as well as event organisers, State bodies, art Councils and the general public. 
+The website is intended to target the visually impaired community, including friends, families and organisations for the blind/visually impaired/disabled as well as event organisers, State bodies, Art Councils and the general public. 
 
-They will be able to see the schedule of events, rehearsal times and locations as well as a way to learn about and contact the choir in order to join, seek further information or book them for an event. 
+They will be able to see the schedule of events, rehearsal times and locations, as well as a way to learn about and contact the choir in order to join, seek further information or book them for an event. 
 
 ---
 
@@ -81,7 +81,7 @@ They will be able to see the schedule of events, rehearsal times and locations a
 
 ## The Landing Page
 
-  The home page hero on the landing page includes a photograph of the choir with a text overlay which captures the essence of the choir.  This section introduces the sighted user to the choir with an eye catching image to grab their attention, the text gives the non-sighted user a very brief introduction to the choir.
+  The home page hero on the landing page includes a photograph of the choir with a text overlay which captures the essence of the choir.  This section introduces the sighted user to the choir with an eye catching image to grab their attention. The text gives the non-sighted user a very brief introduction to the choir.
 
 ### Mobile Screenshot
     iPhone 6/7/8 
@@ -118,13 +118,13 @@ They will be able to see the schedule of events, rehearsal times and locations a
 
 ## The Footer
 
-  Featured on all four pages, includes icons which when clicked or focussed on will bring up a phone number and email address for easy contact with the choir master.  Screen readers are able to read out the phone numbers and the email address as well.  The social icons are labelled links which will open in a new tab to allow for easy navigation for the user.  The footer is valuable to the user as it encourages them to get in touch via phone or email if they prefer that method of contact and it also allows the user to keep connected via social media. (Refer to image above)
+  Featured on all four pages, includes icons which when clicked or focused on will bring up a phone number and email address for easy contact with the choir master.  Screen readers are able to read out the phone numbers and the email address as well.  The social icons are labelled links which will open in a new tab to allow for easy navigation for the user.  The footer is valuable to the user as it encourages them to get in touch via phone or email if they prefer that method of contact and it also allows the user to keep connected via social media. (Refer to image above)
 
 
 ## The About Page
 
-1. The About page opens with an about us section which is overlayed on a background image.  It displays a paragraph on the history of the choir and a read more button which when clicked brings up the rest of the choir history. The read more button was added to reduce the amount of text visible on the page, it is up to the user if they want to find out more about the history of the choir or move on to the next section. The feature has a read less button as well which will hide the second chunck of text once read. 
-2. The flip card with a snippet of the Conductor's Biography is an eye catching feature which displays a photo of the conductor with a background of piano keys and information about his qualifications and conducting experience.  This is helpful for the user as it gives more information about the Conductor as well as links to his social media for more information or to connect. 
+1. The About page opens with an About Us section which is overlayed on a background image.  It displays a paragraph on the history of the choir and a Read More button which when clicked brings up the rest of the choir history. The Read More button was added to reduce the amount of text visible on the page. It is up to the user if they want to find out more about the history of the choir or move on to the next section. The feature has a Read Less button as well which will hide the second chunck of text once read. 
+2. The flip card with a snippet of the Conductor's Biography is an eye catching feature which displays a photo of the conductor with a background of piano keys and information about his qualifications and conducting experience.  This is helpful for the user as it gives more information about the conductor as well as links to his social media for more information or to connect. 
 3. The Rehearsal card is a useful feature on which the rehearsal day and time, location and cost are displayed.  The icons are accessible by screen readers and have a little tooltip explaining what they are.  It also has a link to google maps to aid with finding the location of the rehearsal venue as well as a link to the contact page to encourage the user to sign up.
 
 ### Mobile Screenshots
@@ -147,8 +147,8 @@ They will be able to see the schedule of events, rehearsal times and locations a
 
 ## Media and Testimonials
 
-4. The Audio Section provides the user with supporting evidence showing what the choir's repertoire of songs sounds like.  Although these are temporary arrangments of the songs the choir uses, in the future they will be actual recordings to showcase the choir's talent.  This is valuable to both visually impaired and sighted users and event organisers can have a better idea of what type of events will suit the choir.
-5. The Testimonials Section provides feedback from some of the choir members.  This is very useful to the user as it gives them an overview of how the choir works and the benefits people living with sightloss experience when joining the choir.
+4. The Audio section provides the user with examples from the choir's repertoire of songs.  Although these are temporary arrangments of the songs the choir uses, in the future they will be actual recordings to showcase the choir's talent.  This is valuable to both visually impaired and sighted users, and event organisers can have a better idea of what type of events will suit the choir.
+5. The Testimonials section provides feedback from some of the choir members.  This is very useful to the user as it gives them an overview of how the choir works and the benefits people living with sightloss experience when joining the choir.
 
 ### Mobile Screenshots
     Audio files on iPhone 12 Pro
@@ -164,9 +164,9 @@ They will be able to see the schedule of events, rehearsal times and locations a
 
 ## The Events Page
 
-1. The Events Section features cards with recent performances the choir is participating in.  Each card displays a photo of the venue, the date and time, a link to google maps showing the exact location of the venue and a paragraph about the performance and ticket sales.  This section is valuable to the user as it will be updated with the most recent performance dates so they can save the date, map their location and reserve their tickets. 
+1. The Events section features cards with the most recent performances the choir has participated in.  Each card displays a photo of the venue, the date and time, a link to google maps showing the exact location of the venue and a paragraph about the performance and ticket sales.  This section is valuable to the user as it will be updated with the most recent performance dates so they can save the date, map their location and reserve their tickets. 
 2. The Call To Action card is again featured here to encourage users to get in touch.
-3. The News section features articles written by the conductor himself or by his helper to keep the user updated with the most recent news.  This is a quick and easy way for the user to read through the most important news if they are not on facebook. 
+3. The News section features articles written by the conductor himself, or by his helper, to keep the user updated with the most recent news.  This is a quick and easy way for the user to read through the most important news if they are not on Facebook. 
 
 ### Mobile Screenshot
 
@@ -185,7 +185,7 @@ They will be able to see the schedule of events, rehearsal times and locations a
 
   This page features a fully accessible contact form with specific fieldsets and a submit button.
   This enables the user to get in touch with the choir master or his assistant for further information regarding membership subscription or possibility of future events.
-  The user is able to give their contact details, specify if they are interested in becoming members or if they are event organisers or other.
+  The user is able to give their contact details, specify if they are interested in becoming a member, if they are an event organiser or other.
   The user is able to leave comments in the text area to encourage the choir or offer some insights on their performances.
 
 ### Mobile Screenshot
@@ -202,10 +202,10 @@ They will be able to see the schedule of events, rehearsal times and locations a
 ## Future Features
 
   * Real name, logo, information, media and links for the Visionaries Choir.
-  * A close navigation symbol on the hamburger button in the header on mobile.
-  * An archive of past performances, appearances etc for the choir’s followers and members to access on the website itself.
+  * A Close Navigation symbol on the hamburger button in the header on mobile.
+  * An archive of past performances, appearances etc for the choir’s followers and members to access from the website itself.
   * News cards to look more modern, maybe a skewed effect on an opaque background. 
-  * The choir’s very own donation box.
+  * A donation box for the choir.
   * A personalised page that thanks the user for submitting the sign up/contact form with a functioning action which sends the data to a file on the server.
   * Information about how the users data will be used (GDPR).
 
@@ -217,10 +217,10 @@ They will be able to see the schedule of events, rehearsal times and locations a
 # User Experience (UX)
 
 ## Strategy/Site Goals
-The main goal of the website is to make the public aware of The VisEnsemble Choir.  It hopes to motivate more visually impaired people to join as members and to increase the number of supporters and followers of The VisEnsemble Choir.  The overall objective of this website is to aid in creating a well-established and well-rounded choir and as a result to increase the number of ticket sales and performances per year.  
+The main goal of the website is to make the public aware of The VisEnsemble Choir.  It hopes to motivate more visually impaired people to join as members and increase the number of supporters and followers of The VisEnsemble Choir.  The overall objective of this website is to aid in creating a well-established and well-rounded choir and as a result increase the number of ticket sales and performances per year.  
 
 ## Scope/User Stories
-This section aims at determining what a user/visitor would expect from interacting with the website.  Scenarios of actions each type of visitor wishes to take are listed below.
+This section aims to determine what a user/visitor would expect from interacting with the website.  Scenarios of actions each type of visitor wishes to take are listed below.
 
 * Website User Goals
   
@@ -249,20 +249,21 @@ This section aims at determining what a user/visitor would expect from interacti
     * I want to see updates in the events section in order to pre-book tickets with the relevant organisations.
 
 * Frequent Visitor Goals
+
     As a frequent visitor: 
     * I want to see updated news from the choir master and other members of the choir.
     * I want to see different testimonials from newer members of the choir.
-    * I want to engage and make my contribution to the choir.  I want my opinion to be heard. 
+    * I want to engage with and make my contribution to the choir.  I want my opinion to be heard. 
 
 ## Structure/Design Choices
   A four page website which offers simplicity and consistency within its structure.  The Navigation menu displays the choir’s logo and links to the different pages on the website, for easy navigation.  This is repeated across all pages.  The Footer displays social media links which open in a separate tab for ease of use.  The footer is also repeated across all pages to keep the design uniform and for ease of access. 
 
 ## Skeleton/Wireframes
-Wireframes were firstly sketched with pen and paper.  This method helped me with brainstorming, deciding the most essential parts for the website and getting a feel for the website as a whole.
+Wireframes were first sketched with pen and paper.  This method helped me with brainstorming, deciding the most essential parts for the website and getting a feel for the website as a whole.  They were then wireframed in [Balsamiq](https://balsamiq.com/wireframes/) to give a closer indication of the intended design.  
 
-[Right click to view Mobile Wireframes](assets/documentation/TVE%20Mobile.pdf)
+[Right click to view mobile wireframes in pdf done with Balsamiq](assets/documentation/TVE%20Mobile.pdf)
 
-[Right click to view Desktop Wireframes](assets/documentation/TVE%20Desktop.pdf)
+[Right click to view desktop wireframes in pdf done with Balsamiq](assets/documentation/TVE%20Desktop.pdf)
 
 Note: Through the design phase some elements were changed to allow for a better user experience.
 
@@ -271,7 +272,7 @@ This section defines the visual language of the website.
 
 * Colour Scheme
 
-  The colour orange was chosen as the primary colour for the website as it represents friendliness, enthusiasm and creativity. It was used for the logo and header text as well as important text and buttons to draw the eye. 
+  The colour orange was chosen as the primary colour for the website as it represents friendliness, enthusiasm and creativity. It was used for the logo and header text, as well as important text and buttons to draw the eye. 
 
   [ColorMind](http://colormind.io/) was used to generate the following colour palette. 
 
@@ -292,7 +293,7 @@ This section defines the visual language of the website.
 
 * Icons
 
-The icons used throughout the page were taken from [Font Awesome](https://fontawesome.com/).  On the Home page in the Our Vision Section, the icons used are mainly decorative, they are eye-catching and identify with the text underneath them. They are hidden from screen readers using aria-hidden=true.  The icons on the Footer are interactive links and have an aria-label which gives the relevant information to screen readers to read out to the users. The icons on the Rehearsal Card provide a tooltip for sighted mouse users by using the title tag.  A span tag was also added to provide the same information in the tool tip for assistive technologies.  This is kept visually hidden as the tool tip already provides that information. Unfortunately, at this time it wasn't possible to make them accessible by keyboard navigation without turning them to links and using JS. 
+The icons used throughout the page were taken from [Font Awesome](https://fontawesome.com/).  On the Home page in the Our Vision Section, the icons used are mainly decorative, they are eye-catching and identify with the text underneath them. They are hidden from screen readers using `aria-hidden="true"`.  The icons on the Footer are interactive links and have an aria-label which gives the relevant information to screen readers to read out to the users. The icons on the Rehearsal card provide a tooltip for sighted mouse users by using the title tag.  A span tag was also added to provide the same information in the tool tip for assistive technologies.  This is kept visually hidden as the tool tip already provides that information. Unfortunately, at this time it wasn't possible to make them accessible by keyboard navigation without turning them to links or using JS. 
 
 [Back to Top](#table-of-contents)
 
@@ -401,11 +402,11 @@ Issues:
 
 ## Manual Testing
 
-The website was manually tested on Chrome, Edge, Brave, Firefox and Safari browsers at different screen sizes as well as on iPhone 6S, Samsung Galaxy S10 Plus, iPhone XS max, iPad Air,Laptop 1280px and Standard HD Screen 1920 x 1080.  Responsiveness and functionality worked as expected on all except iPad Air which ran on iOS 12.5.5.  The WebP images were not rendering. Please refer to [Images not rendering on old browsers](#images-not-rendering-on-old-browsers) section under [Bugs](#bugs) for my solution to this.  
+The website was manually tested on Chrome, Edge, Firefox and Safari browsers at different screen sizes as well as on iPhone 6S, Samsung Galaxy S10 Plus, iPhone XS max, iPad Air,Laptop 1280px and Standard HD Screen 1920 x 1080.  Responsiveness and functionality worked as expected on all except iPad Air which ran on iOS 12.5.5 where the WebP images were not rendering. Please refer to [Images not rendering on old browsers](#images-not-rendering-on-old-browsers) section under [Bugs](#bugs) for my solution to this.  
 
-Manual Testing with older browsers also showed that the :is() pseudo class selector was not yet supported and thus was removed from the stylesheet and reverted back to the long format. 
+Manual Testing with older browsers also showed that the `:is()` pseudo class selector was not yet supported and thus was removed from the stylesheet and reverted back to the long format. 
 
-Functionality was also tested with keyboard navigation and screen reading technology.  These work as intended, except for the 'read more button' on the [About Us Section](#the-about-us-section), [The Flip Card](#the-flip-card-our-conductor) and [The Contact Form](#contact-form). Please refer to the next section for details or click on the links above.  
+Functionality was also tested with keyboard navigation and screen reading technology.  These work as intended, except for the 'Read More button' on the [About Us](#the-about-us-section) section, the [Flip card](#the-flip-card-our-conductor) and the [Contact Form](#contact-form). Please refer to the next section for details or click on the links above.  
 
 [Back to Top](#table-of-contents)
 
@@ -470,37 +471,37 @@ Eventually this was also replaced by absolutely positioning the text off screen 
 
 #### Firefox Accessibility Tools
 
-  Firefox gave warnings on every page about contrast issues, which the Lighthouse validators on Chrome and Edge did not detect.  These were all changed accordingly to suit, except for the 'Skip Navigation Link' which is meant to be hidden until it comes into focus. 
+  Firefox gave warnings on every page about contrast issues, which the Lighthouse validators on Chrome and Edge did not detect.  These were all changed accordingly to suit, except for the 'Skip Navigation link' which is meant to be hidden until it comes into focus. 
 
-  Firefox gave an accessibility issue with the radio buttons in the contact form.  They were not visible enough.  The width and height of the radio buttons was added and set for different screen sizes.  
+  Firefox gave an accessibility issue with the radio buttons in the Contact form.  They were not visible enough.  The width and height of the radio buttons was added and set for different screen sizes with media queries.
 
 #### Lighthouse
 
-  * When Lighthouse performance was first checked the report was extremely low for almost all pages.  All images had to be resized, compressed and most changed to webP. Media queries were added to resize images according to screen size.  After all this performance improved a little but still not enough.  Eventually all images on the website were moved to [Cloudinary](https://cloudinary.com/console/c-122ef6555651b7cfec18a8cfd09711/media_library/folders/home), this made it easier to resize the images accordingly.  This [Guide to responsive image syntax in HTML](https://css-tricks.com/a-guide-to-the-responsive-images-syntax-in-html/) was very helpful in making the logo and photos responsive and instruct on how to use srcset for better performance.  
+  * When Lighthouse performance was first checked the report was extremely low for almost all pages.  All images had to be resized, compressed and most changed to webP. Media queries were added to resize images according to screen size.  After all this, performance improved a little but still not enough.  Eventually, all images on the website were moved to [Cloudinary](https://cloudinary.com/console/c-122ef6555651b7cfec18a8cfd09711/media_library/folders/home). This made it easier to resize the images accordingly.  This [Guide to responsive image syntax in HTML](https://css-tricks.com/a-guide-to-the-responsive-images-syntax-in-html/) was very helpful in making the logo and photos responsive and gave instructions on how to use srcset for better performance.  
 
-  * iFrames with YouTube videos were also reducing performance of the website, eventually they were turned to mp3s and ogg backups to help with this.  The visuals were not needed in this case so it made sense to have them as audio files instead.  The real website would have the choir's own recordings and these will be added in as audio/video files or links will be provided to the choir's own YouTube page. 
+  * iFrames with YouTube videos were also reducing performance of the website. They were converted to mp3s and OGG backups to help with this.  The visuals were not needed in this case so it made sense to have them as audio files instead.  The real website will have the choir's own recordings. These will be added as audio/video files, or links will be provided to the choir's own YouTube page. 
 
 #### The Back to Top Button
 
-  All four pages had a back to top button which was meant to appear when scrolling down.  This worked on 3 of the 4 pages and after manual testing it found that it was not always accessible with screen readers. After many trials and errors it had to be scrapped and replaced with the current back to top link which works fine for sighted, non-sighted and keyboard users.  The back to top link brings the user back to the skip navigation link which is quite handy for people with disabilities.  
+  All four pages had a Back to Top button which was meant to appear when scrolling down.  This worked on 3 of the 4 pages and manual testing found that it was not always accessible with screen readers. After much trial and error, it had to be scrapped and replaced with the current Back to Top link which works fine for sighted, non-sighted and keyboard users.  The Back to Top link brings the user back to the skip navigation link which is quite handy for people with disabilities.  
 
 
 #### The About Us Section
 
-  When the read more link was clicked, the whole page jumped down.  This was not ideal so after a few tests an anchor tag was placed in the div container which fixed this problem.  This however made the read more button less intuitive with screen readers.  As the user double taps on the read more button, the next swipe jumps to the next section (Our Conductor) rather than the next paragraph in the about us section.  This issue has not yet been fully resolved! I will opt to not use one in my future projects unless I find an accessible solution to it. For the time being, an aria-label to select and swipe back, has been added in order to facilitate the read more action.   
+  When the read more link was clicked, the whole page jumped down.  This was not ideal, so after a few tests an anchor tag was placed in the div container which fixed this problem.  This, however, made the read more button less intuitive with screen readers.  As the user double-taps on the Read More button, the next swipe jumps to the next section (Our Conductor) rather than the next paragraph in the About Us section.  This issue has not yet been fully resolved. I will opt not to use this feature in my future projects until I find an accessible solution for it. For the time being, an `aria-label` to select and swipe back has been added in order to facilitate the Read More action.   
 
 #### The Flip Card (Our Conductor)
 
-  This worked out better than expected and no JavaScript was needed.  At first the flip card was not rotating when navigating with the keyboard.  A quick search on google brought me to [anycodings](https://www.anycodings.com/1questions/1942238/css-flip-card-how-can-i-activate-the-flip-via-tab-so-it-is-keyboard-accessible) which had a solution made possible by adding `:focus-within` rather than just `:focus` along with `:hover` on the flip card container.  
+  This worked out better than expected and no JavaScript was needed.  At first the Flip Card was not rotating when navigating with the keyboard.  A quick search on Google brought me to [anycodings](https://www.anycodings.com/1questions/1942238/css-flip-card-how-can-i-activate-the-flip-via-tab-so-it-is-keyboard-accessible) which had a solution made possible by adding `:focus-within` rather than just `:focus` along with `:hover` on the flip card container.  
   
-  The only bug with it that remains unfixed is that although voice over is able to read the back side information, with certain devices it does not always flip to show the back.  This is not ideal for visually impaired people who have some sight and use screen readers. More research will be done to fix this.   
+  The only remaining bug is that although voice over can read the back side information, with certain devices it does not always flip to show the back.  This is not ideal for visually impaired people who have some sight and use screen readers. More research will be done to fix this.   
 
 #### Contact Form
 
-* The contact form works well for sighted users and with keyboard navigation as errors are visually highlighted when form is submitted incorrectly.  However the user relying on screen reader has no feedback when errors are displayed.  After plenty of searches online it was evident that this could not be done without JS so a script had to be borrowed from [Hidde's blog](https://hidde.blog/how-to-make-inline-error-messages-accessible/) to make form more accessible with screen readers.  
-After testing with different methods, `aria-live="assertive"` with `aria-relevant="additions removals"` (to apply the same functionality in reverse) is used to tell user that required field is not filled in and a visually hidden note is placed just before the submit button to tell user that in order to submit form, they need to get a confirmation and to review their required fields. 
+* The Contact form works well for sighted users and with keyboard navigation, as errors are visually highlighted when the form is submitted incorrectly.  However, the user relying on screen reader has no feedback when errors are displayed.  After plenty of searches online it was evident that this could not be done without JS, so a script had to be borrowed from [Hidde's blog](https://hidde.blog/how-to-make-inline-error-messages-accessible/) to make the form more accessible with screen readers.  
+After testing with different methods, `aria-live="assertive"` with `aria-relevant="additions removals"` (to apply the same functionality in reverse) is used to tell the user that a required field is not filled in and a visually hidden note is placed just before the Submit button to tell the user that in order to submit the form they need to get confirmation and review their required fields. 
 
-* The text area stretches outside the parent container on small screens and it is not responsive.  After a quick search on google, it was found that box-sizing needed to be set to border-box in order for it to respect its parent container padding and border.
+* The text area stretched outside the parent container on small screens and it was not responsive.  After a quick search on Google, it was found that box-sizing needed to be set to border-box in order for it to respect its parent container padding and border.
 ```CSS
 textarea {
     -webkit-box-sizing: border-box;
@@ -510,13 +511,15 @@ textarea {
 ```
 #### Images not rendering on old browsers
 
-A quick lookup on [Caniuse.com](https://caniuse.com/webp) showed that older versions of all browsers especially Safari did not support the WebP image format.  The picture tag in HTML was added to offer a fallback to a JPG format for these browsers. [faqcode4u.com](https://www.faqcode4u.com/faq/414363/responsive-image-picture-vs-img-with-srcset-fallback-issue) was helpful in figuring this out.  HTML for the pages was validated again in the [HTML Validator](https://validator.w3.org/). For the background images in CSS, it was opted to switch back the Home Page Landing Background Image, The About Us section Background Image and the flip card profile photo to JPG format again as they were useful for positioning of the other elements.  The website was tested again for performance and it was found that there was only a .2s delay for the JPG images.  The Contact Page Background Image was left as WebP as the contact form had good contrast anyway without it.
+A quick search on [Caniuse.com](https://caniuse.com/webp) showed that older versions of all browsers, especially Safari, did not support the WebP image format.  The picture tag in HTML was added to offer a fallback to a JPG format for these browsers. [faqcode4u.com](https://www.faqcode4u.com/faq/414363/responsive-image-picture-vs-img-with-srcset-fallback-issue) was helpful in figuring this out.  HTML for the pages was validated again in the [HTML Validator](https://validator.w3.org/). 
 
-#### Other Issues
+For the background images in CSS, it was opted to switch back the Home Page Landing Background Image, The About Us section Background Image and the Flip Card Profile Photo to JPG format again as they were useful for positioning of the other elements.  The website was tested again for performance and it was found that there was only a .2s delay for the JPG images.  The Contact Page Background Image was left as WebP as the contact form had good contrast without it.
 
-The Audio players on certain iOS devices were not centering properly. It was suggested to pass the CSS through an online [Autoprefixer](https://autoprefixer.github.io/) to add vendor prefixes for all popular browsers.  This did not solve the problem but it was decided to keep the prefixes anyway. 
+#### Unfixed Bugs
 
-iOS seems to disregard the width and height given to radio buttons.
+The Audio players on certain iOS devices were not centering properly. It was suggested to pass the CSS through an online [Autoprefixer](https://autoprefixer.github.io/) to add vendor prefixes for all popular browsers.  This did not solve the problem but it was decided to keep the prefixes in case of other issues. 
+
+The Radio buttons do not show up as intended on iOS devices, they are too small and don't respond to the styles written.  After some research it seemed that JS was needed to fix this or using a jQuery plug-in.  [This video](https://www.youtube.com/watch?v=rR1Yu1fMUk0) shows how to customise them for iOS using only HTML and CSS but this wasn't what I was looking for, for this project.  
 
 [Back to Top](#table-of-contents)
 
@@ -565,9 +568,9 @@ The live link can be found here - https://monipar.github.io/the-visensemble/
 
 # Acknowledgements
 
-A huge thanks goes to my mentor [Sammy Dartnall](https://github.com/SammyDartnall10) for all the help and encouragment she gave me throughout this project. Same goes to the fabulous Student Care Duo Kenan Wright and Kasia Bogucka for their support and help with getting set up and sorted as well as my MSLETBB team mates for the moral and technical l support.    
+A huge thanks goes to my mentor [Sammy Dartnall](https://github.com/SammyDartnall10) for all the guidance and encouragment she gave me throughout this project. Same goes to the fabulous Student Care Duo Kenan Wright and Kasia Bogucka for their support and help with getting set up and sorted as well as my MSLETBB team mates for the moral and technical l support.    
 Thank you goes to the [CodeInstitute](https://codeinstitute.net/ie/) [Slack](https://slack.com/intl/en-ie/) community which had a lot of material I found useful in the various channels. 
-My friends and little team of screen reading technology testers [Abbie Healy](https://www.linkedin.com/in/abbie-healy-2a641b20a/), Edvard Navackas, Victoria Alves de Oliveira and Tim Culhane for testing my website and giving very helpful feedback.
+My friends and little team of screen-reading technology testers [Abbie Healy](https://www.linkedin.com/in/abbie-healy-2a641b20a/), Edvard Navackas, Victoria Alves de Oliveira and Tim Culhane for testing my website and giving very helpful feedback.
 My parents Joe and Lucia Parnis for the encouragment and last but not least my partner [Austen Donohoe](https://www.instagram.com/circlestrafemedia/) for the VisEnsemble Logo and for all the dinners and cups of tea.  
 
 [Back to Top](#table-of-contents)
